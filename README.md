@@ -3,6 +3,8 @@
 
 A research-to-practice brief arguing that America's reading crisis is now a **professionalization problem** — not a knowledge one. The Science of Reading has won the argument. What's missing is the infrastructure to make good practice consistent at scale.
 
+![Preview of the brief](preview.png)
+
 ## The argument in brief
 
 After decades of reform, roughly 40% of U.S. fourth-graders still read below NAEP Basic. The emerging consensus among researchers (Seidenberg, Carnine, Lyon, Tipton & Patton-Terry) is that the bottleneck has shifted: the research base is strong enough, but it has no reliable path from expert knowledge to the median classroom.
