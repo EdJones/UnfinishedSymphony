@@ -413,14 +413,39 @@
       #text(8pt, fill: dmuted)[The difference between the two models is not the document. It is whether anything happens after the document ships.]
     ],
     [
+      #let docVersion = "v0.1"
+      #let docStatus = "Preview"
+      #let docDate = "Sept 21, 2026"
       #image("canonical-source-roles.png", width: 2.25in)
+      #v(-2pt)
+      #block(
+        width: 2.25in,
+        inset: (x: 8pt, y: 4pt),
+        radius: 5pt,
+        fill: dpale,
+        stroke: 0.8pt + dblue,
+      )[
+        #set par(justify: false, leading: 0.48em, spacing: 0pt)
+        #align(center)[#grid(
+          columns: (auto, auto),
+          gutter: 4pt,
+          align: horizon + left,
+          text(6.5pt, tracking: 0.09em, fill: dblue)[#text(fill: dmuted)[This is] #text(weight: "bold")[VERSION]],
+          text(7pt, fill: rgb("#1E2933"))[#text(weight: "bold", fill: dnavy)[#docVersion] - #docStatus],
+        )]
+        #v(2pt)
+        #align(center)[
+          #text(7pt, fill: rgb("#1E2933"))[#docDate \u{00B7} Help improve this #link("https://github.com/EdJones/UnfinishedSymphony/issues")[#text(weight: "bold", fill: dblue)[#underline[here]]]]
+        ]
+      ]
     ],
   )
   #v(-4pt)
 
   Let's look at some details of practice:
- - After K-1 MOY assessments, many teachers are unsure of what to do with the data.
- A decision tree is needed. Let's look at making one part of the knowledge base.
+  - After K-1 MOY assessments, many teachers are unsure of what to do with the data.
+  - A decision tree is needed. It will look different for different grades, and assessment products.
+  - A true expert in the field creates one, and it seems good.
 
 
   #v(8pt)
@@ -449,8 +474,8 @@
 
   #block(breakable: false, above: 0pt, below: 0pt)[
   #set block(above: 0pt, below: 0pt)
-  #block(
-    width: 100%,
+  #align(center)[#block(
+    width: 60%,
     inset: (x: 8pt, y: 5pt),
     radius: 5pt,
     fill: dpale,
@@ -462,7 +487,7 @@
       #v(2.5pt)
       #text(5.5pt, weight: "bold", tracking: 0.09em, fill: dnavy)[THE TWO MODELS ARE IDENTICAL UP TO THIS POINT]
     ]
-  ]
+  ]]
 
   #grid(
     columns: (1fr, 0.28in, 1fr),
