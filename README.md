@@ -1,9 +1,9 @@
 # An Unfinished Symphony
 ### Completing the Playbook for Reading Education
 
-A research-to-practice brief arguing that America's reading crisis is now a **professionalization problem** — not a knowledge one. The Science of Reading has won the argument. What's missing is the infrastructure to make good practice consistent at scale.
+A research-to-practice brief arguing that America's reading crisis is now a **professionalization problem** — not a knowledge one. While the Science of Reading seems to have won the argument, still missing is the infrastructure to make good practice consistent at scale.
 
-![Preview of the brief](preview.png)
+[![Preview of the brief](preview.png)](Unfinished_Symphony.pdf)
 
 ## The argument in brief
 
