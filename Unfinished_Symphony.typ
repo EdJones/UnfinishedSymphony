@@ -423,7 +423,7 @@
  A decision tree is needed. Let's look at making one part of the knowledge base.
 
 
-  #v(4pt)
+  #v(8pt)
 
   // ---- diagram: publish-and-forget vs. maintained-in-the-open ----
   #let dgrey = rgb("#93A0A9")
@@ -431,7 +431,7 @@
 
   #let step(body, tag: none, dead: false) = block(
     width: 100%,
-    inset: (x: 8pt, y: 6pt),
+    inset: (x: 8pt, y: 5pt),
     radius: 5pt,
     fill: if dead { rgb("#F5F6F7") } else { dpale },
     stroke: 0.8pt + (if dead { dgrey } else { dblue }),
@@ -445,12 +445,13 @@
   ]
 
   #let arw(sym, c) = align(center + horizon)[#text(13pt, fill: c)[#sym]]
-  #let vgap(sym, c) = align(center)[#v(1pt) #text(12pt, fill: c)[#sym] #v(1pt)]
+  #let vgap(sym, c) = align(center, pad(y: 4pt, text(12pt, fill: c)[#sym]))
 
-  #block(breakable: false)[
+  #block(breakable: false, above: 0pt, below: 0pt)[
+  #set block(above: 0pt, below: 0pt)
   #block(
     width: 100%,
-    inset: (x: 8pt, y: 6pt),
+    inset: (x: 8pt, y: 5pt),
     radius: 5pt,
     fill: dpale,
     stroke: 0.8pt + dnavy,
@@ -468,6 +469,7 @@
     gutter: 0pt,
     vgap("\u{2193}", dgrey), [], vgap("\u{2193}", dblue),
   )
+  #v(2pt)
 
   #grid(
     columns: (1fr, 0.28in, 1fr),
@@ -476,7 +478,7 @@
     // ===== LEFT: publish and forget =====
     [
       #text(8.5pt, weight: "bold", tracking: 0.06em, fill: dgrey)[PUBLISH AND FORGET]
-      #v(6pt)
+      #v(4pt)
       #step(tag: "the document is the deliverable")[Published as finished: a PDF, an adopted program, a PD day.]
       #vgap("\u{2193}", dgrey)
       #step[The field hits real defects \u{2014} gaps in the scope and sequence, texts that don't match the phonics order, guidance that can't be executed.]
@@ -485,7 +487,7 @@
       #vgap("\u{2193}", dgrey)
       #block(
         width: 100%,
-        inset: (x: 8pt, y: 6pt),
+        inset: (x: 8pt, y: 5pt),
         radius: 5pt,
         fill: rgb("#FEFAF9"),
         stroke: 0.8pt + dstop,
@@ -500,10 +502,10 @@
     // ===== RIGHT: maintained in the open =====
     [
       #text(8.5pt, weight: "bold", tracking: 0.06em, fill: green)[OPEN SOURCE ETHOS, TOOLS, PROCESSES]
-      #v(6pt)
+      #v(4pt)
       #grid(
         columns: (1fr, 0.64in, 1fr),
-        rows: (auto, 0.34in, auto),
+        rows: (auto, 0.2in, auto),
         column-gutter: 0pt,
         row-gutter: 0pt,
 
@@ -523,10 +525,10 @@
         arw("\u{2190}", dlinec),
         step(tag: "issue tracking")[The defect is filed in the open, with a name and a date on it \u{2014} not lost in a PD evaluation form or a hallway conversation.],
       )
-      #v(7pt)
+      #v(6pt)
       #block(
         width: 100%,
-        inset: (x: 8pt, y: 4pt),
+        inset: (x: 8pt, y: 3pt),
         radius: 5pt,
         fill: dpale,
         stroke: (left: 2.5pt + rgb("#2ecc40")),
@@ -534,10 +536,10 @@
         #set par(justify: false, leading: 0.48em, spacing: 0pt)
         #text(7.4pt, weight: "bold", fill: dnavy)[And a district can fork it.] #text(7.4pt, fill: rgb("#1E2933"))[Local adaptation stays linked to the source instead of drifting away from it, and a good local fix can travel back up. Fidelity and adaptation stop being opposites.]
       ]
-      #v(6pt)
+      #v(5pt)
       #block(
         width: 100%,
-        inset: (x: 8pt, y: 6pt),
+        inset: (x: 8pt, y: 5pt),
         radius: 5pt,
         fill: dpale,
         stroke: (left: 2.5pt + dblue),
@@ -549,7 +551,7 @@
   )
   ]
 
-  #v(4pt)
+  #v(6pt)
   #text(7.2pt, fill: dmuted)[
     Publishing makes improvement #text(style: "italic")[episodic:] it happens when a panel is convened and funded. Maintenance makes it #text(style: "italic")[cumulative:] the thousands of corrections teachers already make in private become one shared, reviewed, attributed asset that outlives the grant, the superintendent, and the vendor contract.
   ]
