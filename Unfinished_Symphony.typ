@@ -456,7 +456,7 @@
 
   #let step(body, tag: none, dead: false) = block(
     width: 100%,
-    inset: (x: 8pt, y: 5pt),
+    inset: (x: 8pt, y: 4pt),
     radius: 5pt,
     fill: if dead { rgb("#F5F6F7") } else { dpale },
     stroke: 0.8pt + (if dead { dgrey } else { dblue }),
@@ -464,13 +464,13 @@
     #set par(justify: false, leading: 0.48em, spacing: 0pt)
     #text(7.4pt, fill: rgb("#1E2933"))[#body]
     #if tag != none [
-      #v(3pt)
-      #text(5.5pt, weight: "bold", tracking: 0.09em, fill: if dead { dgrey } else { dblue })[#upper(tag)]
+      #v(2.5pt)
+      #text(5.5pt, weight: "bold", tracking: 0.04em, fill: if dead { dgrey } else { dblue })[#upper(tag)]
     ]
   ]
 
   #let arw(sym, c) = align(center + horizon)[#text(13pt, fill: c)[#sym]]
-  #let vgap(sym, c) = align(center, pad(y: 4pt, text(12pt, fill: c)[#sym]))
+  #let vgap(sym, c) = align(center, pad(y: 3pt, text(12pt, fill: c)[#sym]))
 
   #block(breakable: false, above: 0pt, below: 0pt)[
   #set block(above: 0pt, below: 0pt)
@@ -529,19 +529,19 @@
       #text(8.5pt, weight: "bold", tracking: 0.06em, fill: green)[OPEN SOURCE ETHOS, TOOLS, PROCESSES]
       #v(4pt)
       #grid(
-        columns: (1fr, 0.64in, 1fr),
-        rows: (auto, 0.2in, auto),
+        columns: (1fr, 0.56in, 1fr),
+        rows: (auto, 0.15in, auto),
         column-gutter: 0pt,
         row-gutter: 0pt,
 
         step(tag: "version controlled release")[Proposal is released to single canonical source, version-numbered and dated.],
         arw("\u{2192}", dlinec),
-        step(tag: "public issue tracking")[Experts and users weigh in, in the open, on a dedicated public issues forum. (It's not lost in a PD evaluation form or a hallway conversation.)],
+        step(tag: "public issue tracking")[Experts and users weigh in, on an open, linked, issues tracker. (Feedback isn't lost in evaluation forms or a hallway conversations.)],
 
         arw("\u{2191}", dlinec),
         align(center + horizon)[
           #text(6pt, weight: "bold", tracking: 0.06em, fill: dnavy)[KNOWLEDGE]
-          #linebreak()
+          #v(-4pt)
           #text(6pt, weight: "bold", tracking: 0.06em, fill: dnavy)[COMPOUNDS]
         ],
         arw("\u{2193}", dlinec),
@@ -560,7 +560,7 @@
         stroke: (left: 2.5pt + rgb("#2ecc40")),
       )[
         #set par(justify: false, leading: 0.48em, spacing: 0pt)
-        #text(7.4pt, weight: "bold", fill: dnavy)[And a district can fork it.] #text(7.4pt, fill: rgb("#1E2933"))[Local adaptation stays linked to the source instead of drifting away from it, and a good local fix can travel back up. Fidelity and adaptation stop being opposites.]
+        #text(7.4pt, weight: "bold", fill: dnavy)[Combinations of guidance can be packaged & published.] #text(7.4pt, fill: rgb("#1E2933"))[Local adaptation stays linked to the source instead of drifting away. A good local fix can travel back up. Fidelity and adaptation stop being opposites.]
       ]
       #v(5pt)
       #block(
@@ -571,7 +571,18 @@
         stroke: (left: 2.5pt + dblue),
       )[
         #set par(justify: false, leading: 0.48em, spacing: 0pt)
-        #text(7.4pt, weight: "bold", fill: dnavy)[Nothing is thrown away.] #text(7.4pt, fill: rgb("#1E2933"))[Every prior version stays citable, and the change from the 2019 guidance to the 2026 guidance is legible line by line \u{2014} who changed what, when, and on what evidence.]
+        #text(7.4pt, weight: "bold", fill: dnavy)[Deeper tracking to the science] #text(7.4pt, fill: rgb("#1E2933"))[Trainers and writers can drill down to linked connections to the research-practice edge.]
+      ]
+      #v(5pt)
+      #block(
+        width: 100%,
+        inset: (x: 8pt, y: 5pt),
+        radius: 5pt,
+        fill: dpale,
+        stroke: (left: 2.5pt + dblue),
+      )[
+        #set par(justify: false, leading: 0.48em, spacing: 0pt)
+        #text(7.4pt, weight: "bold", fill: dnavy)[Nothing is thrown away.] #text(7.4pt, fill: rgb("#1E2933"))[Every prior version stays citable. Changes from 2025 guidance to the 2028 guidance are tracked line by line \u{2014} who changed what, when, and on what evidence.]
       ]
     ],
   )
