@@ -440,12 +440,12 @@
       ]
     ],
   )
-  #v(-4pt)
+  #v(-8pt)
 
   Let's look at some details of practice:
   - After K-1 MOY assessments, many teachers are unsure of what to do with the data.
   - A decision tree is needed. It will look different for different grades, and assessment products.
-  - A true expert in the field creates one, and it seems good.
+  - A true expert in the field creates one, and it seems good. It considers changes to Tier I instruction, using additional diagnostics, arranging Tier II intervention, and more.
 
 
   #v(8pt)
@@ -483,8 +483,8 @@
   )[
     #set par(justify: false, leading: 0.48em, spacing: 0pt)
     #align(center)[
-      #text(7.4pt, weight: "bold", fill: dnavy)[The same experts write the same guidance.]
-      #v(2.5pt)
+      #text(7.4pt, weight: "bold", fill: dnavy)[The same expert writes the same guidance.]
+      #v(3.5pt)
       #text(5.5pt, weight: "bold", tracking: 0.09em, fill: dnavy)[THE TWO MODELS ARE IDENTICAL UP TO THIS POINT]
     ]
   ]]
@@ -504,11 +504,11 @@
     [
       #text(8.5pt, weight: "bold", tracking: 0.06em, fill: dgrey)[PUBLISH AND FORGET]
       #v(4pt)
-      #step(tag: "the document is the deliverable")[Published as finished: a PDF, an adopted program, a PD day.]
+      #step(tag: "the document is the deliverable")[Published as finished product: a blog post, podcast, book, webinar, etc.]
       #vgap("\u{2193}", dgrey)
-      #step[The field hits real defects \u{2014} gaps in the scope and sequence, texts that don't match the phonics order, guidance that can't be executed.]
+      #step[Distribution to the field is spotty. Expert review even more uneven. Incorporation into live PD perhaps limited to the author's.]
       #vgap("\u{2193}", dgrey)
-      #step(dead: true, tag: "no route back to the source")[Teachers fix it privately: personal drives, hallway workarounds, a district file no one else sees.]
+      #step(dead: true, tag: "no route back to the source")[Teachers who do see it have questions. A few get asked and answered on X or Substack. Maybe on Facebook-where answers run the gamut.]
       #vgap("\u{2193}", dgrey)
       #block(
         width: 100%,
@@ -518,7 +518,7 @@
         stroke: 0.8pt + dstop,
       )[
         #set par(justify: false, leading: 0.48em, spacing: 0pt)
-        #text(7.4pt, weight: "bold", fill: dstop)[Dead end.] #text(7.4pt, fill: rgb("#1E2933"))[Years later a new panel starts over, and everything the field learned is lost.]
+        #text(7.4pt, weight: "bold", fill: dstop)[Dead end.] #text(7.4pt, fill: rgb("#1E2933"))[Later, another expert repeats the process.]
       ]
     ],
 
@@ -534,9 +534,11 @@
         column-gutter: 0pt,
         row-gutter: 0pt,
 
-        step(tag: "version control")[One canonical source, numbered and dated. Everyone can say #text(style: "italic")[which] guidance they teach.],
+        step(tag: "version control")[Proposal is released to single canonical source, version-numbered and dated.],
         arw("\u{2192}", dlinec),
-        step(tag: "release")[In use nationwide, with every district on a known version \u{2014} not "the state framework," but v2.1.],
+        step(tag: "release")[Experts and users weigh in, in the open, on a public issues forum dedicated to the exact guidance being proposed.
+
+          (It's not lost in a PD evaluation form or a hallway conversation.)],
 
         arw("\u{2191}", dlinec),
         align(center + horizon)[
@@ -546,9 +548,10 @@
         ],
         arw("\u{2193}", dlinec),
 
-        step(tag: "contribution + review")[A teacher, coach, or district proposes the actual correction \u{2014} not just a complaint. Maintainers accept or decline in public, with reasons on the record; the fix ships as the next version.],
+        step(tag: "contribution + review")[
+          Maintainers accept or decline in public, with reasons on the record; the fix ships as the next version.],
         arw("\u{2190}", dlinec),
-        step(tag: "issue tracking")[The defect is filed in the open, with a name and a date on it \u{2014} not lost in a PD evaluation form or a hallway conversation.],
+        step(tag: "issue tracking")[A teacher, coach, or specialist proposes the actual change \u{2014} not just a complaint.],
       )
       #v(6pt)
       #block(
