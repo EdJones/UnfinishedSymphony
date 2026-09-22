@@ -20,8 +20,8 @@
     #let anchors = query(<version-footer-anchor>)
     #let onVersionPage = anchors.len() > 0 and anchors.first().location().page() == here().page()
     #if onVersionPage [
-      #align(center)[
-        #text(fill: blue)[This is #text(weight: "bold")[VERSION #docVersion] - #docStatus] #text[· #docDate · Help improve this ]#link("https://github.com/EdJones/UnfinishedSymphony/issues")[#text(weight: "bold", fill: blue)[#underline[here]]]
+      #align(center)[This is
+        #text(fill: blue)[#text(weight: "bold")[VERSION #docVersion] - #docStatus] #text[· #docDate · Help improve this ]#link("https://github.com/EdJones/UnfinishedSymphony/issues")[#text(weight: "bold", fill: blue)[#underline[here]]]
       ]
       #v(3pt)
     ]
@@ -333,7 +333,7 @@
     #text(10pt, weight: "bold", fill: dnavy)[NRP 2.0 ]
     #v(-5pt)
     #text(8pt)[
-      While some argue for a new National Reading Panel, the truth is that experts have long been monitoring, sharing, and projecting the updated research. A government-sponsored panel of experts may seem a viable next step. Yet there are better ways to achieve what's needed.#cite(7,8)
+      While some argue for a new National Reading Panel#cite(7,8), the truth is that experts have long been monitoring, and sharing the updated research. A government-sponsored panel of experts may seem a viable next step. Yet there are better ways to achieve what's needed.
     ]
   ]
 
