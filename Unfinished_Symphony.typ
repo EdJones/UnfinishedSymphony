@@ -534,11 +534,9 @@
         column-gutter: 0pt,
         row-gutter: 0pt,
 
-        step(tag: "version control")[Proposal is released to single canonical source, version-numbered and dated.],
+        step(tag: "version controlled release")[Proposal is released to single canonical source, version-numbered and dated.],
         arw("\u{2192}", dlinec),
-        step(tag: "release")[Experts and users weigh in, in the open, on a public issues forum dedicated to the exact guidance being proposed.
-
-          (It's not lost in a PD evaluation form or a hallway conversation.)],
+        step(tag: "public issue tracking")[Experts and users weigh in, in the open, on a dedicated public issues forum. (It's not lost in a PD evaluation form or a hallway conversation.)],
 
         arw("\u{2191}", dlinec),
         align(center + horizon)[
@@ -548,10 +546,10 @@
         ],
         arw("\u{2193}", dlinec),
 
-        step(tag: "contribution + review")[
+        step(tag: "new version approved")[
           Maintainers accept or decline in public, with reasons on the record; the fix ships as the next version.],
         arw("\u{2190}", dlinec),
-        step(tag: "issue tracking")[A teacher, coach, or specialist proposes the actual change \u{2014} not just a complaint.],
+        step(tag: "contribution from the field")[A teacher, coach, or specialist proposes the actual change \u{2014} not just a complaint.],
       )
       #v(6pt)
       #block(
