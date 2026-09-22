@@ -8,11 +8,23 @@
 #let pale = rgb("f3f7fa")
 #let rule = rgb("dce5eb")
 
+#let docVersion = "v0.1"
+#let docStatus = "Preview"
+#let docDate = "Sept 21, 2026"
+
 #set page(
   paper: "us-letter",
   margin: (x: 0.58in, y: 0.50in),
   footer: context [
     #set text(font: "Inter", size: 6.8pt, fill: muted)
+    #let anchors = query(<version-footer-anchor>)
+    #let onVersionPage = anchors.len() > 0 and anchors.first().location().page() == here().page()
+    #if onVersionPage [
+      #align(center)[
+        #text(fill: blue)[This is #text(weight: "bold")[VERSION #docVersion] - #docStatus] #text[· #docDate · Help improve this ]#link("https://github.com/EdJones/UnfinishedSymphony/issues")[#text(weight: "bold", fill: blue)[#underline[here]]]
+      ]
+      #v(3pt)
+    ]
     #grid(columns: (1fr, auto),
       [SKUNKWORKS/EDU  ·  THE UNFINISHED WORK],
       [#counter(page).display("1")]
@@ -400,6 +412,7 @@
   )
 
   #v(0.06in)
+  #metadata(none)<version-footer-anchor>
   #grid(
     columns: (1.3fr, 1fr),
     align: (horizon + left, horizon + center),
@@ -414,31 +427,7 @@
       #text(8pt, fill: dmuted)[The difference between the two models is not the document. It is whether anything happens after the document ships.]
     ],
     [
-      #let docVersion = "v0.1"
-      #let docStatus = "Preview"
-      #let docDate = "Sept 21, 2026"
       #image("canonical-source-roles.png", width: 2.25in)
-      #v(-2pt)
-      #block(
-        width: 2.25in,
-        inset: (x: 8pt, y: 4pt),
-        radius: 5pt,
-        fill: dpale,
-        stroke: 0.8pt + dblue,
-      )[
-        #set par(justify: false, leading: 0.48em, spacing: 0pt)
-        #align(center)[#grid(
-          columns: (auto, auto),
-          gutter: 4pt,
-          align: horizon + left,
-          text(6.5pt, tracking: 0.09em, fill: dblue)[#text(fill: dmuted)[This is] #text(weight: "bold")[VERSION]],
-          text(7pt, fill: rgb("#1E2933"))[#text(weight: "bold", fill: dnavy)[#docVersion] - #docStatus],
-        )]
-        #v(2pt)
-        #align(center)[
-          #text(7pt, fill: rgb("#1E2933"))[#docDate \u{00B7} Help improve this #link("https://github.com/EdJones/UnfinishedSymphony/issues")[#text(weight: "bold", fill: dblue)[#underline[here]]]]
-        ]
-      ]
     ],
   )
   #v(-8pt)
