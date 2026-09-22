@@ -126,7 +126,8 @@
   The uncomfortable truth is that structured literacy suffers from the same confusion as “balanced literacy”. It remains — in its fine-grained elements — under-defined.#cite(1)
   #v(8pt)
 
-    #section[The problem shifts: How to make good practice consistent?]
+    #section[The problem shifts:
+      How to make good practices pervasive?]
     #v(6pt)
     For decades, reading reform centered on getting evidence-aligned instruction into more than a minority of classrooms.
 
@@ -148,7 +149,7 @@
       Black fourth-graders face massive, systemic hurdles in reading.
     ]
 
-    #section[From visibility to durability]
+    #section[From awareness to consistency]
     #v(2pt)
     #text(size: 7.5pt)[
       #minihead[2023 · SEIDENBERG]#cite(2,3)
@@ -590,7 +591,7 @@
 
   #v(6pt)
   #text(7.2pt, fill: dmuted)[
-    Publishing makes improvement #text(style: "italic")[episodic:] it happens when a panel is convened and funded. Maintenance makes it #text(style: "italic")[cumulative:] the thousands of corrections teachers already make in private become one shared, reviewed, attributed asset that outlives the grant, the superintendent, and the vendor contract.
+    In the publish-and-forget model, improvement comes in random acts of innovation. In an open source community, improvement is constant and #text(style: "italic")[cumulative:] the thousands of corrections teachers already make in private become one shared, reviewed, attributed asset.
   ]
 
 ]
@@ -632,7 +633,7 @@
     #source[27][Anna Geiger, *Science of Reading Podcast Index*, Reach All Readers, actively maintained.]
     #source[28][Sean Morrisey, "Meet the Word Mapping Project, the new cult favorite vocabulary supplement," *The Curriculum Insight Project*, Feb. 27, 2026.]
     #source[29][AERDF, *Reading Reimagined*, "The False Divide: Why 'Learn to Read, Read to Learn' Fails Older Readers — and How to Fix It," 2026.]
-    #source[30][Jones & Carnine, comments to "60 Million Unnecessary Reading Failures," Aug. 8-11, 2026.]
+    #source[30][Jones & Carnine, comments to "60 Million Unnecessary Reading Failures," 2026.]
     #source[31][Army Publishing Directorate, *Army Doctrine Publications (ADP) Index*, U.S. Army.]
   ]
 )
