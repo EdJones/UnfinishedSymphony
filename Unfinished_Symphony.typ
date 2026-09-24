@@ -8,11 +8,23 @@
 #let pale = rgb("f3f7fa")
 #let rule = rgb("dce5eb")
 
+#let docVersion = "v0.1"
+#let docStatus = "Preview"
+#let docDate = "Sept 21, 2026"
+
 #set page(
   paper: "us-letter",
   margin: (x: 0.58in, y: 0.50in),
   footer: context [
     #set text(font: "Inter", size: 6.8pt, fill: muted)
+    #let anchors = query(<version-footer-anchor>)
+    #let onVersionPage = anchors.len() > 0 and anchors.first().location().page() == here().page()
+    #if onVersionPage [
+      #align(center)[This is
+        #text(fill: blue)[#text(weight: "bold")[VERSION #docVersion] - #docStatus] #text[· #docDate · Help improve this ]#link("https://github.com/EdJones/UnfinishedSymphony/issues")[#text(weight: "bold", fill: blue)[#underline[here]]]
+      ]
+      #v(3pt)
+    ]
     #grid(columns: (1fr, auto),
       [SKUNKWORKS/EDU  ·  THE UNFINISHED WORK],
       [#counter(page).display("1")]
@@ -126,7 +138,8 @@
   The uncomfortable truth is that structured literacy suffers from the same confusion as “balanced literacy”. It remains — in its fine-grained elements — under-defined.#cite(1)
   #v(8pt)
 
-    #section[The problem shifts: How to make good practice consistent?]
+    #section[The problem shifts:
+      How to make good practices pervasive?]
     #v(6pt)
     For decades, reading reform centered on getting evidence-aligned instruction into more than a minority of classrooms.
 
@@ -148,7 +161,7 @@
       Black fourth-graders face massive, systemic hurdles in reading.
     ]
 
-    #section[From visibility to durability]
+    #section[From awareness to consistency]
     #v(2pt)
     #text(size: 7.5pt)[
       #minihead[2023 · SEIDENBERG]#cite(2,3)
@@ -320,7 +333,7 @@
     #text(10pt, weight: "bold", fill: dnavy)[NRP 2.0 ]
     #v(-5pt)
     #text(8pt)[
-      While some argue for a new National Reading Panel, the truth is that experts have long been monitoring, sharing, and projecting the updated research. A government-sponsored panel of experts may seem a viable next step. Yet there are better ways to achieve what's needed.#cite(7,8)
+      While some argue for a new National Reading Panel#cite(7,8), the truth is that experts have long been monitoring, and sharing the updated research. A government-sponsored panel of experts may seem a viable next step. Yet there are better ways to achieve what's needed.
     ]
   ]
 
@@ -399,6 +412,7 @@
   )
 
   #v(0.06in)
+  #metadata(none)<version-footer-anchor>
   #grid(
     columns: (1.3fr, 1fr),
     align: (horizon + left, horizon + center),
@@ -416,14 +430,15 @@
       #image("canonical-source-roles.png", width: 2.25in)
     ],
   )
-  #v(-4pt)
+  #v(-8pt)
 
   Let's look at some details of practice:
- - After K-1 MOY assessments, many teachers are unsure of what to do with the data.
- A decision tree is needed. Let's look at making one part of the knowledge base.
+  - After K-1 MOY assessments, many teachers are unsure of what to do with the data.
+  - A decision tree is needed. It will look different for different grades, and assessment products.
+  - A true expert in the field creates one, and it seems good. It considers changes to Tier I instruction, using additional diagnostics, arranging Tier II intervention, and more.
 
 
-  #v(4pt)
+  #v(8pt)
 
   // ---- diagram: publish-and-forget vs. maintained-in-the-open ----
   #let dgrey = rgb("#93A0A9")
@@ -431,7 +446,7 @@
 
   #let step(body, tag: none, dead: false) = block(
     width: 100%,
-    inset: (x: 8pt, y: 6pt),
+    inset: (x: 8pt, y: 4pt),
     radius: 5pt,
     fill: if dead { rgb("#F5F6F7") } else { dpale },
     stroke: 0.8pt + (if dead { dgrey } else { dblue }),
@@ -439,35 +454,37 @@
     #set par(justify: false, leading: 0.48em, spacing: 0pt)
     #text(7.4pt, fill: rgb("#1E2933"))[#body]
     #if tag != none [
-      #v(3pt)
-      #text(5.5pt, weight: "bold", tracking: 0.09em, fill: if dead { dgrey } else { dblue })[#upper(tag)]
+      #v(2.5pt)
+      #text(5.5pt, weight: "bold", tracking: 0.04em, fill: if dead { dgrey } else { dblue })[#upper(tag)]
     ]
   ]
 
   #let arw(sym, c) = align(center + horizon)[#text(13pt, fill: c)[#sym]]
-  #let vgap(sym, c) = align(center)[#v(1pt) #text(12pt, fill: c)[#sym] #v(1pt)]
+  #let vgap(sym, c) = align(center, pad(y: 3pt, text(12pt, fill: c)[#sym]))
 
-  #block(breakable: false)[
-  #block(
-    width: 100%,
-    inset: (x: 8pt, y: 6pt),
+  #block(breakable: false, above: 0pt, below: 0pt)[
+  #set block(above: 0pt, below: 0pt)
+  #align(center)[#block(
+    width: 60%,
+    inset: (x: 8pt, y: 5pt),
     radius: 5pt,
     fill: dpale,
     stroke: 0.8pt + dnavy,
   )[
     #set par(justify: false, leading: 0.48em, spacing: 0pt)
     #align(center)[
-      #text(7.4pt, weight: "bold", fill: dnavy)[The same experts write the same guidance.]
-      #v(2.5pt)
+      #text(7.4pt, weight: "bold", fill: dnavy)[The same expert writes the same guidance.]
+      #v(3.5pt)
       #text(5.5pt, weight: "bold", tracking: 0.09em, fill: dnavy)[THE TWO MODELS ARE IDENTICAL UP TO THIS POINT]
     ]
-  ]
+  ]]
 
   #grid(
     columns: (1fr, 0.28in, 1fr),
     gutter: 0pt,
     vgap("\u{2193}", dgrey), [], vgap("\u{2193}", dblue),
   )
+  #v(2pt)
 
   #grid(
     columns: (1fr, 0.28in, 1fr),
@@ -476,22 +493,22 @@
     // ===== LEFT: publish and forget =====
     [
       #text(8.5pt, weight: "bold", tracking: 0.06em, fill: dgrey)[PUBLISH AND FORGET]
-      #v(6pt)
-      #step(tag: "the document is the deliverable")[Published as finished: a PDF, an adopted program, a PD day.]
+      #v(4pt)
+      #step(tag: "the document is the deliverable")[Published as finished product: a blog post, podcast, book, webinar, etc.]
       #vgap("\u{2193}", dgrey)
-      #step[The field hits real defects \u{2014} gaps in the scope and sequence, texts that don't match the phonics order, guidance that can't be executed.]
+      #step[Distribution to the field is spotty. Expert review even more uneven. Incorporation into live PD perhaps limited to the author's.]
       #vgap("\u{2193}", dgrey)
-      #step(dead: true, tag: "no route back to the source")[Teachers fix it privately: personal drives, hallway workarounds, a district file no one else sees.]
+      #step(dead: true, tag: "no route back to the source")[Teachers who do see it have questions. A few get asked and answered on X or Substack. Maybe on Facebook-where answers run the gamut.]
       #vgap("\u{2193}", dgrey)
       #block(
         width: 100%,
-        inset: (x: 8pt, y: 6pt),
+        inset: (x: 8pt, y: 5pt),
         radius: 5pt,
         fill: rgb("#FEFAF9"),
         stroke: 0.8pt + dstop,
       )[
         #set par(justify: false, leading: 0.48em, spacing: 0pt)
-        #text(7.4pt, weight: "bold", fill: dstop)[Dead end.] #text(7.4pt, fill: rgb("#1E2933"))[Years later a new panel starts over, and everything the field learned is lost.]
+        #text(7.4pt, weight: "bold", fill: dstop)[Dead end.] #text(7.4pt, fill: rgb("#1E2933"))[Later, another expert repeats the process.]
       ]
     ],
 
@@ -500,58 +517,70 @@
     // ===== RIGHT: maintained in the open =====
     [
       #text(8.5pt, weight: "bold", tracking: 0.06em, fill: green)[OPEN SOURCE ETHOS, TOOLS, PROCESSES]
-      #v(6pt)
+      #v(4pt)
       #grid(
-        columns: (1fr, 0.64in, 1fr),
-        rows: (auto, 0.34in, auto),
+        columns: (1fr, 0.56in, 1fr),
+        rows: (auto, 0.15in, auto),
         column-gutter: 0pt,
         row-gutter: 0pt,
 
-        step(tag: "version control")[One canonical source, numbered and dated. Everyone can say #text(style: "italic")[which] guidance they teach.],
+        step(tag: "version controlled release")[Proposal is released to single canonical source, version-numbered and dated.],
         arw("\u{2192}", dlinec),
-        step(tag: "release")[In use nationwide, with every district on a known version \u{2014} not "the state framework," but v2.1.],
+        step(tag: "public issue tracking")[Experts and users weigh in, on an open, linked, issues tracker. (Feedback isn't lost in evaluation forms or a hallway conversations.)],
 
         arw("\u{2191}", dlinec),
         align(center + horizon)[
           #text(6pt, weight: "bold", tracking: 0.06em, fill: dnavy)[KNOWLEDGE]
-          #linebreak()
+          #v(-4pt)
           #text(6pt, weight: "bold", tracking: 0.06em, fill: dnavy)[COMPOUNDS]
         ],
         arw("\u{2193}", dlinec),
 
-        step(tag: "contribution + review")[A teacher, coach, or district proposes the actual correction \u{2014} not just a complaint. Maintainers accept or decline in public, with reasons on the record; the fix ships as the next version.],
+        step(tag: "new version approved")[
+          Maintainers accept or decline in public, with reasons on the record; the fix ships as the next version.],
         arw("\u{2190}", dlinec),
-        step(tag: "issue tracking")[The defect is filed in the open, with a name and a date on it \u{2014} not lost in a PD evaluation form or a hallway conversation.],
+        step(tag: "contribution from the field")[A teacher, coach, or specialist proposes the actual change \u{2014} not just a complaint.],
       )
-      #v(7pt)
+      #v(6pt)
       #block(
         width: 100%,
-        inset: (x: 8pt, y: 4pt),
+        inset: (x: 8pt, y: 3pt),
         radius: 5pt,
         fill: dpale,
         stroke: (left: 2.5pt + rgb("#2ecc40")),
       )[
         #set par(justify: false, leading: 0.48em, spacing: 0pt)
-        #text(7.4pt, weight: "bold", fill: dnavy)[And a district can fork it.] #text(7.4pt, fill: rgb("#1E2933"))[Local adaptation stays linked to the source instead of drifting away from it, and a good local fix can travel back up. Fidelity and adaptation stop being opposites.]
+        #text(7.4pt, weight: "bold", fill: dnavy)[Combinations of guidance can be packaged & published.] #text(7.4pt, fill: rgb("#1E2933"))[Local adaptation stays linked to the source instead of drifting away. A good local fix can travel back up. Fidelity and adaptation stop being opposites.]
       ]
-      #v(6pt)
+      #v(5pt)
       #block(
         width: 100%,
-        inset: (x: 8pt, y: 6pt),
+        inset: (x: 8pt, y: 5pt),
         radius: 5pt,
         fill: dpale,
         stroke: (left: 2.5pt + dblue),
       )[
         #set par(justify: false, leading: 0.48em, spacing: 0pt)
-        #text(7.4pt, weight: "bold", fill: dnavy)[Nothing is thrown away.] #text(7.4pt, fill: rgb("#1E2933"))[Every prior version stays citable, and the change from the 2019 guidance to the 2026 guidance is legible line by line \u{2014} who changed what, when, and on what evidence.]
+        #text(7.4pt, weight: "bold", fill: dnavy)[Deeper tracking to the science] #text(7.4pt, fill: rgb("#1E2933"))[Trainers and writers can drill down to linked connections to the research-practice edge.]
+      ]
+      #v(5pt)
+      #block(
+        width: 100%,
+        inset: (x: 8pt, y: 5pt),
+        radius: 5pt,
+        fill: dpale,
+        stroke: (left: 2.5pt + dblue),
+      )[
+        #set par(justify: false, leading: 0.48em, spacing: 0pt)
+        #text(7.4pt, weight: "bold", fill: dnavy)[Nothing is thrown away.] #text(7.4pt, fill: rgb("#1E2933"))[Every prior version stays citable. Changes from 2025 guidance to the 2028 guidance are tracked line by line \u{2014} who changed what, when, and on what evidence.]
       ]
     ],
   )
   ]
 
-  #v(4pt)
+  #v(6pt)
   #text(7.2pt, fill: dmuted)[
-    Publishing makes improvement #text(style: "italic")[episodic:] it happens when a panel is convened and funded. Maintenance makes it #text(style: "italic")[cumulative:] the thousands of corrections teachers already make in private become one shared, reviewed, attributed asset that outlives the grant, the superintendent, and the vendor contract.
+    In the publish-and-forget model, improvement comes in random acts of innovation. In an open source community, improvement is constant and #text(style: "italic")[cumulative:] the thousands of corrections teachers already make in private become one shared, reviewed, attributed asset.
   ]
 
 ]
@@ -593,7 +622,7 @@
     #source[27][Anna Geiger, *Science of Reading Podcast Index*, Reach All Readers, actively maintained.]
     #source[28][Sean Morrisey, "Meet the Word Mapping Project, the new cult favorite vocabulary supplement," *The Curriculum Insight Project*, Feb. 27, 2026.]
     #source[29][AERDF, *Reading Reimagined*, "The False Divide: Why 'Learn to Read, Read to Learn' Fails Older Readers — and How to Fix It," 2026.]
-    #source[30][Jones & Carnine, comments to "60 Million Unnecessary Reading Failures," Aug. 8-11, 2026.]
+    #source[30][Jones & Carnine, comments to "60 Million Unnecessary Reading Failures," 2026.]
     #source[31][Army Publishing Directorate, *Army Doctrine Publications (ADP) Index*, U.S. Army.]
   ]
 )
