@@ -8,9 +8,9 @@
 #let pale = rgb("f3f7fa")
 #let rule = rgb("dce5eb")
 
-#let docVersion = "v0.1"
+#let docVersion = "v0.2-working"
 #let docStatus = "Preview"
-#let docDate = "Sept 21, 2026"
+#let docDate = "Oct 1, 2026"
 
 #set page(
   paper: "us-letter",
