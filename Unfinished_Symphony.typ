@@ -216,27 +216,27 @@
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[The Reading League: standards for foundational curricula]#cite(14)
       #v(4pt)
       #text(size: 7pt)[Its Curriculum Evaluation Guidelines and Navigation Reports help schools make better choices.]
-      #v(7pt)
+      #v(4pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Reading Rockets + Reading Universe]#cite(16,17)
       #v(4pt)
       #text(size: 7pt)[Reading Rockets has been refurbished and updated; Reading Universe adds a newer, practical, video-rich body of guidance.]
-      #v(7pt)
+      #v(4pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[State-built professional learning ]#cite(18,19)
       #v(4pt)
       #text(size: 7pt)[States are increasingly building grade-, role-, and context-specific training, administrator pathways, and refresher modules.]
-      #v(7pt)
+      #v(4pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[UFLI brings a free, quality phonics program, with training.]
       #v(4pt)
       #text(size: 7pt)[Scope and sequence, routines, assessments, videos, fidelity tools, and implementation supports package research.]
-      #v(7pt)
+      #v(4pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[State-Coordinated Coaching Networks]#cite(20)
       #v(4pt)
       #text(size: 7pt)[While 26 states have adopted some form of coaching policies, 8 have the type of coordinated field force that brought Mississippi its gains.]
-      #v(7pt)
+      #v(4pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Learning Science Practices | ResearchEd ]
       #v(4pt)
       #text(size: 7pt)[Led by our friends in the UK, teachers are tying day to day teaching to learning science well beyond structured literacy.]
-      #v(7pt)
+      #v(4pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Teacher-prep standards and audits: Fixing the Ed Schools ]#cite(21,22)
       #v(4pt)
       #text(size: 7pt)[NCTQ's systematic reviews of teacher-preparation programs — combined with state program reviews — audit whether education schools actually teach structured literacy.]
@@ -245,26 +245,30 @@
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Knowledge Matters: supporting knowledge-building]#cite(23)
       #v(4pt)
       #text(size: 7pt)[The Knowledge Matters Campaign focuses on the critical role of knowledge-building in early literacy, and on approaches to do so.]
-      #v(7pt)
+      #v(4pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Johns Hopkins ELA Knowledge Map]#cite(24)
       #v(4pt)
       #text(size: 7pt)[With the ELA Knowledge Map, reviewers can explore the domains, sequencing, coherence, and gaps in a curriculum's content knowledge.]
-      #v(7pt)
+      #v(4pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[The EdReports reckoning]#cite(25,26)
       #v(4pt)
       #text(size: 7pt)[The exposure of serious weaknesses in the Ed Reports definition of "evidence-based" has led it to release a "2.0 Review Criteria", and to users being far more circumspect about its ratings.]
-      #v(7pt)
+      #v(4pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Podcasts and specialist media: solid learning]#cite(27)
       #v(4pt)
       #text(size: 7pt)[A strong ecosystem of  podcast series and specialist videos now lets those with the inclination learn on their own schedule.]
-      #v(7pt)
+      #v(4pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Social-Media Dispersal and Discussion]
       #v(4pt)
       #text(size: 7pt)[The Facebook Group Science of Reading-What I Should Have Learned in College now has 250,000 members. An extremely well-informed X community daily discusses the hard cases of Strucured Literacy. Substack gives longer-form ideas immediate feedack.]
-      #v(7pt)
+      #v(4pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[R&D and Systems for older readers, too]#cite(28,29)
       #v(4pt)
       #text(size: 7pt)[From more structured fifth-grade word study to systems for severe high school remediation; from individually-authored programs to high end programs like Reading Reimagined, all K12 literacy is getting love.]
+      #v(4pt)
+      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[ExcelinEd: 18 Early Literacy Fundamental Principles]#cite(30)
+      #v(4pt)
+      #text(size: 7pt)[A state policy blueprint: screening, parent notification, teacher support, intervention, and retention as a last resort.]
     ],
   )
 
@@ -366,11 +370,11 @@
       #text(9pt, weight: "bold", fill: dnavy)[A Field Manual System]
       #v(-5pt)
       #text(8pt)[
-        Here, the focus is on the median teacher (with various 'extra duties', a suppemental coaching contract, 3 kids at home, maybe a parent needing care).#cite(30)
+        Here, the focus is on the median teacher (with various 'extra duties', a suppemental coaching contract, 3 kids at home, maybe a parent needing care).#cite(31)
 
         Part natural 'Field guide' (describing nature); part field manual (describing a working system and default operating procedures), not just print, but a science-backed collection of the best all-media resources for learning structured literacy.
 
-        Field manuals are something much more than a mere book published by one or two authors, and far more than the standard blog post, video, or podcast episode (not that those don’t serve!), and more than a website of independently authored white papers.#cite(31)
+        Field manuals are something much more than a mere book published by one or two authors, and far more than the standard blog post, video, or podcast episode (not that those don’t serve!), and more than a website of independently authored white papers.#cite(32)
 
         They are a snapshot of the institution’s understanding of best practices: grade-by-grade scope and sequence, explicit routines, decision rules for common classroom situations, diagnostic and progress-monitoring tools, and checklists.
 
@@ -622,7 +626,8 @@
     #source[27][Anna Geiger, *Science of Reading Podcast Index*, Reach All Readers, actively maintained.]
     #source[28][Sean Morrisey, "Meet the Word Mapping Project, the new cult favorite vocabulary supplement," *The Curriculum Insight Project*, Feb. 27, 2026.]
     #source[29][AERDF, *Reading Reimagined*, "The False Divide: Why 'Learn to Read, Read to Learn' Fails Older Readers — and How to Fix It," 2026.]
-    #source[30][Jones & Carnine, comments to "60 Million Unnecessary Reading Failures," 2026.]
-    #source[31][Army Publishing Directorate, *Army Doctrine Publications (ADP) Index*, U.S. Army.]
+    #source[30][ExcelinEd, *Comprehensive Early Literacy Policy: Fundamental Principles*, 2024; Early Literacy Matters state-by-state adoption and implementation reports.]
+    #source[31][Jones & Carnine, comments to "60 Million Unnecessary Reading Failures," 2026.]
+    #source[32][Army Publishing Directorate, *Army Doctrine Publications (ADP) Index*, U.S. Army.]
   ]
 )
