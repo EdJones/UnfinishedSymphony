@@ -213,7 +213,7 @@
     columns: (1fr, 1fr),
     gutter: 14pt,
     [
-      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[The Reading League: quality standards for foundational curricula]#cite(14)
+      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[The Reading League: standards for foundational curricula]#cite(14)
       #v(4pt)
       #text(size: 7pt)[Its Curriculum Evaluation Guidelines and Navigation Reports help schools make better choices.]
       #v(7pt)
@@ -221,7 +221,7 @@
       #v(4pt)
       #text(size: 7pt)[Reading Rockets has been refurbished and updated; Reading Universe adds a newer, practical, video-rich body of guidance.]
       #v(7pt)
-      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[State-built professional learning: training becomes infrastructure]#cite(18,19)
+      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[State-built professional learning ]#cite(18,19)
       #v(4pt)
       #text(size: 7pt)[States are increasingly building grade-, role-, and context-specific training, administrator pathways, and refresher modules.]
       #v(7pt)
