@@ -635,13 +635,13 @@
 // PAGE 4 — APPENDIX
 #pagebreak()
 
-#let drift(title, body) = block(above: 0pt, below: 4.5pt, breakable: false)[
+#let drift(title, body) = block(above: 0pt, below: 5.5pt, breakable: false)[
   #set par(justify: true, leading: 0.44em, spacing: 0pt)
   #block(above: 0pt, below: 0pt)[
     #set par(justify: false)
     #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy, hyphenate: false)[#title]
   ]
-  #v(1.5pt)
+  #v(2pt)
   #text(size: 6.45pt)[#body]
 ]
 #let driftgroup(body) = block(above: 7pt, below: 5pt, breakable: false, sticky: true)[
@@ -682,7 +682,7 @@
   #drift[Marking too many word parts as “irregular.”][When a pronunciation does not match an introductory phonics rule, the mismatch may reflect stress, historical spelling, morphology, or a more advanced correspondence. Calling each case an exception can make English look less systematic than it is.]
 
   #driftgroup[Text selection]
-  #drift[Equating decodability with instructional suitability.][A text can technically conform to taught correspondences and still impose awkward syntax, weak vocabulary, low coherence, or excessive cognitive load. Conversely, excluding every word containing an untaught pattern can impoverish language and knowledge unnecessarily.]
+  #drift[Equating decodability with instructional suitability.][A text can conform to taught correspondences and still impose awkward syntax, weak vocabulary, low coherence, or excess cognitive load. Conversely, excluding every word containing an untaught pattern can impoverish language and knowledge.]
   #drift[Using controlled text for too long.][Decodable text can be valuable while students consolidate the alphabetic system. If tightly controlled text persists after students can handle broader print, it may constrain vocabulary, syntax, fluency, and knowledge building.]
   #drift[Moving students out of controlled text too early.][The reverse error leaves students guessing from context because the text contains too many patterns they cannot yet decode reliably. “Authentic text” is not automatically appropriate text.]
 
@@ -696,7 +696,8 @@
   #driftgroup[Vocabulary, knowledge, and comprehension]
   #drift[Teaching vocabulary as isolated definitions.][Students may copy definitions, match words to meanings, or memorize weekly lists without learning semantic relationships, morphology, multiple meanings, collocations, or the knowledge domain in which the words are useful.]
   #drift[Treating background knowledge as a comprehension strategy.][Students cannot “activate” knowledge they do not possess. Asking what they already know is not a substitute for systematically building knowledge over months and years.]
-  #drift[Teaching comprehension through strategy rehearsal after the strategy is understood.][Predicting, questioning, summarizing, and identifying main ideas can help students learn how comprehension works. Repeatedly practicing the same strategies can displace the acquisition of vocabulary and knowledge that increasingly drives comprehension.]
+  #drift[Teaching comprehension through excessive  strategy rehearsal.][Predicting, questioning, summarizing, and identifying main ideas can help students learn how comprehension works. Once students understand a strategy, more practice yields little.
+    The time is better spent building the vocabulary and knowledge.]
   #drift[Teaching “main idea” as though it were independent of knowledge.][Students may be asked to infer main ideas from passages about topics they barely understand, making a knowledge deficit look like a strategy deficit.]
   #drift[Underteaching sentence structure.][Students who know every word in a sentence may still misunderstand passive voice, embedded clauses, nominalizations, conjunctions, or pronoun references. Vocabulary instruction alone will not repair a syntactic problem.]
   #drift[Overteaching grammatical labels.][Students can spend substantial time naming predicates, subordinating conjunctions, or clause types without becoming better at understanding or constructing difficult sentences. The instructional question is whether the grammatical knowledge supports reading and writing.]
