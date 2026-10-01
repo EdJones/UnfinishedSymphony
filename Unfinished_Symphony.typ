@@ -631,3 +631,93 @@
     #source[32][Army Publishing Directorate, *Army Doctrine Publications (ADP) Index*, U.S. Army.]
   ]
 )
+
+// PAGE 4 — APPENDIX
+#pagebreak()
+
+#let drift(title, body) = block(above: 0pt, below: 4.5pt, breakable: false)[
+  #set par(justify: true, leading: 0.44em, spacing: 0pt)
+  #block(above: 0pt, below: 0pt)[
+    #set par(justify: false)
+    #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy, hyphenate: false)[#title]
+  ]
+  #v(1.5pt)
+  #text(size: 6.45pt)[#body]
+]
+#let driftgroup(body) = block(above: 7pt, below: 5pt, breakable: false, sticky: true)[
+  #text(font: "Inter Display", size: 6.6pt, weight: 700, tracking: 0.08em, fill: blue)[#upper(body)]
+  #v(-3pt)
+  #line(length: 100%, stroke: 0.6pt + rule)
+]
+
+#kicker[APPENDIX]
+#v(-2pt)
+#text(font: "Inter Display", size: 16pt, weight: 700, fill: navy, tracking: -0.01em)[
+  Where Structured Literacy Guidance Can Drift
+]
+#v(4pt)
+#block(width: 100%)[
+  #set par(justify: false)
+  #text(size: 8.2pt, fill: muted)[
+    Even when teachers are committed to structured literacy, unclear, inherited, or weakly specified guidance can cause instruction to drift. The problem is often not grossly bad practice. It is the accumulation of small decisions that consume time, attention, and working memory without producing proportional gains.
+  ]
+]
+#v(2pt)
+#line(length: 100%, stroke: 1.5pt + rgb("#E0A526"))
+#v(4pt)
+
+#columns(2, gutter: 0.22in)[
+  #driftgroup[Phonemic awareness and phonics]
+  #drift[Treating consonant blends as though they were new sound-symbol correspondences.][A student who can read /s/ /t/ /ŏ/ /p/ already possesses the correspondences needed for _stop_. Extra instructional categories such as _st-_, _bl-_, _tr-_ may sometimes help with blending difficulty, but they can also become an entire layer of phonics content without clear evidence that the category itself needs to be taught.]
+  #drift[Overteaching phonemic manipulation after basic decoding is established.][Deleting the second sound in _smile_, reversing phonemes, or performing increasingly elaborate oral-only tasks may continue long after a student can segment, blend, and map phonemes to print. What begins as useful preparation for decoding can become a detached exercise with diminishing transfer to reading.]
+  #drift[Teaching syllable division as a rule system rather than a flexible aid.][Students may spend substantial time marking VCCV, VCV, VC/CV, or similar patterns as if the divisions determine pronunciation. In actual words, stress, morphology, vowel flexibility, and lexical knowledge often matter more. The routine can become more elaborate than the reading problem it is supposed to solve.]
+  #drift[Treating six syllable types as a decoding algorithm.][Open, closed, vowel-consonant-e, r-controlled, vowel-team, and consonant-le categories can be useful descriptions. Problems arise when students are expected to classify syllables first and read words second, or when exceptions force increasingly complicated rules.]
+
+  #driftgroup[Morphology and orthography]
+  #drift[Ignoring morphology until students are considered “advanced.”][A student may be taught to attack _unhelpfulness_, _disagreement_, or _reconstruction_ primarily through syllabification even though meaningful units provide a clearer structure. Delaying morphology can make complex words unnecessarily difficult.]
+  #drift[Introducing morphology as lists of prefixes and suffixes.][The opposite error also occurs. Students memorize _pre-_, _re-_, _un-_, _-ful_, _-tion_ without learning how morphological structure explains meaning, spelling, word families, or pronunciation changes.]
+  #drift[Failing to teach morphophonemic change.][Pairs such as _define/definition_, _sign/signature_, _serene/serenity_, and _electric/electricity_ reveal why English spelling cannot be understood solely as sound-to-letter matching. Without this knowledge, teachers may describe perfectly regular morphological spellings as exceptions students simply have to remember.]
+  #drift[Using “schwa” as an explanation rather than teaching what causes it.][Students may be told that an unstressed vowel “says /uh/” without learning the role of stress, morphology, and word structure. The label names the phenomenon but does not necessarily help them read or spell the word.]
+  #drift[Continuing to teach every irregular word as a heart word.][Words may be treated as visually irregular even when most of their spelling is phonically or morphologically explainable. The result can be unnecessary memorization and lost opportunities to strengthen the orthographic system students are learning.]
+  #drift[Marking too many word parts as “irregular.”][When a pronunciation does not match an introductory phonics rule, the mismatch may reflect stress, historical spelling, morphology, or a more advanced correspondence. Calling each case an exception can make English look less systematic than it is.]
+
+  #driftgroup[Text selection]
+  #drift[Equating decodability with instructional suitability.][A text can technically conform to taught correspondences and still impose awkward syntax, weak vocabulary, low coherence, or excessive cognitive load. Conversely, excluding every word containing an untaught pattern can impoverish language and knowledge unnecessarily.]
+  #drift[Using controlled text for too long.][Decodable text can be valuable while students consolidate the alphabetic system. If tightly controlled text persists after students can handle broader print, it may constrain vocabulary, syntax, fluency, and knowledge building.]
+  #drift[Moving students out of controlled text too early.][The reverse error leaves students guessing from context because the text contains too many patterns they cannot yet decode reliably. “Authentic text” is not automatically appropriate text.]
+
+  #driftgroup[Fluency]
+  #drift[Treating oral reading fluency as a single problem.][A low words-correct-per-minute score can result from inaccurate decoding, weak automaticity, difficulty with multisyllabic words, poor phrasing, limited vocabulary, or unfamiliar content. Repeated reading is not an equally appropriate response to all of them.]
+  #colbreak()
+  #drift[Using repeated reading when the bottleneck is decoding.][A student can become faster at a practiced passage without acquiring the word-reading knowledge needed to transfer that improvement to a new passage.]
+  #drift[Using decoding practice when the bottleneck is language comprehension.][A student may read every word accurately and still fail to understand the sentence because of vocabulary, syntax, background knowledge, pronoun reference, or logical relationships.]
+  #drift[Calling an accurate but slow reader a “fluency problem” without locating the source.][Slow performance may reflect inefficient word recognition, excessive decoding effort, unfamiliar morphology, limited exposure to print, or language difficulty. The label does not identify the instructional target.]
+
+  #driftgroup[Vocabulary, knowledge, and comprehension]
+  #drift[Teaching vocabulary as isolated definitions.][Students may copy definitions, match words to meanings, or memorize weekly lists without learning semantic relationships, morphology, multiple meanings, collocations, or the knowledge domain in which the words are useful.]
+  #drift[Treating background knowledge as a comprehension strategy.][Students cannot “activate” knowledge they do not possess. Asking what they already know is not a substitute for systematically building knowledge over months and years.]
+  #drift[Teaching comprehension through strategy rehearsal after the strategy is understood.][Predicting, questioning, summarizing, and identifying main ideas can help students learn how comprehension works. Repeatedly practicing the same strategies can displace the acquisition of vocabulary and knowledge that increasingly drives comprehension.]
+  #drift[Teaching “main idea” as though it were independent of knowledge.][Students may be asked to infer main ideas from passages about topics they barely understand, making a knowledge deficit look like a strategy deficit.]
+  #drift[Underteaching sentence structure.][Students who know every word in a sentence may still misunderstand passive voice, embedded clauses, nominalizations, conjunctions, or pronoun references. Vocabulary instruction alone will not repair a syntactic problem.]
+  #drift[Overteaching grammatical labels.][Students can spend substantial time naming predicates, subordinating conjunctions, or clause types without becoming better at understanding or constructing difficult sentences. The instructional question is whether the grammatical knowledge supports reading and writing.]
+
+  #driftgroup[Programs, assessment, and intervention]
+  #drift[Assuming a program scope and sequence is the same thing as a knowledge model.][A commercial program necessarily makes sequencing choices. Those choices may be sensible, but teachers can begin treating one program’s terminology, order, and routines as though they represented settled findings about reading development.]
+  #drift[Treating fidelity as immunity from error.][Implementation fidelity is useful only if the underlying practice is well matched to the student and the evidence. Perfectly implementing the wrong response simply produces consistent inefficiency.]
+  #drift[Adding interventions instead of subtracting ineffective instruction.][A struggling student may receive core instruction plus phonemic awareness intervention plus phonics intervention plus fluency practice plus software. The result can be a day dominated by remediation while the actual bottleneck remains unidentified.]
+  #drift[Responding to every error with immediate correction.][Constant interruption can reduce fluency and comprehension. On the other hand, allowing repeated decoding errors to pass can reinforce faulty word recognition. Teachers need clearer guidance about which errors matter, when to interrupt, and why.]
+  #drift[Treating every student below benchmark as needing the same foundational-skills sequence.][Two students with the same screening score may have very different causes: weak phoneme-grapheme knowledge, slow automatic recognition, language disorder, limited vocabulary, poor attendance, or little experience with English print. A benchmark is a signal, not a diagnosis.]
+  #drift[Continuing instruction because it is “evidence based” without checking response.][Population-level evidence does not guarantee that a particular routine remains useful for a particular student. Instruction should change when progress data show that the presumed mechanism is not producing the expected result.]
+]
+
+#v(4pt)
+#block(
+  fill: pale,
+  stroke: (left: 3pt + blue),
+  inset: (x: 8pt, y: 6pt),
+  radius: 2pt,
+)[
+  #set par(justify: false, leading: 0.5em)
+  #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy)[Each of these is an open issue, not a verdict.]
+  #text(size: 6.45pt)[In a community-maintained canonical source, every item above would be a tracked issue: evidence linked, objections on the record, and guidance revised in the next version rather than left to drift.]
+]
