@@ -635,13 +635,13 @@
 // PAGE 4 — APPENDIX
 #pagebreak()
 
-#let drift(title, body) = block(above: 0pt, below: 5.5pt, breakable: false)[
+#let drift(title, body) = block(above: 0pt, below: 6.5pt, breakable: false)[
   #set par(justify: true, leading: 0.44em, spacing: 0pt)
   #block(above: 0pt, below: 0pt)[
     #set par(justify: false)
     #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy, hyphenate: false)[#title]
   ]
-  #v(2pt)
+  #v(2.5pt)
   #text(size: 6.45pt)[#body]
 ]
 #let driftgroup(body) = block(above: 7pt, below: 5pt, breakable: false, sticky: true)[
@@ -655,11 +655,11 @@
 #text(font: "Inter Display", size: 16pt, weight: 700, fill: navy, tracking: -0.01em)[
   Where Structured Literacy Guidance Can Drift
 ]
-#v(4pt)
+#v(-4pt)
 #block(width: 100%)[
   #set par(justify: false)
   #text(size: 8.2pt, fill: muted)[
-    Even when teachers are committed to structured literacy, unclear, inherited, or weakly specified guidance can cause instruction to drift. The problem is often not grossly bad practice. It is the accumulation of small decisions that consume time, attention, and working memory without producing proportional gains.
+    Even when teachers are committed to structured literacy, unclear, inherited, or weakly specified guidance can cause instructional habits to drift. Some confusions that can consume time, attention, and working memory without producing proportional gains:
   ]
 ]
 #v(2pt)
@@ -719,6 +719,6 @@
   radius: 2pt,
 )[
   #set par(justify: false, leading: 0.5em)
-  #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy)[Each of these is an open issue, not a verdict.]
-  #text(size: 6.45pt)[In a community-maintained canonical source, every item above would be a tracked issue: evidence linked, objections on the record, and guidance revised in the next version rather than left to drift.]
+  #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy)[The original draft appendix is pretty much a one-shot product of AI.]
+  #text(size: 6.45pt)[It is the authors' hope that you, the experts, will embrace this as a community, and build it to better tell the story.]
 ]
