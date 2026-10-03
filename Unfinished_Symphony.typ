@@ -635,13 +635,13 @@
 // PAGE 4 — APPENDIX
 #pagebreak()
 
-#let drift(title, body) = block(above: 0pt, below: 6.5pt, breakable: false)[
+#let drift(title, body) = block(above: 0pt, below: 5pt, breakable: false)[
   #set par(justify: true, leading: 0.44em, spacing: 0pt)
   #block(above: 0pt, below: 0pt)[
     #set par(justify: false)
     #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy, hyphenate: false)[#title]
   ]
-  #v(2.5pt)
+  #v(2pt)
   #text(size: 6.45pt)[#body]
 ]
 #let driftgroup(body) = block(above: 7pt, below: 5pt, breakable: false, sticky: true)[
@@ -671,7 +671,9 @@
   #drift[Treating consonant blends as though they were new sound-symbol correspondences.][A student who can read /s/ /t/ /ŏ/ /p/ already possesses the correspondences needed for _stop_. Extra instructional categories such as _st-_, _bl-_, _tr-_ may sometimes help with blending difficulty, but they can also become an entire layer of phonics content without clear evidence that the category itself needs to be taught.]
   #drift[Overteaching phonemic manipulation after basic decoding is established.][Deleting the second sound in _smile_, reversing phonemes, or performing increasingly elaborate oral-only tasks may continue long after a student can segment, blend, and map phonemes to print. What begins as useful preparation for decoding can become a detached exercise with diminishing transfer to reading.]
   #drift[Teaching syllable division as a rule system rather than a flexible aid.][Students may spend substantial time marking VCCV, VCV, VC/CV, or similar patterns as if the divisions determine pronunciation. In actual words, stress, morphology, vowel flexibility, and lexical knowledge often matter more. The routine can become more elaborate than the reading problem it is supposed to solve.]
-  #drift[Treating six syllable types as a decoding algorithm.][Open, closed, vowel-consonant-e, r-controlled, vowel-team, and consonant-le categories can be useful descriptions. Problems arise when students are expected to classify syllables first and read words second, or when exceptions force increasingly complicated rules.]
+  #drift[Treating six syllable types as a decoding algorithm.][Open, closed, vowel-consonant-e, r-controlled, vowel-team, and consonant-le categories can be useful descriptions. Teachers often overdo it.]
+
+  #drift[Teaching phonics patterns without enough connected-text reading.][Patterns only stick and transfer when students meet them repeatedly in connected text.]
 
   #driftgroup[Morphology and orthography]
   #drift[Ignoring morphology until students are considered “advanced.”][A student may be taught to attack _unhelpfulness_, _disagreement_, or _reconstruction_ primarily through syllabification even though meaningful units provide a clearer structure. Delaying morphology can make complex words unnecessarily difficult.]
@@ -687,11 +689,12 @@
   #drift[Moving students out of controlled text too early.][The reverse error leaves students guessing from context because the text contains too many patterns they cannot yet decode reliably. “Authentic text” is not automatically appropriate text.]
 
   #driftgroup[Fluency]
-  #drift[Treating oral reading fluency as a single problem.][A low words-correct-per-minute score can result from inaccurate decoding, weak automaticity, difficulty with multisyllabic words, poor phrasing, limited vocabulary, or unfamiliar content. Repeated reading is not an equally appropriate response to all of them.]
+  #drift[Treating oral reading fluency as a single problem.][A low words-correct-per-minute score can result from inaccurate decoding, weak automaticity, difficulty with multisyllabic words, poor phrasing, limited vocabulary, or unfamiliar content. Each calls for a different response.]
   #colbreak()
   #drift[Using repeated reading when the bottleneck is decoding.][A student can become faster at a practiced passage without acquiring the word-reading knowledge needed to transfer that improvement to a new passage.]
   #drift[Using decoding practice when the bottleneck is language comprehension.][A student may read every word accurately and still fail to understand the sentence because of vocabulary, syntax, background knowledge, pronoun reference, or logical relationships.]
-  #drift[Calling an accurate but slow reader a “fluency problem” without locating the source.][Slow performance may reflect inefficient word recognition, excessive decoding effort, unfamiliar morphology, limited exposure to print, or language difficulty. The label does not identify the instructional target.]
+  #drift[Calling accurate but slow reading a “fluency problem” without locating the source.][Slow performance may reflect inefficient word recognition, excessive decoding effort, unfamiliar morphology, limited exposure to print, or language difficulty.]
+  #drift[Using round-robin or popcorn reading for oral reading practice.][Each student reads only a few sentences while classmates wait, read ahead, or tune out, and weak readers are exposed rather than supported. Partner, choral, and echo reading give every student far more practice.]
 
   #driftgroup[Vocabulary, knowledge, and comprehension]
   #drift[Teaching vocabulary as isolated definitions.][Students may copy definitions, match words to meanings, or memorize weekly lists without learning semantic relationships, morphology, multiple meanings, collocations, or the knowledge domain in which the words are useful.]
