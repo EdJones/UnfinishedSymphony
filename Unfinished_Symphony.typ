@@ -689,9 +689,9 @@
   #drift[Using controlled text for too long.][Decodable text can be valuable while students consolidate the alphabetic system. If tightly controlled text persists after students can handle broader print, it may constrain vocabulary, syntax, fluency, and knowledge building.]
   #drift[Moving students out of controlled text too early.][The reverse error leaves students guessing from context because the text contains too many patterns they cannot yet decode reliably. “Authentic text” is not automatically appropriate text.]
 
-  #colbreak()
   #driftgroup[Fluency]
   #drift[Treating oral reading fluency as a single problem.][A low words-correct-per-minute score can result from inaccurate decoding, weak automaticity, difficulty with multisyllabic words, poor phrasing, limited vocabulary, or unfamiliar content. Each calls for a different response.]
+  #colbreak()
   #drift[Using repeated reading when the bottleneck is decoding.][A student can become faster at a practiced passage without acquiring the word-reading knowledge needed to transfer that improvement to a new passage.]
   #drift[Using decoding practice when the bottleneck is language comprehension.][A student may read every word accurately and still fail to understand the sentence because of vocabulary, syntax, background knowledge, pronoun reference, or logical relationships.]
   #drift[Calling accurate but slow reading a “fluency problem” without locating the source.][Slow performance may reflect inefficient word recognition, excessive decoding effort, unfamiliar morphology, limited exposure to print, or language difficulty.]
@@ -707,10 +707,11 @@
   #drift[Overteaching grammatical labels.][Students can spend substantial time naming predicates, subordinating conjunctions, or clause types without becoming better at understanding or constructing difficult sentences.]
 
   #driftgroup[Programs, assessment, and intervention]
-  #drift[Assuming a program scope and sequence is the same thing as a knowledge model.][A commercial program necessarily makes sequencing choices. Those choices may be sensible, but teachers can begin treating one program’s terminology, order, and routines as though they represented settled findings about reading development.]
+  #drift[Assuming a program scope and sequence = a knowledge model.][A commercial program necessarily makes sequencing choices. Those choices may be sensible, but teachers can begin treating one program’s terminology, order, and routines as though they represented settled findings about reading development.]
   #drift[Treating fidelity as immunity from error.][Implementation fidelity is useful only if the underlying practice is well matched to the student and the evidence. Perfectly implementing the wrong response simply produces consistent inefficiency.]
   #drift[Adding interventions instead of subtracting ineffective instruction.][A struggling student may receive core instruction plus phonemic awareness intervention plus phonics intervention plus fluency practice plus software. The result can be a day dominated by remediation while the actual bottleneck remains unidentified.]
-  #drift[Responding to every error with immediate correction.][Constant interruption can reduce fluency and comprehension. On the other hand, allowing repeated decoding errors to pass can reinforce faulty word recognition. Teachers need clearer guidance about which errors matter, when to interrupt, and why.]
+  #drift[Three tiers does not mean three programs.][Unrelated programs at each tier give struggling students conflicting routines and terminology. Intervention works best when it reinforces core instruction.]
+  #drift[Responding to every error with immediate correction.][Constant interruption undermines fluency and comprehension. Teachers need guidance on which errors matter and when to step in.]
   #drift[Treating every student below benchmark as needing the same foundational-skills sequence.][Two students with the same screening score may have very different causes: weak phoneme-grapheme knowledge, slow automatic recognition, language disorder, limited vocabulary, poor attendance, or little experience with English print. A benchmark is a signal, not a diagnosis.]
   #drift[Continuing instruction because it is “evidence based” without checking response.][Population-level evidence does not guarantee that a particular routine remains useful for a particular student. Instruction should change when progress data show that the presumed mechanism is not producing the expected result.]
 ]
