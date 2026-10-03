@@ -635,7 +635,7 @@
 // PAGE 4 — APPENDIX
 #pagebreak()
 
-#let drift(title, body) = block(above: 0pt, below: 5pt, breakable: false)[
+#let drift(title, body) = block(above: 0pt, below: 4pt, breakable: false)[
   #set par(justify: true, leading: 0.44em, spacing: 0pt)
   #block(above: 0pt, below: 0pt)[
     #set par(justify: false)
@@ -670,6 +670,7 @@
   #driftgroup[Phonemic awareness and phonics]
   #drift[Treating consonant blends as though they were new sound-symbol correspondences.][A student who can read /s/ /t/ /ŏ/ /p/ already possesses the correspondences needed for _stop_. Extra instructional categories such as _st-_, _bl-_, _tr-_ may sometimes help with blending difficulty, but they can also become an entire layer of phonics content without clear evidence that the category itself needs to be taught.]
   #drift[Overteaching phonemic manipulation after basic decoding is established.][Deleting the second sound in _smile_, reversing phonemes, or performing increasingly elaborate oral-only tasks may continue long after a student can segment, blend, and map phonemes to print. What begins as useful preparation for decoding can become a detached exercise with diminishing transfer to reading.]
+  #drift[Sound walls: teaching articulatory terminology beyond its instructional payoff.][Mouth pictures and articulation cues can help students tell similar sounds apart. Drilling terms like _bilabial_, _fricative_, or _voiceless alveolar stop_ rarely improves reading.]
   #drift[Teaching syllable division as a rule system rather than a flexible aid.][Students may spend substantial time marking VCCV, VCV, VC/CV, or similar patterns as if the divisions determine pronunciation. In actual words, stress, morphology, vowel flexibility, and lexical knowledge often matter more. The routine can become more elaborate than the reading problem it is supposed to solve.]
   #drift[Treating six syllable types as a decoding algorithm.][Open, closed, vowel-consonant-e, r-controlled, vowel-team, and consonant-le categories can be useful descriptions. Teachers often overdo it.]
 
@@ -688,9 +689,9 @@
   #drift[Using controlled text for too long.][Decodable text can be valuable while students consolidate the alphabetic system. If tightly controlled text persists after students can handle broader print, it may constrain vocabulary, syntax, fluency, and knowledge building.]
   #drift[Moving students out of controlled text too early.][The reverse error leaves students guessing from context because the text contains too many patterns they cannot yet decode reliably. “Authentic text” is not automatically appropriate text.]
 
+  #colbreak()
   #driftgroup[Fluency]
   #drift[Treating oral reading fluency as a single problem.][A low words-correct-per-minute score can result from inaccurate decoding, weak automaticity, difficulty with multisyllabic words, poor phrasing, limited vocabulary, or unfamiliar content. Each calls for a different response.]
-  #colbreak()
   #drift[Using repeated reading when the bottleneck is decoding.][A student can become faster at a practiced passage without acquiring the word-reading knowledge needed to transfer that improvement to a new passage.]
   #drift[Using decoding practice when the bottleneck is language comprehension.][A student may read every word accurately and still fail to understand the sentence because of vocabulary, syntax, background knowledge, pronoun reference, or logical relationships.]
   #drift[Calling accurate but slow reading a “fluency problem” without locating the source.][Slow performance may reflect inefficient word recognition, excessive decoding effort, unfamiliar morphology, limited exposure to print, or language difficulty.]
@@ -698,12 +699,12 @@
 
   #driftgroup[Vocabulary, knowledge, and comprehension]
   #drift[Teaching vocabulary as isolated definitions.][Students may copy definitions, match words to meanings, or memorize weekly lists without learning semantic relationships, morphology, multiple meanings, collocations, or the knowledge domain in which the words are useful.]
-  #drift[Treating background knowledge as a comprehension strategy.][Students cannot “activate” knowledge they do not possess. Asking what they already know is not a substitute for systematically building knowledge over months and years.]
+  #drift[Trying to activate knowledge instead of building it.][Students cannot activate knowledge they do not have.]
   #drift[Teaching comprehension through excessive  strategy rehearsal.][Predicting, questioning, summarizing, and identifying main ideas can help students learn how comprehension works. Once students understand a strategy, more practice yields little.
     The time is better spent building the vocabulary and knowledge.]
   #drift[Teaching “main idea” as though it were independent of knowledge.][Students may be asked to infer main ideas from passages about topics they barely understand, making a knowledge deficit look like a strategy deficit.]
   #drift[Underteaching sentence structure.][Students who know every word in a sentence may still misunderstand passive voice, embedded clauses, nominalizations, conjunctions, or pronoun references. Vocabulary instruction alone will not repair a syntactic problem.]
-  #drift[Overteaching grammatical labels.][Students can spend substantial time naming predicates, subordinating conjunctions, or clause types without becoming better at understanding or constructing difficult sentences. The instructional question is whether the grammatical knowledge supports reading and writing.]
+  #drift[Overteaching grammatical labels.][Students can spend substantial time naming predicates, subordinating conjunctions, or clause types without becoming better at understanding or constructing difficult sentences.]
 
   #driftgroup[Programs, assessment, and intervention]
   #drift[Assuming a program scope and sequence is the same thing as a knowledge model.][A commercial program necessarily makes sequencing choices. Those choices may be sensible, but teachers can begin treating one program’s terminology, order, and routines as though they represented settled findings about reading development.]
