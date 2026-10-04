@@ -674,7 +674,7 @@
   #drift[Teaching syllable division as a rule system rather than a flexible aid.][Students may spend substantial time marking VCCV, VCV, VC/CV, or similar patterns as if the divisions determine pronunciation. In actual words, stress, morphology, vowel flexibility, and lexical knowledge often matter more. The routine can become more elaborate than the reading problem it is supposed to solve.]
   #drift[Treating six syllable types as a decoding algorithm.][Open, closed, vowel-consonant-e, r-controlled, vowel-team, and consonant-le categories can be useful descriptions. Teachers often overdo it.]
 
-  #drift[Teaching phonics patterns without enough connected-text reading.][Patterns only stick and transfer when students meet them repeatedly in connected text.]
+  #drift[Teaching phonics patterns without enough connected-text reading.][Patterns only stick when students meet them repeatedly in connected text.]
 
   #driftgroup[Morphology and orthography]
   #drift[Ignoring morphology until students are considered “advanced.”][A student may be taught to attack _unhelpfulness_, _disagreement_, or _reconstruction_ primarily through syllabification even though meaningful units provide a clearer structure. Delaying morphology can make complex words unnecessarily difficult.]
@@ -687,7 +687,7 @@
   #driftgroup[Text selection]
   #drift[Equating decodability with instructional suitability.][A text can conform to taught correspondences and still impose awkward syntax, weak vocabulary, low coherence, or excess cognitive load. Conversely, excluding every word containing an untaught pattern can impoverish language and knowledge.]
   #drift[Using controlled text for too long.][Decodable text can be valuable while students consolidate the alphabetic system. If tightly controlled text persists after students can handle broader print, it may constrain vocabulary, syntax, fluency, and knowledge building.]
-  #drift[Moving students out of controlled text too early.][The reverse error leaves students guessing from context because the text contains too many patterns they cannot yet decode reliably. “Authentic text” is not automatically appropriate text.]
+  #drift[Moving students out of controlled text too early.][The reverse error leaves students guessing from context because the text contains too many patterns they cannot yet decode reliably.]
 
   #driftgroup[Fluency]
   #drift[Treating oral reading fluency as a single problem.][A low words-correct-per-minute score can result from inaccurate decoding, weak automaticity, difficulty with multisyllabic words, poor phrasing, limited vocabulary, or unfamiliar content. Each calls for a different response.]
@@ -703,17 +703,18 @@
   #drift[Teaching comprehension through excessive  strategy rehearsal.][Predicting, questioning, summarizing, and identifying main ideas can help students learn how comprehension works. Once students understand a strategy, more practice yields little.
     The time is better spent building the vocabulary and knowledge.]
   #drift[Teaching “main idea” as though it were independent of knowledge.][Students may be asked to infer main ideas from passages about topics they barely understand, making a knowledge deficit look like a strategy deficit.]
-  #drift[Underteaching sentence structure.][Students who know every word in a sentence may still misunderstand passive voice, embedded clauses, nominalizations, conjunctions, or pronoun references. Vocabulary instruction alone will not repair a syntactic problem.]
+  #drift[Underteaching sentence structure.][Students may know every word in a sentence and still misunderstand who did what to whom, which idea modifies which, or how one clause relates to another. Passive voice, relative clauses, embedded clauses, and connectives such as _although_, _unless_, and _despite_ can trip up many learners.]
   #drift[Overteaching grammatical labels.][Students can spend substantial time naming predicates, subordinating conjunctions, or clause types without becoming better at understanding or constructing difficult sentences.]
 
   #driftgroup[Programs, assessment, and intervention]
   #drift[Assuming a program scope and sequence = a knowledge model.][A commercial program necessarily makes sequencing choices. Those choices may be sensible, but teachers can begin treating one program’s terminology, order, and routines as though they represented settled findings about reading development.]
   #drift[Treating fidelity as immunity from error.][Implementation fidelity is useful only if the underlying practice is well matched to the student and the evidence. Perfectly implementing the wrong response simply produces consistent inefficiency.]
-  #drift[Adding interventions instead of subtracting ineffective instruction.][A struggling student may receive core instruction plus phonemic awareness intervention plus phonics intervention plus fluency practice plus software. The result can be a day dominated by remediation while the actual bottleneck remains unidentified.]
+  #drift[Adding interventions instead of subtracting ineffective instruction.][Struggling students can accumulate layers of remediation—core instruction, phonemic awareness, phonics, fluency practice, and software—without adequate diagnosis as to what's actually needed.]
   #drift[Three tiers does not mean three programs.][Unrelated programs at each tier give struggling students conflicting routines and terminology. Intervention works best when it reinforces core instruction.]
   #drift[Responding to every error with immediate correction.][Constant interruption undermines fluency and comprehension. Teachers need guidance on which errors matter and when to step in.]
   #drift[Treating every student below benchmark as needing the same foundational-skills sequence.][Two students with the same screening score may have very different causes: weak phoneme-grapheme knowledge, slow automatic recognition, language disorder, limited vocabulary, poor attendance, or little experience with English print. A benchmark is a signal, not a diagnosis.]
-  #drift[Continuing instruction because it is “evidence based” without checking response.][Population-level evidence does not guarantee that a particular routine remains useful for a particular student. Instruction should change when progress data show that the presumed mechanism is not producing the expected result.]
+  #drift[Undiagnosed DLD.][More than 7% of kids have Developmental Language Disorder. The earlier it’s diagnosed, the better. Yet many schools don’t screen early enough, treating language difficulties as generic reading problems.]
+  #drift[Continuing “evidence based” instruction without checking response.][Population-level evidence does not guarantee that a particular routine remains useful for a particular student. Instruction should change when progress data show that the presumed mechanism is not producing the expected result.]
 ]
 
 #v(4pt)
