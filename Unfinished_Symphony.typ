@@ -659,7 +659,7 @@
 #block(width: 100%)[
   #set par(justify: false)
   #text(size: 8.2pt, fill: muted)[
-    Even when teachers are committed to structured literacy, guidance that is unclear, inherited, or weakly specified can cause instructional habits to drift. Below are confusions that consume time, attention, and working memory without proportional gains:
+    Even when teachers are committed to structured literacy, guidance that is unclear, inherited, or weakly specified can cause instructional habits to drift. The practices below can consume time, attention, and working memory without proportional gains:
   ]
 ]
 #v(2pt)
@@ -668,12 +668,12 @@
 
 #columns(2, gutter: 0.22in)[
   #driftgroup[Phonemic awareness and phonics]
-  #drift[Treating consonant blends as though they were new sound-symbol correspondences.][A student who can read /s/ /t/ /ŏ/ /p/ already possesses the correspondences needed for _stop_. Extra instructional categories such as _st-_, _bl-_, _tr-_ may sometimes help with blending difficulty, but they can also become an entire layer of phonics content without clear evidence that the category itself needs to be taught.]
+  #drift[Treating consonant blends as though they were new sound-symbol correspondences.][A student who knows the correspondences for _s_, _t_, _o_, and _p_ already has what’s needed for _stop_. Extra instructional categories such as _st-_, _bl-_, _tr-_ may help with blending difficulty, but they can also become an entire layer of phonics content without clear evidence that the category itself needs to be taught.]
   #drift[Overteaching phonemic manipulation after basic decoding is established.][Deleting the second sound in _smile_, reversing phonemes, or performing increasingly elaborate oral-only tasks may continue long after a student can segment, blend, and map phonemes to print. What begins as useful preparation for decoding can become a detached exercise with diminishing transfer to reading.]
   #drift[Sound walls: teaching articulatory terminology beyond its instructional payoff.][Mouth pictures and articulation cues can help students tell similar sounds apart. Drilling terms like _bilabial_, _fricative_, or _voiceless alveolar stop_ rarely improves reading.]
-  #drift[Teaching syllable division as a rule system rather than a flexible aid.][Students may spend substantial time marking VCCV, VCV, VC/CV, or similar patterns as if the divisions determine pronunciation. In actual words, stress, morphology, vowel flexibility, and lexical knowledge often matter more. The routine can become more elaborate than the reading problem it is supposed to solve.]
+  #drift[Teaching syllable division as a rule system rather than a flexible aid.][Students may spend substantial time marking VC/CV, V/CV, or VC/V divisions as if they determine pronunciation. In actual words, stress, morphology, vowel flexibility, and lexical knowledge often matter more. The routine can become more elaborate than the reading problem it is supposed to solve.]
   #drift[Treating six syllable types as a decoding algorithm.][Open, closed, vowel-consonant-e, r-controlled, vowel-team, and consonant-le categories can be useful descriptions. Teachers often overdo them.]
-  #drift[Teaching phonics patterns without enough connected-text reading.][Patterns stick only when students meet them repeatedly in connected text.]
+  #drift[Teaching phonics patterns without enough connected-text reading.][Patterns stick best when students meet them repeatedly in connected text.]
 
   #driftgroup[Morphology and orthography]
   #drift[Ignoring morphology until students are considered “advanced.”][A student may be taught to attack _unhelpfulness_, _disagreement_, or _reconstruction_ primarily through syllabification even though meaningful units provide a clearer structure. Delaying morphology can make complex words unnecessarily difficult.]
@@ -710,7 +710,7 @@
   #drift[Adding interventions instead of subtracting ineffective instruction.][Struggling students can accumulate layers of remediation on top of core instruction (phonemic awareness, phonics, fluency practice, software) without adequate diagnosis of what’s actually needed.]
   #drift[Three tiers does not mean three programs.][Unrelated programs at each tier give struggling students conflicting routines and terminology. Intervention works best when it reinforces core instruction.]
   #drift[Responding to every error with immediate correction.][Constant interruption undermines fluency and comprehension. Teachers need guidance on which errors matter and when to step in.]
-  #drift[Treating every student below benchmark as needing the same foundational-skills sequence.][Two students with the same screening score may have very different causes: weak phoneme-grapheme knowledge, slow automatic recognition, language disorder, limited vocabulary, poor attendance, or little experience with English print. A benchmark is a signal, not a diagnosis.]
+  #drift[Treating every student below benchmark as needing the same foundational-skills sequence.][Two students with the same screening score may struggle for very different reasons: weak phoneme-grapheme knowledge, slow automatic recognition, language disorder, limited vocabulary, poor attendance, or little experience with English print. A benchmark is a signal, not a diagnosis.]
   #drift[Undiagnosed DLD.][More than 7% of kids have Developmental Language Disorder. The earlier it’s diagnosed, the better. Yet many schools don’t screen early enough, treating language difficulties as generic reading problems.]
   #drift[Continuing “evidence-based” instruction without checking response.][Population-level evidence does not guarantee that a particular routine remains useful for a particular student. Instruction should change when progress data show that the presumed mechanism is not producing the expected result.]
 ]
