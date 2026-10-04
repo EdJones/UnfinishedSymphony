@@ -635,13 +635,13 @@
 // PAGE 4 — APPENDIX
 #pagebreak()
 
-#let drift(title, body) = block(above: 0pt, below: 5.5pt, breakable: false)[
+#let drift(title, body) = block(above: 0pt, below: 5pt, breakable: false)[
   #set par(justify: true, leading: 0.44em, spacing: 0pt)
   #block(above: 0pt, below: 0pt)[
     #set par(justify: false)
     #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy, hyphenate: false)[#title]
   ]
-  #v(2.5pt)
+  #v(2pt)
   #text(size: 6.45pt)[#body]
 ]
 #let driftgroup(body) = block(above: 7pt, below: 5pt, breakable: false, sticky: true)[
@@ -697,6 +697,7 @@
 
   #driftgroup[Vocabulary, knowledge, and comprehension]
   #drift[Teaching vocabulary as isolated definitions.][Students may copy definitions, match words to meanings, or memorize weekly lists without learning semantic relationships, morphology, multiple meanings, collocations, or the knowledge domain in which the words are useful.]
+  #drift[Underteaching academic vocabulary.][Words such as _analyze_, _contrast_, _infer_, _significant_, and _establish_ occur across subjects and carry much of the meaning in textbooks, directions, assignments, and tests.]
   #drift[Trying to activate knowledge instead of building it.][Students cannot activate knowledge they do not have.]
   #drift[Teaching comprehension through excessive strategy rehearsal.][Predicting, questioning, summarizing, and identifying main ideas can help students learn how comprehension works. Once students understand a strategy, more practice yields little. The time is better spent building vocabulary and knowledge.]
   #drift[Teaching “main idea” as though it were independent of knowledge.][Students may be asked to infer main ideas from passages about topics they barely understand, making a knowledge deficit look like a strategy deficit.]
@@ -722,6 +723,6 @@
   radius: 2pt,
 )[
   #set par(justify: false, leading: 0.5em)
-  #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy)[The original draft appendix is pretty much a one-shot product of AI.]
+  #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy)[This appendix contains significant AI text.]
   #text(size: 6.45pt)[It is the authors' hope that you, the experts, will embrace this as a community, and build it to better tell the story.]
 ]
