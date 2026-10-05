@@ -674,7 +674,7 @@
   #drift[Teaching syllable division as a rule system rather than a flexible aid.][Students may spend substantial time marking VC/CV, V/CV, or VC/V divisions as if they determine pronunciation. In actual words, stress, morphology, vowel flexibility, and lexical knowledge often matter more. The routine can become more elaborate than the reading problem it is supposed to solve.]
   #drift[Treating six syllable types as a decoding algorithm.][Open, closed, vowel-consonant-e, r-controlled, vowel-team, and consonant-le categories can be useful descriptions. Teachers often overdo them.]
   #drift[Teaching phonics patterns without enough connected-text reading.][Patterns stick best, and words get orthographically mapped, when students meet them repeatedly in connected text.]
-  #drift[Inadequate or misaligned spelling instruction.][Spelling the patterns students are learning is one of the strongest supports for reading.]
+  #drift[Inadequate or misaligned spelling instruction.][Encoding—spelling the patterns students are learning—is one of the strongest supports for reading.]
 
   #driftgroup[Morphology and orthography]
   #drift[Ignoring morphology until students are considered “advanced.”][A student may be taught to attack _unhelpfulness_, _disagreement_, or _reconstruction_ primarily through syllabification even though meaningful units provide a clearer structure. Delaying morphology can make complex words unnecessarily difficult.]
@@ -723,6 +723,6 @@
   radius: 2pt,
 )[
   #set par(justify: false, leading: 0.5em)
-  #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy)[This appendix contains significant AI text.]
-  #text(size: 6.45pt)[It is the authors' hope that you, the experts, will embrace this as a community, and build it to better tell the story.]
+  #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy)[]
+  #text(size: 6.45pt)[This appendix contains significant AI text. It is the authors' hope that you, the experts, will embrace this as a community, and build it to better tell the story.]
 ]
