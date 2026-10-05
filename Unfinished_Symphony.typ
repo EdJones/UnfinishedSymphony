@@ -659,7 +659,7 @@
 #block(width: 100%)[
   #set par(justify: false)
   #text(size: 8.2pt, fill: muted)[
-    Even when teachers are committed to structured literacy, guidance that is unclear, inherited, or weakly specified can cause instructional habits to drift. The practices below can consume time, attention, and working memory without proportional gains:
+    Even when teachers are committed to structured literacy, their guidance may vary greatly. Some practices below consume time, attention, and working memory without proportional gain; crowding out others that are needed.
   ]
 ]
 #v(2pt)
@@ -692,6 +692,7 @@
   #driftgroup[Fluency]
   #drift[Treating oral reading fluency as a single problem.][A low words-correct-per-minute score, or accurate but slow reading, can reflect weak decoding, automaticity, multisyllabic word skill, phrasing, vocabulary, content knowledge, or print exposure. Locate the source before choosing a response.]
   #colbreak()
+  #drift[Accurate decoding ≠ automatic word recognition.][A student who decodes a word correctly may need many more encounters before recognizing it instantly. Check speed as well as accuracy.]
   #drift[Using repeated reading when the bottleneck is decoding.][A student can become faster at a practiced passage without acquiring the word-reading knowledge needed to transfer that improvement to a new passage.]
   #drift[Using round-robin or popcorn reading for oral reading practice.][Each student reads only a few sentences while classmates wait, read ahead, or tune out, and weak readers are exposed rather than supported. Partner, choral, and echo reading give every student far more practice.]
 
@@ -711,7 +712,7 @@
   #drift[Adding interventions instead of subtracting ineffective instruction.][Struggling students can accumulate layers of remediation on top of core instruction (phonemic awareness, phonics, fluency practice, software) without adequate diagnosis of what’s actually needed.]
   #drift[Three tiers does not mean three programs.][Unrelated programs at each tier give struggling students conflicting routines and terminology. Intervention works best when it reinforces core instruction.]
   #drift[Responding to every error with immediate correction.][Constant interruption undermines fluency and comprehension. Teachers need guidance on which errors matter and when to step in.]
-  #drift[Treating every student below benchmark as needing the same foundational-skills sequence.][Two students with the same screening score may struggle for very different reasons: weak phoneme-grapheme knowledge, slow automatic recognition, language disorder, limited vocabulary, poor attendance, or little experience with English print. A benchmark is a signal, not a diagnosis.]
+  #drift[Treating a screening score as a diagnosis.][Two students with the same screening score may struggle for very different reasons: weak phoneme-grapheme knowledge, slow automatic recognition, language disorder, limited vocabulary, etc. Good intervention-based diagnostic assessments are essential; core instruction may also be lacking.]
   #drift[Undiagnosed DLD.][More than 7% of kids have Developmental Language Disorder. The earlier it’s diagnosed, the better. Yet many schools don’t screen early enough, treating language difficulties as generic reading problems.]
   #drift[Continuing “evidence-based” instruction without checking response.][Population-level evidence does not guarantee that a particular routine remains useful for a particular student. Instruction should change when progress data show that the presumed mechanism is not producing the expected result.]
 ]
