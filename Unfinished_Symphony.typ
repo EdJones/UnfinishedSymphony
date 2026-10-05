@@ -671,7 +671,7 @@
   #drift[Teaching “blends.”][A student who knows the sounds for _s_, _t_, _o_, and _p_ already has what’s needed to read _stop_. While some students need explicit practice blending adjacent consonants like _st-_, _bl-_, _tr-_, memorizing 20 or more “blends” imposes an undue burden.]
   #drift[Overdoing oral phonemic awareness.][Oral PA gains peak after roughly 10 hours of instruction, then decline, while PA paired with letters keeps paying off. Yet oral-only daily drills, including “advanced” tasks like deleting the second sound in _smile_, often run for years.]
   #drift[Sound walls: teaching articulatory terminology beyond its instructional payoff.][Mouth pictures and articulation cues can help students tell similar sounds apart. Drilling terms like _bilabial_, _fricative_, or _voiceless alveolar stop_ rarely improves reading.]
-  #drift[Teaching syllable division as a rule system rather than a flexible aid.][Students may spend substantial time marking VC/CV, V/CV, or VC/V divisions as if they determine pronunciation. In actual words, stress, morphology, vowel flexibility, and lexical knowledge often matter more. The routine can become more elaborate than the reading problem it is supposed to solve.]
+  #drift[Teaching syllable division as a rule system rather than a flexible aid.][Students may spend excess time marking VC/CV, V/CV, or VC/V divisions as if they determine pronunciation. Stress, morphology, and vowel flexibility often matter more.]
   #drift[Treating six syllable types as a decoding algorithm.][Open, closed, vowel-consonant-e, r-controlled, vowel-team, and consonant-le categories can be useful descriptions. Teachers often overdo them.]
   #drift[Teaching phonics patterns without enough connected-text reading.][Patterns stick best, and words get orthographically mapped, when students meet them repeatedly in connected text.]
   #drift[Inadequate or misaligned spelling instruction.][Encoding—spelling the patterns students are learning—is one of the strongest supports for reading.]
@@ -689,13 +689,14 @@
   #drift[Using controlled text for too long.][Decodable text can be valuable while students consolidate the alphabetic system. If tightly controlled text persists after students can handle broader print, it may constrain vocabulary, syntax, fluency, and knowledge building.]
   #drift[Moving students out of controlled text too early.][The reverse error leaves students guessing from context because the text contains too many patterns they cannot yet decode reliably.]
 
-  #colbreak()
   #driftgroup[Fluency]
   #drift[Treating oral reading fluency as a single problem.][A low words-correct-per-minute score, or accurate but slow reading, can reflect weak decoding, automaticity, multisyllabic word skill, phrasing, vocabulary, content knowledge, or print exposure. Locate the source before choosing a response.]
+  #colbreak()
   #drift[Using repeated reading when the bottleneck is decoding.][A student can become faster at a practiced passage without acquiring the word-reading knowledge needed to transfer that improvement to a new passage.]
   #drift[Using round-robin or popcorn reading for oral reading practice.][Each student reads only a few sentences while classmates wait, read ahead, or tune out, and weak readers are exposed rather than supported. Partner, choral, and echo reading give every student far more practice.]
 
   #driftgroup[Vocabulary, knowledge, and comprehension]
+  #drift[Underteaching oral language.][Many students lag in spoken language. Listening comprehension should be explicitly built from K up, through read-alouds, discussion, and extended talk.]
   #drift[Teaching vocabulary as isolated definitions.][Students may copy definitions, match words to meanings, or memorize weekly lists without learning semantic relationships, morphology, multiple meanings, collocations, or the knowledge domain in which the words are useful.]
   #drift[Underteaching academic vocabulary.][Words such as _analyze_, _contrast_, _infer_, _significant_, and _establish_ occur across subjects and carry much of the meaning in textbooks, directions, assignments, and tests.]
   #drift[Trying to activate knowledge instead of building it.][Students cannot activate knowledge they do not have.]
