@@ -646,7 +646,7 @@
 ]
 #let driftgroup(body) = block(above: 7pt, below: 5pt, breakable: false, sticky: true)[
   #text(font: "Inter Display", size: 6.6pt, weight: 700, tracking: 0.08em, fill: blue)[#upper(body)]
-  #v(-3pt)
+  #v(-6pt)
   #line(length: 100%, stroke: 0.6pt + rule)
 ]
 
@@ -693,6 +693,7 @@
   #drift[Treating oral reading fluency as a single problem.][A low words-correct-per-minute score, or accurate but slow reading, can reflect weak decoding, automaticity, multisyllabic word skill, phrasing, vocabulary, content knowledge, or print exposure. Locate the source before choosing a response.]
   #colbreak()
   #drift[Accurate decoding ≠ automatic word recognition.][A student who decodes a word correctly may need many more encounters before recognizing it instantly. Check speed as well as accuracy.]
+  #drift[Ignoring prosody when assessing fluency.][Appropriate phrasing, pausing, stress, and intonation can indicate whether a student is reading with comprehension.]
   #drift[Using repeated reading when the bottleneck is decoding.][A student can become faster at a practiced passage without acquiring the word-reading knowledge needed to transfer that improvement to a new passage.]
   #drift[Using round-robin or popcorn reading for oral reading practice.][Each student reads only a few sentences while classmates wait, read ahead, or tune out, and weak readers are exposed rather than supported. Partner, choral, and echo reading give every student far more practice.]
 
@@ -704,7 +705,7 @@
   #drift[Teaching comprehension through excessive strategy rehearsal.][Predicting, questioning, summarizing, and identifying main ideas can help students learn how comprehension works. Once students understand a strategy, more practice yields little. The time is better spent building vocabulary and knowledge.]
   #drift[Teaching “main idea” as though it were independent of knowledge.][Students may be asked to infer main ideas from passages about topics they barely understand, making a knowledge deficit look like a strategy deficit.]
   #drift[Underteaching sentence structure.][Students may know every word in a sentence and still misunderstand who did what to whom, which idea modifies which, or how one clause relates to another. Passive voice, relative clauses, embedded clauses, and connectives such as _although_, _unless_, and _despite_ can trip up many learners.]
-  #drift[Overteaching grammatical labels.][Students can spend substantial time naming predicates, subordinating conjunctions, or clause types without becoming better at understanding or constructing difficult sentences.]
+  #drift[Overteaching grammatical labels.][Students can spend substantial time naming predicates, subordinating conjunctions, or clause types without getting better at understanding or writing hard sentences.]
 
   #driftgroup[Programs, assessment, and intervention]
   #drift[Assuming a program scope and sequence = a knowledge model.][A commercial program necessarily makes sequencing choices. Those choices may be sensible, but teachers can begin treating one program’s terminology, order, and routines as though they represented settled findings about reading development.]
