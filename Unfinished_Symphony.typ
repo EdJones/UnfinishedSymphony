@@ -659,7 +659,7 @@
 #block(width: 100%)[
   #set par(justify: false)
   #text(size: 8.2pt, fill: muted)[
-    Even when teachers are committed to structured literacy, their guidance may vary greatly. Some practices below consume time, attention, and working memory without proportional gain; crowding out others that are needed.
+    Even when teachers are committed to structured literacy, their guidance may vary greatly. Some practices below consume time, attention, and working memory without proportional gain—crowding out others that are needed.
   ]
 ]
 #v(2pt)
@@ -669,7 +669,7 @@
 #columns(2, gutter: 0.22in)[
   #driftgroup[Phonemic awareness and phonics]
   #drift[Teaching “blends.”][A student who knows the sounds for _s_, _t_, _o_, and _p_ already has what’s needed to read _stop_. While some students need explicit practice blending adjacent consonants like _st-_, _bl-_, _tr-_, memorizing 20 or more “blends” imposes an undue burden.]
-  #drift[Overdoing oral phonemic awareness.][Oral PA gains peak after roughly 10 hours of instruction, then decline, while PA paired with letters keeps paying off. Yet oral-only daily drills, including “advanced” tasks like deleting the second sound in _smile_, often run for years.]
+  #drift[Overdoing oral phonemic awareness---for far too long.][Oral PA gains peak after roughly 10 hours of Tier I instruction, while PA paired with letters keeps paying off. So-called “advanced” PA is generally not useful.]
   #drift[Sound walls: teaching articulatory terminology beyond its instructional payoff.][Mouth pictures and articulation cues can help students tell similar sounds apart. Drilling terms like _bilabial_, _fricative_, or _voiceless alveolar stop_ rarely improves reading.]
   #drift[Teaching syllable division as a rule system rather than a flexible aid.][Students may spend excess time marking VC/CV, V/CV, or VC/V divisions as if they determine pronunciation. Stress, morphology, and vowel flexibility often matter more.]
   #drift[Treating six syllable types as a decoding algorithm.][Open, closed, vowel-consonant-e, r-controlled, vowel-team, and consonant-le categories can be useful descriptions. Teachers often overdo them.]
@@ -679,7 +679,7 @@
   #driftgroup[Morphology and orthography]
   #drift[Ignoring morphology until students are considered “advanced.”][A student may be taught to attack _unhelpfulness_, _disagreement_, or _reconstruction_ primarily through syllabification even though meaningful units provide a clearer structure. Delaying morphology can make complex words unnecessarily difficult.]
   #drift[Introducing morphology as lists of prefixes and suffixes.][The opposite error also occurs. Students memorize _pre-_, _re-_, _un-_, _-ful_, _-tion_ without learning how morphological structure explains meaning, spelling, word families, or pronunciation changes.]
-  #drift[Failing to teach morphophonemic change.][Pairs such as _define/definition_, _sign/signature_, _serene/serenity_, and _electric/electricity_ reveal why English spelling cannot be understood solely as sound-to-letter matching. Without this knowledge, teachers may describe perfectly regular morphological spellings as exceptions students simply have to remember.]
+  #drift[Failing to teach morphophonemic change.][In pairs such as _define/definition_, _sign/signature_, _serene/serenity_, and _electric/electricity_, pronunciation shifts while spelling preserves the shared meaning. This helps explain “silent” letters and unclear vowels (_compete_ → _competition_), shows why English spelling cannot be understood solely as sound-to-letter matching, and keeps regular morphological spellings from being taught as “exceptions.”]
   #drift[Using “schwa” as an explanation rather than teaching what causes it.][Students may be told that an unstressed vowel “says /uh/” without learning the role of stress, morphology, and word structure. The label names the phenomenon but does not necessarily help them read or spell the word.]
   #drift[Teaching too many heart words or “irregular” word parts.][Words like _have_ (English words don’t end in _v_) and _two_ (_twin_, _twelve_) are often taught as heart words, though their spellings are explainable. When a word breaks an introductory rule, the cause is often stress, morphology, history, or a more advanced correspondence. Calling each case an exception adds memorization and makes English look less systematic than it is.]
   #drift[Overteaching linguistics or etymology.][Explanation can also go too far: rabbit holes into word origins and linguistic processes that don’t pay off. An explanation earns its place when it helps students read or spell many words, not just one.]
@@ -693,7 +693,7 @@
   #drift[Treating oral reading fluency as a single problem.][A low words-correct-per-minute score, or accurate but slow reading, can reflect weak decoding, automaticity, multisyllabic word skill, phrasing, vocabulary, content knowledge, or print exposure. Locate the source before choosing a response.]
   #colbreak()
   #drift[Accurate decoding ≠ automatic word recognition.][A student who decodes a word correctly may need many more encounters before recognizing it instantly. Check speed as well as accuracy.]
-  #drift[Ignoring prosody when assessing fluency.][Appropriate phrasing, pausing, stress, and intonation can indicate whether a student is reading with comprehension.]
+  #drift[Ignoring prosody when assessing fluency.][Appropriate phrasing, pausing, stress, and intonation provide information that accuracy and rate alone miss. These meaningfully relate to comprehension.]
   #drift[Using repeated reading when the bottleneck is decoding.][A student can become faster at a practiced passage without acquiring the word-reading knowledge needed to transfer that improvement to a new passage.]
   #drift[Using round-robin or popcorn reading for oral reading practice.][Each student reads only a few sentences while classmates wait, read ahead, or tune out, and weak readers are exposed rather than supported. Partner, choral, and echo reading give every student far more practice.]
 
