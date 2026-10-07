@@ -8,9 +8,9 @@
 #let pale = rgb("f3f7fa")
 #let rule = rgb("dce5eb")
 
-#let docVersion = "v0.1"
+#let docVersion = "v0.2"
 #let docStatus = "Preview"
-#let docDate = "Sept 21, 2026"
+#let docDate = "Oct 7, 2026"
 
 #set page(
   paper: "us-letter",
@@ -26,7 +26,7 @@
       #v(3pt)
     ]
     #grid(columns: (1fr, auto),
-      [SKUNKWORKS/EDU  ·  THE UNFINISHED WORK],
+      [SKUNKWORKS/EDU  ·  THE UNFINISHED WORK, #docVersion],
       [#counter(page).display("1")]
     )
   ],
@@ -139,7 +139,7 @@
   #v(8pt)
 
     #section[The problem shifts:
-      How to make good practices pervasive?]
+      Enabling pervasive good practices]
     #v(6pt)
     For decades, reading reform centered on getting evidence-aligned instruction into more than a minority of classrooms.
 
@@ -213,7 +213,7 @@
     columns: (1fr, 1fr),
     gutter: 14pt,
     [
-      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[The Reading League: quality standards for foundational curricula]#cite(14)
+      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[The Reading League: standards for foundational curricula]#cite(14)
       #v(4pt)
       #text(size: 7pt)[Its Curriculum Evaluation Guidelines and Navigation Reports help schools make better choices.]
       #v(7pt)
@@ -221,7 +221,7 @@
       #v(4pt)
       #text(size: 7pt)[Reading Rockets has been refurbished and updated; Reading Universe adds a newer, practical, video-rich body of guidance.]
       #v(7pt)
-      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[State-built professional learning: training becomes infrastructure]#cite(18,19)
+      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[State-built professional learning ]#cite(18,19)
       #v(4pt)
       #text(size: 7pt)[States are increasingly building grade-, role-, and context-specific training, administrator pathways, and refresher modules.]
       #v(7pt)
@@ -233,13 +233,17 @@
       #v(4pt)
       #text(size: 7pt)[While 26 states have adopted some form of coaching policies, 8 have the type of coordinated field force that brought Mississippi its gains.]
       #v(7pt)
+      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[ExcelinEd: 18 Early Literacy Fundamental Principles]#cite(30)
+      #v(4pt)
+      #text(size: 7pt)[A state policy blueprint: screening, parent notification, teacher support, intervention, and retention as a last resort.]
+      #v(7pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Learning Science Practices | ResearchEd ]
       #v(4pt)
       #text(size: 7pt)[Led by our friends in the UK, teachers are tying day to day teaching to learning science well beyond structured literacy.]
       #v(7pt)
-      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Teacher-prep standards and audits: Fixing the Ed Schools ]#cite(21,22)
+      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Fixing the Ed Schools: Teacher-prep standards and audits]#cite(21,22)
       #v(4pt)
-      #text(size: 7pt)[NCTQ's systematic reviews of teacher-preparation programs — combined with state program reviews — audit whether education schools actually teach structured literacy.]
+      #text(size: 7pt)[NCTQ's systematic reviews of teacher-preparation programs has led to state audits and standards for schools of education.]
     ],
     [
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Knowledge Matters: supporting knowledge-building]#cite(23)
@@ -260,7 +264,7 @@
       #v(7pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Social-Media Dispersal and Discussion]
       #v(4pt)
-      #text(size: 7pt)[The Facebook Group Science of Reading-What I Should Have Learned in College now has 250,000 members. An extremely well-informed X community daily discusses the hard cases of Strucured Literacy. Substack gives longer-form ideas immediate feedack.]
+      #text(size: 7pt)[The Facebook Group Science of Reading—What I Should Have Learned in College now has 250,000 members. An extremely well-informed X community daily discusses the hard cases of Structured Literacy. Substack gives longer-form ideas immediate feedback.]
       #v(7pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[R&D and Systems for older readers, too]#cite(28,29)
       #v(4pt)
@@ -308,7 +312,7 @@
     #v(-5pt)
     #text(8pt, fill: dnavy)[
       Is Reading Universe a suitable knowledge base?
-      It would apppear so: it explains phonemic awareness, decoding, fluency, vocabulary, morphology, and many classroom routines quite well.
+      It would appear so: it explains phonemic awareness, decoding, fluency, vocabulary, morphology, and many classroom routines quite well.
 
       Yet critical components are missing: Knowledge-building is not developed as a major segment. Fine-grained issues such as morphophonemic alternation in complex multisyllabic words receive little treatment. Poor practices like teaching "blends" remain.
 
@@ -347,7 +351,7 @@
     #text(9pt, weight: "bold", fill: navy)[An 'Engineering of Reading']
     #v(-5pt)
     #text(8pt)[
-      Its a good phrase: an engineering mindset is definitely needed. Today we have more of a writers + publishers mentality driving the system - extremely useful, yet insufficient to the need.
+      It's a good phrase: an engineering mindset is definitely needed. Today we have more of a writers + publishers mentality driving the system - extremely useful, yet insufficient to the need.
       #linebreak()
       On the other hand, engineering-like documents can only be intermidate steps. Not teacher- or trainer-facing work products. The various engineering professions are all smaller, and generally draw from a more academically elite demographic base than teaching. Where they can suffer more technical jargon, the teaching profession cannot.
     ]
@@ -366,11 +370,11 @@
       #text(9pt, weight: "bold", fill: dnavy)[A Field Manual System]
       #v(-5pt)
       #text(8pt)[
-        Here, the focus is on the median teacher (with various 'extra duties', a suppemental coaching contract, 3 kids at home, maybe a parent needing care).#cite(30)
+        Here, the focus is on the median teacher (with various 'extra duties', a supplemental coaching contract, 3 kids at home, maybe a parent needing care).#cite(31)
 
         Part natural 'Field guide' (describing nature); part field manual (describing a working system and default operating procedures), not just print, but a science-backed collection of the best all-media resources for learning structured literacy.
 
-        Field manuals are something much more than a mere book published by one or two authors, and far more than the standard blog post, video, or podcast episode (not that those don’t serve!), and more than a website of independently authored white papers.#cite(31)
+        Field manuals are something much more than a mere book published by one or two authors, and far more than the standard blog post, video, or podcast episode (not that those don’t serve!), and more than a website of independently authored white papers.#cite(32)
 
         They are a snapshot of the institution’s understanding of best practices: grade-by-grade scope and sequence, explicit routines, decision rules for common classroom situations, diagnostic and progress-monitoring tools, and checklists.
 
@@ -385,10 +389,10 @@
       radius: 6pt,
       stroke: 0.8pt + rgb("#2ecc40"),
     )[
-      #text(9pt, weight: "bold", fill: dnavy)[A Community-Maintained Cannonical Source]
+      #text(9pt, weight: "bold", fill: dnavy)[A Community-Maintained Canonical Source]
       #v(-5pt)
       #text(8pt)[
-        Teaching, in the US, is a far larger, and more decentalized profession than most. It has no clear institutional center. Thus, while the US military is a similarly-sized profession, and the US Army's doctrine and manual system provides a solid model for a knowledge center, reading education has no TRADOC equivalent to organize and maintain such a cannonical source.
+        Teaching, in the US, is a far larger, and more decentralized profession than most. It has no clear institutional center. Thus, while the US military is a similarly-sized profession, and the US Army's doctrine and manual system provides a solid model for a knowledge center, reading education has no TRADOC equivalent to organize and maintain such a canonical source.
 
         There is, tho, a similarly-sized profession, with similarly decentralized leadership. And they have solved this challenge.
 
@@ -605,10 +609,10 @@
     #source[13][Elizabeth Tipton & Nicole Patton-Terry, "We Need an 'Engineering of Reading': Why the 'Science of Reading' May Not Be Enough," *Mind, Brain, and Education* 20(3), 2026.]
     #source[14][The Reading League, *Curriculum Evaluation Guidelines*, Curriculum Navigation Reports, and Reading League Compass.]
     #source[15][Douglas Carnine, "60 Million Unnecessary Reading Failures — Shame on the System," Aug. 7, 2026.]
+    #source[16][Reading Universe, WETA / Barksdale Reading Institute, launched 2023.]
   ],
   [
     #v(7pt)
-    #source[16][Reading Universe, WETA / Barksdale Reading Institute, launched 2023.]
     #source[17][Reading Rockets, WETA, national literacy resource and professional-learning site.]
     #source[18][Ohio Department of Education and Workforce, Science of Reading professional-development requirements and recurring refresher courses, 2026.]
     #source[19][Tennessee Department of Education, *Reading 360*, \$100M statewide literacy initiative launched 2021; training, coaching, implementation networks, free online SoR courses.]
@@ -622,7 +626,106 @@
     #source[27][Anna Geiger, *Science of Reading Podcast Index*, Reach All Readers, actively maintained.]
     #source[28][Sean Morrisey, "Meet the Word Mapping Project, the new cult favorite vocabulary supplement," *The Curriculum Insight Project*, Feb. 27, 2026.]
     #source[29][AERDF, *Reading Reimagined*, "The False Divide: Why 'Learn to Read, Read to Learn' Fails Older Readers — and How to Fix It," 2026.]
-    #source[30][Jones & Carnine, comments to "60 Million Unnecessary Reading Failures," 2026.]
-    #source[31][Army Publishing Directorate, *Army Doctrine Publications (ADP) Index*, U.S. Army.]
+    #source[30][ExcelinEd, *Comprehensive Early Literacy Policy: Fundamental Principles*, 2024; Early Literacy Matters state-by-state adoption and implementation reports.]
+    #source[31][Jones & Carnine, comments to "60 Million Unnecessary Reading Failures," 2026.]
+    #source[32][Army Publishing Directorate, *Army Doctrine Publications (ADP) Index*, U.S. Army.]
   ]
 )
+
+// PAGE 4 — APPENDIX
+#pagebreak()
+
+#let drift(title, body) = block(above: 0pt, below: 5pt, breakable: false)[
+  #set par(justify: true, leading: 0.44em, spacing: 0pt)
+  #block(above: 0pt, below: 0pt)[
+    #set par(justify: false)
+    #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy, hyphenate: false)[#title]
+  ]
+  #v(2pt)
+  #text(size: 6.45pt)[#body]
+]
+#let driftgroup(body) = block(above: 7pt, below: 5pt, breakable: false, sticky: true)[
+  #text(font: "Inter Display", size: 6.6pt, weight: 700, tracking: 0.08em, fill: blue)[#upper(body)]
+  #v(-6pt)
+  #line(length: 100%, stroke: 0.6pt + rule)
+]
+
+#kicker[APPENDIX]
+#v(-2pt)
+#text(font: "Inter Display", size: 16pt, weight: 700, fill: navy, tracking: -0.01em)[
+  Where Structured Literacy Practices Can Drift
+]
+#v(-4pt)
+#block(width: 100%)[
+  #set par(justify: false)
+  #text(size: 8.2pt, fill: muted)[
+    Even when teachers are committed to structured literacy, their guidance may vary greatly. Some practices below consume time, attention, and working memory without proportional gain—crowding out others that are needed.
+  ]
+]
+#v(2pt)
+#line(length: 100%, stroke: 1.5pt + rgb("#E0A526"))
+#v(4pt)
+
+#columns(2, gutter: 0.22in)[
+  #driftgroup[Phonemic awareness and phonics]
+  #drift[Teaching “blends.”][A student who knows the sounds for _s_, _t_, _o_, and _p_ already has what’s needed to read _stop_. While some students need explicit practice blending adjacent consonants like _st-_, _bl-_, and _tr-_, memorizing 20 or more “blends” imposes an undue burden.]
+  #drift[Overdoing oral phonemic awareness---for far too long.][Oral PA gains peak after roughly 10 hours of Tier I instruction; PA integrated with letters is more efficacious. So-called “advanced” PA is generally not useful.]
+  #drift[Sound walls: teaching articulatory terminology beyond its instructional payoff.][Mouth pictures and articulation cues can help students tell similar sounds apart. Drilling terms like _bilabial_, _fricative_, or _voiceless alveolar stop_ rarely improves reading.]
+  #drift[Teaching syllable division as a rule system rather than a flexible aid.][Students may spend excess time marking VC/CV, V/CV, or VC/V divisions as if they determine pronunciation. Stress, morphology, and vowel flexibility often matter more.]
+  #drift[Treating six syllable types as a decoding algorithm.][Open, closed, vowel-consonant-e, r-controlled, vowel-team, and consonant-le categories can be useful descriptions. Teachers often overdo them.]
+  #drift[Teaching phonics patterns without enough connected-text reading.][Patterns stick best, and words get orthographically mapped, when students meet them repeatedly in connected text.]
+  #drift[Inadequate or misaligned spelling instruction.][Encoding—spelling the patterns students are learning—is one of the strongest supports for reading.]
+
+  #driftgroup[Morphology and orthography]
+  #drift[Ignoring morphology until students are considered “advanced.”][A student may be taught to attack _unhelpfulness_, _disagreement_, or _reconstruction_ primarily through syllabification even though meaningful units provide a clearer structure. Delaying morphology can make complex words unnecessarily difficult.]
+  #drift[Introducing morphology as lists of prefixes and suffixes.][The opposite error also occurs. Students memorize _pre-_, _re-_, _un-_, _-ful_, _-tion_ without learning how morphological structure explains meaning, spelling, word families, or pronunciation changes.]
+  #drift[Failing to teach morphophonemic change.][In pairs such as _define/definition_, _sign/signature_, _serene/serenity_, and _electric/electricity_, pronunciation shifts while spelling preserves the shared meaning. This helps explain “silent” letters and unclear vowels (_compete_ → _competition_), shows why English spelling cannot be understood solely as sound-to-letter matching, and keeps regular morphological spellings from being taught as “exceptions.”]
+  #drift[Using “schwa” as an explanation rather than teaching what causes it.][Students may be told that an unstressed vowel “says /uh/” without learning the role of stress, morphology, and word structure. The label names the phenomenon but does not necessarily help them read or spell the word.]
+  #drift[Teaching too many heart words or “irregular” word parts.][Words like _have_ (English words don’t end in _v_) and _two_ (_twin_, _twelve_) are often taught as heart words, though their spellings are explainable. When a word breaks an introductory rule, the cause is often stress, morphology, history, or a more advanced correspondence. Calling each case an exception adds memorization and makes English look less systematic than it is.]
+  #drift[Overteaching linguistics or etymology.][Explanation can also go too far: rabbit holes into word origins and linguistic processes that don’t pay off. An explanation earns its place when it helps students read or spell many words, not just one.]
+
+  #driftgroup[Text selection]
+  #drift[Equating decodability with instructional suitability.][A text can conform to taught correspondences and still impose awkward syntax, weak vocabulary, low coherence, or excess cognitive load. Conversely, excluding every word containing an untaught pattern can impoverish language and knowledge.]
+  #drift[Using controlled text for too long.][Decodable text can be valuable while students consolidate the alphabetic system. If tightly controlled text persists after students can handle broader print, it may constrain vocabulary, syntax, fluency, and knowledge building.]
+  #drift[Moving students out of controlled text too early.][The reverse error leaves students guessing from context because the text contains too many patterns they cannot yet decode reliably.]
+
+  #driftgroup[Fluency]
+  #drift[Treating oral reading fluency as a single problem.][A low words-correct-per-minute score, or accurate but slow reading, can reflect weak decoding, automaticity, multisyllabic word skill, phrasing, vocabulary, content knowledge, or print exposure. Locate the source before choosing a response.]
+  #colbreak()
+  #drift[Accurate decoding ≠ automatic word recognition.][A student who decodes a word correctly may need many more encounters before recognizing it instantly. Check speed as well as accuracy.]
+  #drift[Ignoring prosody when assessing fluency.][Appropriate phrasing, pausing, stress, and intonation provide information that accuracy and rate alone miss. Prosody relates meaningfully to comprehension.]
+  #drift[Using repeated reading when the bottleneck is decoding.][A student can become faster at a practiced passage without acquiring the word-reading knowledge needed to transfer that improvement to a new passage.]
+  #drift[Using round-robin or popcorn reading for oral reading practice.][Each student reads only a few sentences while classmates wait, read ahead, or tune out, and weak readers are exposed rather than supported. Partner, choral, and echo reading give every student far more practice.]
+
+  #driftgroup[Vocabulary, knowledge, and comprehension]
+  #drift[Underteaching oral language.][Many students lag in spoken language. Listening comprehension should be explicitly built from K up, through read-alouds, discussion, and extended talk.]
+  #drift[Teaching vocabulary as isolated definitions.][Students may copy definitions, match words to meanings, or memorize weekly lists without learning semantic relationships, morphology, multiple meanings, collocations, or the knowledge domain in which the words are useful.]
+  #drift[Underteaching academic vocabulary.][Words such as _analyze_, _contrast_, _infer_, _significant_, and _establish_ occur across subjects and carry much of the meaning in textbooks, directions, assignments, and tests.]
+  #drift[Trying to activate knowledge instead of building it.][Students cannot activate knowledge they do not have.]
+  #drift[Teaching comprehension through excessive strategy rehearsal.][Predicting, questioning, summarizing, and identifying main ideas can help students learn how comprehension works. Once students understand a strategy, more practice yields little. The time is better spent building vocabulary and knowledge.]
+  #drift[Teaching “main idea” as though it were independent of knowledge.][Students may be asked to infer main ideas from passages about topics they barely understand, making a knowledge deficit look like a strategy deficit.]
+  #drift[Underteaching sentence structure.][Students may know every word in a sentence and still misunderstand who did what to whom, which idea modifies which, or how one clause relates to another. Passive voice, relative clauses, embedded clauses, and connectives such as _although_, _unless_, and _despite_ can trip up many learners.]
+  #drift[Overteaching grammatical labels.][Students can spend substantial time naming predicates, subordinating conjunctions, or clause types without getting better at understanding or writing hard sentences.]
+
+  #driftgroup[Programs, assessment, and intervention]
+  #drift[Assuming a program scope and sequence = a knowledge model.][A commercial program necessarily makes sequencing choices. Those choices may be sensible, but teachers can begin treating one program’s terminology, order, and routines as though they represented settled findings about reading development.]
+  #drift[Treating fidelity as immunity from error.][Implementation fidelity is useful only if the underlying practice is well matched to the student and the evidence. Perfectly implementing the wrong response simply produces consistent inefficiency.]
+  #drift[Assigning intervention when Tier I instruction needs improvement.][If more than \~20% of students are struggling, the grade-level team should review core instruction wrt pacing, content, sequencing, instructional time, and delivery.]
+  #drift[Three tiers does not mean three programs.][Unrelated programs at each tier give struggling students conflicting routines and terminology. Intervention works best when it reinforces core instruction.]
+  #drift[Responding to every error with immediate correction.][Constant interruption undermines fluency and comprehension. Teachers need guidance on which errors matter and when to step in.]
+  #drift[Treating a screening score as a diagnosis.][Two students with the same screening score may struggle for very different reasons: weak phoneme-grapheme knowledge, slow automatic recognition, language disorder, limited vocabulary, etc. Good diagnostic assessments should precede intervention; core instruction may also need adjustment.]
+  #drift[Undiagnosed DLD.][More than 7% of kids have Developmental Language Disorder. The earlier it’s diagnosed, the better. Yet many schools don’t screen early enough, treating language difficulties as generic reading problems.]
+  #drift[Continuing “evidence-based” instruction without checking response.][Population-level evidence does not guarantee that a particular routine remains useful for a particular student. Instruction should change when progress data show that the presumed mechanism is not producing the expected result.]
+]
+
+#v(4pt)
+#block(
+  fill: pale,
+  stroke: (left: 3pt + blue),
+  inset: (x: 8pt, y: 6pt),
+  radius: 2pt,
+)[
+  #set par(justify: false, leading: 0.5em)
+
+  #text(size: 6.45pt)[This appendix contains significant AI text. It is the authors' hope that you, the experts, will embrace this as a community, and build it to better tell the story.]
+]
