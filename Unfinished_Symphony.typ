@@ -8,9 +8,9 @@
 #let pale = rgb("f3f7fa")
 #let rule = rgb("dce5eb")
 
-#let docVersion = "v0.2-working"
+#let docVersion = "v0.2"
 #let docStatus = "Preview"
-#let docDate = "Oct 1, 2026"
+#let docDate = "Oct 7, 2026"
 
 #set page(
   paper: "us-letter",
@@ -668,8 +668,8 @@
 
 #columns(2, gutter: 0.22in)[
   #driftgroup[Phonemic awareness and phonics]
-  #drift[Teaching “blends.”][A student who knows the sounds for _s_, _t_, _o_, and _p_ already has what’s needed to read _stop_. While some students need explicit practice blending adjacent consonants like _st-_, _bl-_, _tr-_, memorizing 20 or more “blends” imposes an undue burden.]
-  #drift[Overdoing oral phonemic awareness---for far too long.][Oral PA gains peak after roughly 10 hours of Tier I instruction, while PA paired with letters keeps paying off. So-called “advanced” PA is generally not useful.]
+  #drift[Teaching “blends.”][A student who knows the sounds for _s_, _t_, _o_, and _p_ already has what’s needed to read _stop_. While some students need explicit practice blending adjacent consonants like _st-_, _bl-_, and _tr-_, memorizing 20 or more “blends” imposes an undue burden.]
+  #drift[Overdoing oral phonemic awareness---for far too long.][Oral PA gains peak after roughly 10 hours of Tier I instruction; PA integrated with letters is more efficacious. So-called “advanced” PA is generally not useful.]
   #drift[Sound walls: teaching articulatory terminology beyond its instructional payoff.][Mouth pictures and articulation cues can help students tell similar sounds apart. Drilling terms like _bilabial_, _fricative_, or _voiceless alveolar stop_ rarely improves reading.]
   #drift[Teaching syllable division as a rule system rather than a flexible aid.][Students may spend excess time marking VC/CV, V/CV, or VC/V divisions as if they determine pronunciation. Stress, morphology, and vowel flexibility often matter more.]
   #drift[Treating six syllable types as a decoding algorithm.][Open, closed, vowel-consonant-e, r-controlled, vowel-team, and consonant-le categories can be useful descriptions. Teachers often overdo them.]
@@ -693,7 +693,7 @@
   #drift[Treating oral reading fluency as a single problem.][A low words-correct-per-minute score, or accurate but slow reading, can reflect weak decoding, automaticity, multisyllabic word skill, phrasing, vocabulary, content knowledge, or print exposure. Locate the source before choosing a response.]
   #colbreak()
   #drift[Accurate decoding ≠ automatic word recognition.][A student who decodes a word correctly may need many more encounters before recognizing it instantly. Check speed as well as accuracy.]
-  #drift[Ignoring prosody when assessing fluency.][Appropriate phrasing, pausing, stress, and intonation provide information that accuracy and rate alone miss. These meaningfully relate to comprehension.]
+  #drift[Ignoring prosody when assessing fluency.][Appropriate phrasing, pausing, stress, and intonation provide information that accuracy and rate alone miss. Prosody relates meaningfully to comprehension..]
   #drift[Using repeated reading when the bottleneck is decoding.][A student can become faster at a practiced passage without acquiring the word-reading knowledge needed to transfer that improvement to a new passage.]
   #drift[Using round-robin or popcorn reading for oral reading practice.][Each student reads only a few sentences while classmates wait, read ahead, or tune out, and weak readers are exposed rather than supported. Partner, choral, and echo reading give every student far more practice.]
 
@@ -710,10 +710,10 @@
   #driftgroup[Programs, assessment, and intervention]
   #drift[Assuming a program scope and sequence = a knowledge model.][A commercial program necessarily makes sequencing choices. Those choices may be sensible, but teachers can begin treating one program’s terminology, order, and routines as though they represented settled findings about reading development.]
   #drift[Treating fidelity as immunity from error.][Implementation fidelity is useful only if the underlying practice is well matched to the student and the evidence. Perfectly implementing the wrong response simply produces consistent inefficiency.]
-  #drift[Adding interventions instead of subtracting ineffective instruction.][Struggling students can accumulate layers of remediation on top of core instruction (phonemic awareness, phonics, fluency practice, software) without adequate diagnosis of what’s actually needed.]
+  #drift[Adding intervention instead of fixing core instruction.][When many students in a class struggle, the problem is often core instruction. Layering on more phonemic awareness, phonics, fluency practice, or software treats a classroom problem one student at a time.]
   #drift[Three tiers does not mean three programs.][Unrelated programs at each tier give struggling students conflicting routines and terminology. Intervention works best when it reinforces core instruction.]
   #drift[Responding to every error with immediate correction.][Constant interruption undermines fluency and comprehension. Teachers need guidance on which errors matter and when to step in.]
-  #drift[Treating a screening score as a diagnosis.][Two students with the same screening score may struggle for very different reasons: weak phoneme-grapheme knowledge, slow automatic recognition, language disorder, limited vocabulary, etc. Good intervention-based diagnostic assessments are essential; core instruction may also be lacking.]
+  #drift[Treating a screening score as a diagnosis.][Two students with the same screening score may struggle for very different reasons: weak phoneme-grapheme knowledge, slow automatic recognition, language disorder, limited vocabulary, etc. Good diagnostic assessments should precede intervention; core instruction may also need adjustment.]
   #drift[Undiagnosed DLD.][More than 7% of kids have Developmental Language Disorder. The earlier it’s diagnosed, the better. Yet many schools don’t screen early enough, treating language difficulties as generic reading problems.]
   #drift[Continuing “evidence-based” instruction without checking response.][Population-level evidence does not guarantee that a particular routine remains useful for a particular student. Instruction should change when progress data show that the presumed mechanism is not producing the expected result.]
 ]
@@ -726,6 +726,6 @@
   radius: 2pt,
 )[
   #set par(justify: false, leading: 0.5em)
-  #text(font: "Inter Display", size: 7.1pt, weight: 700, fill: navy)[]
+
   #text(size: 6.45pt)[This appendix contains significant AI text. It is the authors' hope that you, the experts, will embrace this as a community, and build it to better tell the story.]
 ]
