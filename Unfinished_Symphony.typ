@@ -26,7 +26,7 @@
       #v(3pt)
     ]
     #grid(columns: (1fr, auto),
-      [SKUNKWORKS/EDU  ·  THE UNFINISHED WORK],
+      [SKUNKWORKS/EDU  ·  THE UNFINISHED WORK, #docVersion],
       [#counter(page).display("1")]
     )
   ],
@@ -710,7 +710,7 @@
   #driftgroup[Programs, assessment, and intervention]
   #drift[Assuming a program scope and sequence = a knowledge model.][A commercial program necessarily makes sequencing choices. Those choices may be sensible, but teachers can begin treating one program’s terminology, order, and routines as though they represented settled findings about reading development.]
   #drift[Treating fidelity as immunity from error.][Implementation fidelity is useful only if the underlying practice is well matched to the student and the evidence. Perfectly implementing the wrong response simply produces consistent inefficiency.]
-  #drift[Adding interventions instead of subtracting ineffective instruction.][Struggling students can accumulate layers of remediation on top of core instruction (phonemic awareness, phonics, fluency practice, software) without adequate diagnosis of what’s actually needed.]
+  #drift[Assigning intervention when Tier I instruction needs improvement.][If more than \~20% of students are struggling, the grade-level team should review core instruction wrt pacing, content, sequencing, instructional time, and delivery.]
   #drift[Three tiers does not mean three programs.][Unrelated programs at each tier give struggling students conflicting routines and terminology. Intervention works best when it reinforces core instruction.]
   #drift[Responding to every error with immediate correction.][Constant interruption undermines fluency and comprehension. Teachers need guidance on which errors matter and when to step in.]
   #drift[Treating a screening score as a diagnosis.][Two students with the same screening score may struggle for very different reasons: weak phoneme-grapheme knowledge, slow automatic recognition, language disorder, limited vocabulary, etc. Good diagnostic assessments should precede intervention; core instruction may also need adjustment.]
