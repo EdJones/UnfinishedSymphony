@@ -285,10 +285,10 @@
   #let dpale = rgb("#EEF4F8")
   #let dmuted = rgb("#667580")
   #let dlinec = rgb("#A8BAC7")
-  #let lifted(body) = layout(region => {
+  #let lifted(body, inset: 0.18in) = layout(region => {
     let card = block(
       width: region.width,
-      inset: 0.18in,
+      inset: inset,
       radius: 6pt,
       stroke: 0.8pt + rgb("#2ecc40"),
       fill: gradient.linear((white, 0%), (white, 60%), (rgb("#FAFDFB"), 100%), angle: 90deg),
@@ -297,12 +297,12 @@
     let h = measure(card).height
     block(width: region.width, height: h, {
       for i in range(12) {
-        let s = 0.5pt * (12 - i)
+        let s = 0.33pt * (12 - i)
         place(dx: -s, dy: 3pt - s, rect(
           width: region.width + 2 * s,
           height: h + 2 * s,
           radius: 6pt + s,
-          fill: rgb(20, 60, 40, 2.5%),
+          fill: rgb(20, 60, 40, 1.8%),
         ))
       }
       place(card)
@@ -348,16 +348,16 @@
 
   #v(2pt)
 
-  #text(12.5pt, weight: "bold", fill: dnavy)[Four Approaches]
+  #text(12.5pt, weight: "bold", fill: dnavy)[The Road Forward]
 
   #v(-4pt)
   #block(
     width: 100%,
-    inset: 0.18in,
+    inset: (x: 0.18in, y: 0.1in),
     radius: 6pt,
     stroke: 0.75pt + rgb("#7A9CB8"),
   )[
-    #text(10pt, weight: "bold", fill: dnavy)[NRP 2.0 ]
+    #text(9pt, weight: "bold", fill: dnavy)[NRP 2.0]
     #v(-5pt)
     #text(8pt)[
       While some argue for a new National Reading Panel#cite(7,8), the truth is that experts have long been monitoring, and sharing the updated research. A government-sponsored panel of experts may seem a viable next step. Yet there are better ways to achieve what's needed.
@@ -367,11 +367,11 @@
   #v(0pt)
   #block(
     width: 100%,
-    inset: 0.18in,
+    inset: (x: 0.18in, y: 0.1in),
     radius: 6pt,
     stroke: 0.75pt + rgb("#7A9CB8"),
   )[
-    #text(9pt, weight: "bold", fill: navy)[An 'Engineering of Reading']
+    #text(9pt, weight: "bold", fill: dnavy)[An 'Engineering of Reading']
     #v(-5pt)
     #text(8pt)[
       It's a good phrase: an engineering mindset is definitely needed. Today we have more of a writers + publishers mentality driving the system - extremely useful, yet insufficient to the need.
@@ -381,10 +381,13 @@
   ]
 
   #v(0pt)
+  #lifted(inset: (x: 0.18in, y: 0.12in))[
+  #text(10pt, weight: "bold", fill: rgb("#1E8A3A"))[An Integrated Field Manual System, Maintained as Community Canonical Source]
+  #v(-2pt)
   #grid(
-    columns: (1fr, 1fr),
-    gutter: 0.18in,
-    lifted[
+    columns: (1fr, 0.15in, 0.15in, 1fr),
+    grid.vline(x: 2, stroke: 0.6pt + rgb("#2ecc40").lighten(40%)),
+    [
       #text(9pt, weight: "bold", fill: dnavy)[A Field Manual System]
       #v(-5pt)
       #text(8pt)[
@@ -401,7 +404,8 @@
         They not ony explain the research base; they use learning science and instructional principles in their own design for teacher/trainer learning.
       ]
     ],
-    lifted[
+    [], [],
+    [
       #text(9pt, weight: "bold", fill: dnavy)[A Community-Maintained Canonical Source]
       #v(-5pt)
       #text(8pt)[
@@ -427,6 +431,7 @@
       ]
     ],
   )
+  ]
 
   #v(0.06in)
   #metadata(none)<version-footer-anchor>
