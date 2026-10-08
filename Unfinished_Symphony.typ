@@ -360,7 +360,7 @@
     #text(9pt, weight: "bold", fill: dnavy)[NRP 2.0]
     #v(-5pt)
     #text(8pt)[
-      While some argue for a new National Reading Panel#cite(7,8), the truth is that experts have long been monitoring, and sharing the updated research. A government-sponsored panel of experts may seem a viable next step. Yet there are better ways to achieve what's needed.
+      While some argue for a new National Reading Panel#cite(7,8), the truth is that experts have long been monitoring and sharing the updated research. A government-sponsored panel of experts may seem a viable next step. Yet there are better ways to achieve what's needed.
     ]
   ]
 
@@ -374,15 +374,15 @@
     #text(9pt, weight: "bold", fill: dnavy)[An 'Engineering of Reading']
     #v(-5pt)
     #text(8pt)[
-      It's a good phrase: an engineering mindset is definitely needed. Today we have more of a writers + publishers mentality driving the system - extremely useful, yet insufficient to the need.
+      It's a good phrase: an engineering mindset is definitely needed. Today we have more of a writers + publishers mentality driving the system — extremely useful, yet insufficient to the need.
       #linebreak()
-      On the other hand, engineering-like documents can only be intermidate steps. Not teacher- or trainer-facing work products. The various engineering professions are all smaller, and generally draw from a more academically elite demographic base than teaching. Where they can suffer more technical jargon, the teaching profession cannot.
+      On the other hand, engineering-like documents can only be intermediate steps. Not teacher- or trainer-facing work products. The various engineering professions are all smaller, and generally draw from a more academically elite demographic base than teaching. Where they can suffer more technical jargon, the teaching profession cannot.
     ]
   ]
 
   #v(0pt)
   #lifted(inset: (x: 0.18in, y: 0.12in))[
-  #text(10pt, weight: "bold", fill: rgb("#1E8A3A"))[An Integrated Field Manual System, Maintained as Community Canonical Source]
+  #text(10pt, weight: "bold", fill: rgb("#1E8A3A"))[An Integrated Field Manual System---Maintained by the Community as a Canonical Source]
   #v(-2pt)
   #grid(
     columns: (1fr, 0.15in, 0.15in, 1fr),
@@ -393,29 +393,29 @@
       #text(8pt)[
         Here, the focus is on the median teacher (with various 'extra duties', a supplemental coaching contract, 3 kids at home, maybe a parent needing care).#cite(31)
 
-        Part natural 'Field guide' (describing nature); part field manual (describing a working system and default operating procedures), not just print, but a science-backed collection of the best all-media resources for learning structured literacy.
+        Part natural 'field guide' (describing nature); part field manual (describing a working system and default operating procedures), not just print, but a science-backed collection of the best all-media resources for learning structured literacy.
 
-        Field manuals are something much more than a mere book published by one or two authors, and far more than the standard blog post, video, or podcast episode (not that those don’t serve!), and more than a website of independently authored white papers.#cite(32)
+        Field manuals are something much more than a mere book published by one or two authors, far more than the standard blog post, video, or podcast episode (not that those don’t serve!), and more than a website of independently authored white papers.#cite(32)
 
-        They are a snapshot of the institution’s understanding of best practices: grade-by-grade scope and sequence, explicit routines, decision rules for common classroom situations, diagnostic and progress-monitoring tools, and checklists.
+        They provide a snapshot of the institution’s understanding of best practices: grade-by-grade scope and sequence, explicit routines, decision rules for common classroom situations, diagnostic and progress-monitoring tools, and checklists.
 
-        More than that, they are created not just to publish information, but to teach it. They are designed for people who are not first and foremost knowledge workers. They are written with the objective of being read by (in Pondiscio’s words) mere mortals.
+        They are carefully designed for people who are _not_ primarily knowledge workers. They are written with the objective of being read by (in Pondiscio’s words) mere mortals.
 
-        They not ony explain the research base; they use learning science and instructional principles in their own design for teacher/trainer learning.
+        They use learning science and instructional principles _in their own design_ for teacher/trainer learning.
       ]
     ],
     [], [],
     [
-      #text(9pt, weight: "bold", fill: dnavy)[A Community-Maintained Canonical Source]
+      #text(9pt, weight: "bold", fill: dnavy)[Community-Maintained as Canonical Source]
       #v(-5pt)
       #text(8pt)[
-        Teaching, in the US, is a far larger, and more decentralized profession than most. It has no clear institutional center. Thus, while the US military is a similarly-sized profession, and the US Army's doctrine and manual system provides a solid model for a knowledge center, reading education has no TRADOC equivalent to organize and maintain such a canonical source.
+        Teaching, in the US, is a far larger and more decentralized profession than most. It has no clear institutional center. Thus, while the US military is a similarly sized profession, and the US Army's doctrine and manual system provides a solid model for a knowledge center, reading education has no TRADOC equivalent to organize and maintain such a canonical source.
 
-        There is, tho, a similarly-sized profession, with similarly decentralized leadership. And they have solved this challenge.
+        There is, though, a similarly sized profession, with similarly decentralized leadership. And they have solved this challenge.
 
         For thirty years, communities of open source software developers have collaboratively built not just products, but documentation and all manner of tools to support the open source processes.
 
-        In time, a unique culture also developed, to support those people, methods, and tools. Habits of mind actually changed to support the new model.
+        In time, a unique culture also developed to support those people, methods, and tools. Habits of mind actually changed to support the new model.
 
         Reading education can import that culture and process.
 
