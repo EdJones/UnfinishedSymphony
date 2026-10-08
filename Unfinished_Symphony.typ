@@ -8,9 +8,9 @@
 #let pale = rgb("f3f7fa")
 #let rule = rgb("dce5eb")
 
-#let docVersion = "v0.2"
+#let docVersion = "v0.3"
 #let docStatus = "Preview"
-#let docDate = "Oct 7, 2026"
+#let docDate = "Oct 8, 2026"
 
 #set page(
   paper: "us-letter",
@@ -308,6 +308,26 @@
       place(card)
     })
   })
+  #let joined(left, right, gutter: 0.3in) = layout(region => {
+    let colw = (region.width - gutter) / 2
+    let h = calc.max(
+      measure(block(width: colw, left)).height,
+      measure(block(width: colw, right)).height,
+    )
+    let gap = 10pt
+    let divider = 0.6pt + rgb("#2ecc40").lighten(40%)
+    grid(
+      columns: (colw, gutter, colw),
+      left,
+      box(width: gutter, height: h, {
+        let at = h / 3
+        place(center + top, line(angle: 90deg, length: at - gap, stroke: divider))
+        place(center + top, dy: at + gap, line(angle: 90deg, length: h - at - gap, stroke: divider))
+        place(center + top, dy: at, place(center + horizon, text(16pt, weight: "bold", fill: rgb("#2ecc40"))[+]))
+      }),
+      right,
+    )
+  })
 
   #set text(9pt, font: "Helvetica", fill: rgb("#1E2933"))
   #set par(justify: false)
@@ -384,9 +404,7 @@
   #lifted(inset: (x: 0.18in, y: 0.12in))[
   #text(10pt, weight: "bold", fill: rgb("#1E8A3A"))[An Integrated Field Manual System---Maintained by the Community as a Canonical Source]
   #v(-2pt)
-  #grid(
-    columns: (1fr, 0.15in, 0.15in, 1fr),
-    grid.vline(x: 2, stroke: 0.6pt + rgb("#2ecc40").lighten(40%)),
+  #joined(
     [
       #text(9pt, weight: "bold", fill: dnavy)[A Field Manual System]
       #v(-5pt)
@@ -404,7 +422,6 @@
         They use learning science and instructional principles _in their own design_ for teacher/trainer learning.
       ]
     ],
-    [], [],
     [
       #text(9pt, weight: "bold", fill: dnavy)[Community-Maintained as Canonical Source]
       #v(-5pt)
