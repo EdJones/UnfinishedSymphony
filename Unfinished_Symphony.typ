@@ -285,6 +285,29 @@
   #let dpale = rgb("#EEF4F8")
   #let dmuted = rgb("#667580")
   #let dlinec = rgb("#A8BAC7")
+  #let lifted(body) = layout(region => {
+    let card = block(
+      width: region.width,
+      inset: 0.18in,
+      radius: 6pt,
+      stroke: 0.8pt + rgb("#2ecc40"),
+      fill: gradient.linear((white, 0%), (white, 60%), (rgb("#FAFDFB"), 100%), angle: 90deg),
+      body,
+    )
+    let h = measure(card).height
+    block(width: region.width, height: h, {
+      for i in range(12) {
+        let s = 0.5pt * (12 - i)
+        place(dx: -s, dy: 3pt - s, rect(
+          width: region.width + 2 * s,
+          height: h + 2 * s,
+          radius: 6pt + s,
+          fill: rgb(20, 60, 40, 2.5%),
+        ))
+      }
+      place(card)
+    })
+  })
 
   #set text(9pt, font: "Helvetica", fill: rgb("#1E2933"))
   #set par(justify: false)
@@ -361,12 +384,7 @@
   #grid(
     columns: (1fr, 1fr),
     gutter: 0.18in,
-    block(
-      width: 100%,
-      inset: 0.18in,
-      radius: 6pt,
-      stroke: 0.8pt + rgb("#2ecc40"),
-    )[
+    lifted[
       #text(9pt, weight: "bold", fill: dnavy)[A Field Manual System]
       #v(-5pt)
       #text(8pt)[
@@ -383,12 +401,7 @@
         They not ony explain the research base; they use learning science and instructional principles in their own design for teacher/trainer learning.
       ]
     ],
-    block(
-      width: 100%,
-      inset: 0.18in,
-      radius: 6pt,
-      stroke: 0.8pt + rgb("#2ecc40"),
-    )[
+    lifted[
       #text(9pt, weight: "bold", fill: dnavy)[A Community-Maintained Canonical Source]
       #v(-5pt)
       #text(8pt)[
