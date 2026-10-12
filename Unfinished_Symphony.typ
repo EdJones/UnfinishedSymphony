@@ -453,7 +453,7 @@
   ]
 
   #v(2pt)
-  Building these is the unfinished work necessary for excellent reading instruction to become commonplace. Teachers and trainers shouldn't have to become reading scientists; they should be able to count on the profession to make that knowledge clear, practical, and readily available---in forms that are, if not addictive, at least such that teachers will truly want to use them.
+  Building these is the unfinished work; with them, excellent reading instruction can become commonplace. Teachers and trainers won't have to become reading scientists; they'll be able to count on the profession to make that knowledge clear, practical, and readily available---in forms that are, if not addictive, at least such that teachers will truly want to use them.
 
   #v(0.06in)
   #metadata(none)<version-footer-anchor>
