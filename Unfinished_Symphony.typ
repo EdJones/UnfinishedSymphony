@@ -453,7 +453,7 @@
   ]
 
   #v(2pt)
-  Together, these offer a model for making excellent reading instruction commonplace---one that stops asking trainers and teachers to be reading scientists and instead gives them the tools, guidance, and institutional support to put that science to work.
+  Building these is the unfinished work necessary for excellent reading instruction to become commonplace. Teachers and trainers shouldn't have to become reading scientists; they should be able to count on the profession to make that knowledge clear, practical, and readily available---in forms that are, if not addictive, at least such that teachers will truly want to use them.
 
   #v(0.06in)
   #metadata(none)<version-footer-anchor>
