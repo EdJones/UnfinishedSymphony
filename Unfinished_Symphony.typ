@@ -65,7 +65,7 @@
   #set par(leading: 0.42em, justify: false)
   #text(size: 6pt, fill: muted)[#n. #body]
 ]
-#let cite(..nums) = super[#text(size: 9pt, fill: blue, weight: 700)[#nums.pos().map(str).join(",")]]
+#let cite(..nums) = super(typographic: false)[#text(size: 9pt, fill: blue, weight: 400)[#nums.pos().map(str).join(",")]]
 #let piece(n, title, body) = block(
   fill: pale,
   inset: 8pt,
@@ -131,11 +131,11 @@
   columns: (1.16fr, 0.84fr),
   gutter: 0.25in,
   [For many, the Science of Reading movement has entered its ‘trough of
-  despair’. Not only are nationwide scores not up; they are, in fact, down.
-  Finger-pointing has begun. “Too much phonics”. “Not enough whole
+  despair.’ Not only are nationwide scores not up; they are, in fact, down.
+  Finger-pointing has begun. “Too much phonics.” “Not enough whole
   books.” “Time wasted on phonemic awareness.” “MTSS doesn’t work.”
 
-  The uncomfortable truth is that structured literacy suffers from the same confusion as “balanced literacy”. It remains — in its fine-grained elements — under-defined.#cite(1)
+  The uncomfortable truth is that structured literacy suffers from the same confusion as “balanced literacy.” It remains — in its fine-grained elements — under-defined.#cite(1)
   #v(8pt)
 
     #section[The problem shifts:
@@ -168,19 +168,19 @@
       The science has won attention, but research expertise is thin throughout the education system. Translation and professional infrastructure are missing.
 
       #v(2pt)
-      #minihead[2024-25 · JONES]#cite(4,6)
+      #minihead[2024--25 · JONES]#cite(4,6)
       A living profession needs "garbage collection"; other professions have solutions that can help cut instructional waste, reduce opportunity costs, help kids read.
 
       #v(2pt)
-      #minihead[2024-26 · CALLS FOR NRP 2.0]#cite(5,7,8)
+      #minihead[2024--26 · CALLS FOR NRP 2.0]#cite(5,7,8)
       In the wake of unsustained and unscaled improvement, calls grow for a new National Reading Panel to synthesize research done since NRP I.
 
       #v(2pt)
-      #minihead[2025-26 · CARNINE/LYON]#cite(9,10,11,12,15)
+      #minihead[2025--26 · CARNINE/LYON]#cite(9,10,11,12,15)
       frame the problem as professionalization: shared knowledge, common language, aligned preparation, competence-based licensure, accountability.
 
       #v(2pt)
-      #minihead[2026 · TIPTON/PATTON-TERRY]#cite(13)
+      #minihead[2026 · TIPTON/PATTON TERRY]#cite(13)
       Beyond the science of reading, we need an "engineering of reading."
     ]
   ]
@@ -221,17 +221,17 @@
       #v(4pt)
       #text(size: 7pt)[Reading Rockets has been refurbished and updated; Reading Universe adds a newer, practical, video-rich body of guidance.]
       #v(7pt)
-      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[State-built professional learning ]#cite(18,19)
+      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[State-built professional learning]#cite(18,19)
       #v(4pt)
       #text(size: 7pt)[States are increasingly building grade-, role-, and context-specific training, administrator pathways, and refresher modules.]
       #v(7pt)
-      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[UFLI brings a free, quality phonics program, with training.]
+      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[UFLI brings a free, quality phonics program, with training]
       #v(4pt)
-      #text(size: 7pt)[Scope and sequence, routines, assessments, videos, fidelity tools, and implementation supports package research.]
+      #text(size: 7pt)[Scope and sequence, routines, assessments, videos, fidelity tools, and implementation supports package research into practice.]
       #v(7pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[State-Coordinated Coaching Networks]#cite(20)
       #v(4pt)
-      #text(size: 7pt)[While 26 states have adopted some form of coaching policies, 8 have the type of coordinated field force that brought Mississippi its gains.]
+      #text(size: 7pt)[While 26 states have adopted some mixture of coaching policies, 8 have the type of coordinated field force that brought Mississippi its gains.]
       #v(7pt)
       #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[ExcelinEd: 18 Early Literacy Fundamental Principles]#cite(30)
       #v(4pt)
@@ -262,11 +262,11 @@
       #v(4pt)
       #text(size: 7pt)[A strong ecosystem of  podcast series and specialist videos now lets those with the inclination learn on their own schedule.]
       #v(7pt)
-      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Social-Media Dispersal and Discussion]
+      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[Social-media dispersal and discussion]
       #v(4pt)
-      #text(size: 7pt)[The Facebook Group Science of Reading—What I Should Have Learned in College now has 250,000 members. An extremely well-informed X community daily discusses the hard cases of Structured Literacy. Substack gives longer-form ideas immediate feedback.]
+      #text(size: 7pt)[The Facebook group "Science of Reading—What I Should Have Learned in College" now has 250,000 members. An extremely well-informed X community daily discusses the hard cases of Structured Literacy. Substack gives longer-form ideas immediate feedback.]
       #v(7pt)
-      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[R&D and Systems for older readers, too]#cite(28,29)
+      #text(font: "Inter Display", size: 8pt, weight: 700, fill: navy)[R&D and systems for older readers, too]#cite(28,29)
       #v(4pt)
       #text(size: 7pt)[From more structured fifth-grade word study to systems for severe high school remediation; from individually-authored programs to high end programs like Reading Reimagined, all K12 literacy is getting love.]
     ],
@@ -415,13 +415,13 @@
 
         In K12, the focus is thus on the median teacher (with various 'extra duties', a supplemental coaching contract, 3 kids at home, maybe a parent needing care).#cite(31)
 
-        Part natural 'field guide' (describing nature); part technical manual (describing a working system and default operating procedures), an SOR field manual would be a science-backed collection of the best all-media resources for learning structured literacy.
+        Part natural 'field guide' (describing nature), part technical manual (describing a working system and default operating procedures), an SOR field manual would be a science-backed collection of the best all-media resources for learning structured literacy.
 
         A field manual system would offer much more than books published by one or two authors, blog posts, videos, or podcast episodes (not that those don’t serve!), and more than a website of independently authored white papers.
 
        It would provide an authoritative snapshot of the profession's knowledge and best practices: evidence-based learning progressions, explicit instructional routines and their limits, assessment and diagnostic tools, decision rules for grouping students and adjusting instruction, guidance for coordinating core instruction and interventions, and procedures for evaluating results and correcting course.
 
-        It would (as the military's do) use learning science and instructional principles _in their own design_ for teacher/trainer learning.
+        It would (as the military's manuals do) use learning science and instructional principles _in its own design_ for teacher/trainer learning.
       ]
     ],
     [
@@ -478,7 +478,7 @@
 
   Let's look at some details of practice:
   - After K-1 MOY assessments, many teachers are unsure of what to do with the data.
-  - A decision tree is needed. It will look different for different grades, and assessment products.
+  - A decision tree is needed. It will look different for different grades and assessment products.
   - A true expert in the field creates one, and it seems good. It considers changes to Tier I instruction, using additional diagnostics, arranging Tier II intervention, and more.
 
 
@@ -542,7 +542,7 @@
       #vgap("\u{2193}", dgrey)
       #step[Distribution to the field is spotty. Expert review even more uneven. Incorporation into live PD perhaps limited to the author's.]
       #vgap("\u{2193}", dgrey)
-      #step(dead: true, tag: "no route back to the source")[Teachers who do see it have questions. A few get asked and answered on X or Substack. Maybe on Facebook-where answers run the gamut.]
+      #step(dead: true, tag: "no route back to the source")[Teachers who do see it have questions. A few get asked and answered on X or Substack. Maybe on Facebook—where answers run the gamut.]
       #vgap("\u{2193}", dgrey)
       #block(
         width: 100%,
@@ -568,9 +568,9 @@
         column-gutter: 0pt,
         row-gutter: 0pt,
 
-        step(tag: "version controlled release")[Proposal is released to single canonical source, version-numbered and dated.],
+        step(tag: "version controlled release")[Proposal is released to a single canonical source, version-numbered and dated.],
         arw("\u{2192}", dlinec),
-        step(tag: "public issue tracking")[Experts and users weigh in, on an open, linked, issues tracker. (Feedback isn't lost in evaluation forms or a hallway conversations.)],
+        step(tag: "public issue tracking")[Experts and users weigh in, on an open, linked, issues tracker. (Feedback isn't lost in evaluation forms or hallway conversations.)],
 
         arw("\u{2191}", dlinec),
         align(center + horizon)[
@@ -646,7 +646,7 @@
     #source[10][AEI, "From Reform to Results: Making Education a True Profession," Nov. 13, 2025.]
     #source[11][Douglas Carnine, "What Education Can Learn From Trusted Professions," May 7, 2026.]
     #source[12][G. Reid Lyon & Douglas Carnine, "The Unfinished Work of Professionalizing Reading Education," Jun. 28, 2026.]
-    #source[13][Elizabeth Tipton & Nicole Patton-Terry, "We Need an 'Engineering of Reading': Why the 'Science of Reading' May Not Be Enough," *Mind, Brain, and Education* 20(3), 2026.]
+    #source[13][Elizabeth Tipton & Nicole Patton Terry, "We Need an 'Engineering of Reading': Why the 'Science of Reading' May Not Be Enough," *Mind, Brain, and Education* 20(3), 2026.]
     #source[14][The Reading League, *Curriculum Evaluation Guidelines*, Curriculum Navigation Reports, and Reading League Compass.]
     #source[15][Douglas Carnine, "60 Million Unnecessary Reading Failures — Shame on the System," Aug. 7, 2026.]
     #source[16][Reading Universe, WETA / Barksdale Reading Institute, launched 2023.]
@@ -661,7 +661,7 @@
     #source[22][National Council on Teacher Quality, *Teacher Prep Review: Decoding Progress in Reading Preparation*, Jun. 9, 2026.]
     #source[23][Knowledge Matters Campaign, Scientific Advisory Committee and research-to-practice resources.]
     #source[24][Johns Hopkins Institute for Education Policy, *ELA Knowledge Map™*.]
-    #source[25][EdReports, v2.0/v2.1 ELA review tools and reports, 2025-26.]
+    #source[25][EdReports, v2.0/v2.1 ELA review tools and reports, 2025--26.]
     #source[26][Christopher Peak, "When schools buy new reading programs, they look to EdReports. But some of its reviews don't line up with science," APM Reports, Mar. 6, 2025.]
     #source[27][Anna Geiger, *Science of Reading Podcast Index*, Reach All Readers, actively maintained.]
     #source[28][Sean Morrisey, "Meet the Word Mapping Project, the new cult favorite vocabulary supplement," *The Curriculum Insight Project*, Feb. 27, 2026.]
@@ -726,7 +726,7 @@
 
   #driftgroup[Text selection]
   #drift[Equating decodability with instructional suitability.][A text can conform to taught correspondences and still impose awkward syntax, weak vocabulary, low coherence, or excess cognitive load. Conversely, excluding every word containing an untaught pattern can impoverish language and knowledge.]
-  #drift[Using controlled text for too long.][Decodable text can be valuable while students consolidate the alphabetic system. If tightly controlled text persists after students can handle broader print, it may constrain vocabulary, syntax, fluency, and knowledge building.]
+  #drift[Using controlled text for too long.][Decodable text can be valuable while students consolidate the alphabetic system. If tightly controlled text persists after students can handle broader print, it may constrain vocabulary, syntax, fluency, and knowledge-building.]
   #drift[Moving students out of controlled text too early.][The reverse error leaves students guessing from context because the text contains too many patterns they cannot yet decode reliably.]
 
   #driftgroup[Fluency]
