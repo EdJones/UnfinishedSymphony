@@ -4,12 +4,12 @@
 #let navy = rgb("2c3e50")
 #let blue = rgb("3498db")
 #let ink = rgb("263238")
-#let muted = rgb("66717c")
+#let muted = rgb("454f59")
 #let pale = rgb("f3f7fa")
 #let rule = rgb("dce5eb")
 
-#let docVersion = "v0.3-working"
-#let docStatus = "Preview"
+#let docVersion = "v0.3"
+#let docStatus = "Working"
 #let docDate = "Oct 12, 2026"
 
 #set page(
@@ -283,7 +283,7 @@
   #let dnavy = rgb("#18324A")
   #let dblue = rgb("#2F6F9F")
   #let dpale = rgb("#EEF4F8")
-  #let dmuted = rgb("#667580")
+  #let dmuted = rgb("#454f59")
   #let dlinec = rgb("#A8BAC7")
   #let lifted(body, inset: 0.18in) = layout(region => {
     let card = block(
