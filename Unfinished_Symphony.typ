@@ -63,7 +63,7 @@
 ]
 #let source(n, body) = block(above: 3pt, below: 0pt)[
   #set par(leading: 0.42em, justify: false)
-  #text(size: 5.8pt, fill: muted)[#n. #body]
+  #text(size: 6pt, fill: muted)[#n. #body]
 ]
 #let cite(..nums) = super[#text(size: 9pt, fill: blue, weight: 700)[#nums.pos().map(str).join(",")]]
 #let piece(n, title, body) = block(
@@ -401,6 +401,7 @@
   ]
 
   #v(0pt)
+  // ---- integrated field manual system box ----
   #lifted(inset: (x: 0.18in, y: 0.12in))[
   #text(10pt, weight: "bold", fill: rgb("#1E8A3A"))[An Integrated Field Manual System---Maintained by the Community as a Canonical Source]
   #v(-2pt)
@@ -408,7 +409,7 @@
     [
       #text(9pt, weight: "bold", fill: dnavy)[A Field Manual System]
       #v(-5pt)
-      #text(8pt)[
+      #text(7.5pt)[
         Field manuals are carefully designed publications for people who are not primarily knowledge workers. They are written with the objective of being
         read by (in Pondiscio’s words) mere mortals.
 
@@ -416,7 +417,7 @@
 
         Part natural 'field guide' (describing nature); part technical manual (describing a working system and default operating procedures), an SOR field manual would be a science-backed collection of the best all-media resources for learning structured literacy.
 
-        Field manuals are something much more than a mere book published by one or two authors, far more than the standard blog post, video, or podcast episode (not that those don’t serve!), and more than a website of independently authored white papers.#cite(32)
+        A field manual system would offer much more than books published by one or two authors, blog posts, videos, or podcast episodes (not that those don’t serve!), and more than a website of independently authored white papers.
 
         They provide a snapshot of the institution’s understanding of best practices: grade-by-grade scope and sequence, explicit routines, decision rules for common classroom situations, diagnostic and progress-monitoring tools, and checklists.
 
@@ -426,8 +427,8 @@
     [
       #text(9pt, weight: "bold", fill: dnavy)[Community-Maintained as Canonical Source]
       #v(-5pt)
-      #text(8pt)[
-        Teaching, in the US, is a far larger and more decentralized profession than most. It has no clear institutional center. Thus, while the US military is a similarly sized profession, and the US Army's doctrine and manual system provides a solid model for a knowledge center, reading education has no TRADOC equivalent to organize and maintain such a canonical source.
+      #text(7.5pt)[
+        Teaching, in the US, is a far larger and more decentralized profession than most. It has no clear institutional center. Thus, while the US military is a similarly sized profession, and the US Army's doctrine and manual system#cite(32) provides a solid model for a knowledge center, reading education has no TRADOC equivalent to organize and maintain such a canonical source.
 
         There is, though, a similarly sized profession, with similarly decentralized leadership. And they have solved this challenge.
 
