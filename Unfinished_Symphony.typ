@@ -419,9 +419,9 @@
 
         A field manual system would offer much more than books published by one or two authors, blog posts, videos, or podcast episodes (not that those don’t serve!), and more than a website of independently authored white papers.
 
-        They provide a snapshot of the institution’s understanding of best practices: grade-by-grade scope and sequence, explicit routines, decision rules for common classroom situations, diagnostic and progress-monitoring tools, and checklists.
+       It would provide an authoritative snapshot of the profession's knowledge and best practices: evidence-based learning progressions, explicit instructional routines and their limits, assessment and diagnostic tools, decision rules for grouping students and adjusting instruction, guidance for coordinating core instruction and interventions, and procedures for evaluating results and correcting course.
 
-        They use learning science and instructional principles _in their own design_ for teacher/trainer learning.
+        It would (as the military's do) use learning science and instructional principles _in their own design_ for teacher/trainer learning.
       ]
     ],
     [
@@ -430,7 +430,7 @@
       #text(7.5pt)[
         Teaching, in the US, is a far larger and more decentralized profession than most. It has no clear institutional center. Thus, while the US military is a similarly sized profession, and the US Army's doctrine and manual system#cite(32) provides a solid model for a knowledge center, reading education has no TRADOC equivalent to organize and maintain such a canonical source.
 
-        There is, though, a similarly sized profession, with similarly decentralized leadership. And they have solved this challenge.
+        There is another similarly sized profession, with similarly decentralized leadership. And they have solved this challenge.
 
         For thirty years, communities of open source software developers have collaboratively built not just products, but documentation and all manner of tools to support the open source processes.
 
@@ -451,6 +451,9 @@
     ],
   )
   ]
+
+  #v(2pt)
+  Together, these offer a model for making excellent reading instruction commonplace---one that stops asking trainers and teachers to be reading scientists and instead gives them the tools, guidance, and institutional support to put that science to work.
 
   #v(0.06in)
   #metadata(none)<version-footer-anchor>
