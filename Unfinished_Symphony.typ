@@ -9,7 +9,7 @@
 #let rule = rgb("dce5eb")
 
 #let docVersion = "v0.3"
-#let docStatus = "Working"
+#let docStatus = "Preview"
 #let docDate = "Oct 12, 2026"
 
 #set page(
