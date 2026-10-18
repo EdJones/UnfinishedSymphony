@@ -9,8 +9,8 @@
 #let rule = rgb("dce5eb")
 
 #let docVersion = "v0.4"
-#let docStatus = "Preview"
-#let docDate = "Oct 12, 2026"
+#let docStatus = "Working"
+#let docDate = "Oct 18, 2026"
 
 #set page(
   paper: "us-letter",
@@ -738,7 +738,7 @@
   #drift[Using round-robin or popcorn reading for oral reading practice.][Each student reads only a few sentences while classmates wait, read ahead, or tune out, and weak readers are exposed rather than supported. Partner, choral, and echo reading give every student far more practice.]
 
   #driftgroup[Vocabulary, knowledge, and comprehension]
-  #drift[Underteaching oral language.][Many students lag in spoken language. Listening comprehension should be explicitly built from K up, through read-alouds, discussion, and extended talk.]
+  #drift[Underteaching oral language.][Many students lag in spoken language. Listening comprehension should be explicitly built from K up, via read-alouds, discussion, prompted storytelling, and extended talk.]
   #drift[Teaching vocabulary as isolated definitions.][Students may copy definitions, match words to meanings, or memorize weekly lists without learning semantic relationships, morphology, multiple meanings, collocations, or the knowledge domain in which the words are useful.]
   #drift[Underteaching academic vocabulary.][Words such as _analyze_, _contrast_, _infer_, _significant_, and _establish_ occur across subjects and carry much of the meaning in textbooks, directions, assignments, and tests.]
   #drift[Trying to activate knowledge instead of building it.][Students cannot activate knowledge they do not have.]
