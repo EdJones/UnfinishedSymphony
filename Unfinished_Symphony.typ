@@ -361,7 +361,7 @@
 
 
 
-      Further, research traceability is inconsistent and not built into the architecture. It lacks the maintenance, issue tracking, version control, and feedback processes critical to the profession.
+      Further, research traceability is inconsistent and not built into the architecture. Like every resource today, it lacks the maintenance, issue tracking, version control, and feedback processes needed to move the profession forward.
     ]
   ]
 
