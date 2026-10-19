@@ -10,7 +10,7 @@
 
 #let docVersion = "v0.4"
 #let docStatus = "Working"
-#let docDate = "Oct 18, 2026"
+#let docDate = "Oct 19, 2026"
 
 #set page(
   paper: "us-letter",
@@ -334,7 +334,7 @@
 
   #text(21pt, weight: "bold", fill: dnavy)[Building Consistent Nationwide Teaching Capability]
   #v(-8pt)
-  No one should doubt the remarkable success represented in the above components. Few, indeed, would have had reason to expect us to have come so far, so fast.
+  No one should doubt the remarkable success represented in the above components. Few, indeed, would have had reason to expect us to have come so far, so fast. That said, practices remain wildly inconsistent (see Appendix).
   //#linebreak()
   //#text(26pt, weight: "bold", fill: dnavy)[Reading Capability]
 
@@ -343,7 +343,7 @@
   #text(12.5pt, weight: "bold", fill: dnavy)[Still Missing]
   #v(-6pt)
 
-  Yet there remains missing an integrating framework. A unifying structure that ties together the various components of the system.
+  What's missing is an integrating framework: a unifying structure that ties the components together.
 
   #block(
     width: 100%,
@@ -377,10 +377,8 @@
     radius: 6pt,
     stroke: 0.75pt + rgb("#7A9CB8"),
   )[
-    #text(9pt, weight: "bold", fill: dnavy)[NRP 2.0]
-    #v(-5pt)
     #text(8pt)[
-      While some argue for a new National Reading Panel#cite(7,8), the truth is that experts have long been monitoring and sharing the updated research. A government-sponsored panel of experts may seem a viable next step. Yet there are better ways to achieve what's needed.
+      #text(9pt, weight: "bold", fill: dnavy)[NRP 2.0] A new National Reading Panel#cite(7,8) is moving forward, yet that 1990s model has aged. In 2026, experts monitor and share new research daily. While a government-sponsored panel may add imprimatur, its static report merely restarts the clock. Other professions offer tools, processes, and cultures to keep guidance current as the evidence changes.
     ]
   ]
 
@@ -391,10 +389,8 @@
     radius: 6pt,
     stroke: 0.75pt + rgb("#7A9CB8"),
   )[
-    #text(9pt, weight: "bold", fill: dnavy)[An 'Engineering of Reading']
-    #v(-5pt)
     #text(8pt)[
-      It's a good phrase: an engineering mindset is definitely needed. Today we have more of a writers + publishers mentality driving the system — extremely useful, yet insufficient to the need.
+      #text(9pt, weight: "bold", fill: dnavy)[An 'Engineering of Reading'] It's a good phrase: an engineering mindset is definitely needed. Today we have more of a writers + publishers mentality driving the system — extremely useful, yet insufficient to the need.
       #linebreak()
       On the other hand, engineering-like documents can only be intermediate steps. Not teacher- or trainer-facing work products. The various engineering professions are all smaller, and generally draw from a more academically elite demographic base than teaching. Where they can suffer more technical jargon, the teaching profession cannot.
     ]
