@@ -26,7 +26,7 @@
       #v(3pt)
     ]
     #grid(columns: (1fr, auto),
-      [SKUNKWORKS/EDU  ·  THE UNFINISHED WORK, #docVersion],
+      [SKUNKWORKS/EDU  ·  AN UNFINISHED SYMPHONY, #docVersion],
       [#counter(page).display("1")]
     )
   ],
@@ -106,7 +106,7 @@
         #let cy = ringSize/2 + radius * calc.sin(ang) - 4pt
         #place(top + left, dx: cx, dy: cy)[
           #if i == 6 or i == 7 [
-            #text(size: 8pt, fill: rgb("dce5eb"))[♪]
+            #text(size: 8pt, fill: rgb("A8B4BD"))[♪]
           ] else [
             #text(size: 8pt, fill: noteColors.at(calc.rem(i, 4)))[♪]
           ]
