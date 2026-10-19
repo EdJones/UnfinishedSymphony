@@ -464,7 +464,7 @@
       #linebreak()
       Accelerating the Speed of the Loop]
       #v(-4pt)
-      #text(8pt, fill: dmuted)[The difference between the two models is not the document. It is whether anything happens after the document ships.]
+      #text(8pt, fill: dmuted)[Today, guidance is published and left to age. It could be maintained instead.]
     ],
     [
       #image("canonical-source-roles.png", width: 2.25in)
@@ -473,12 +473,7 @@
   #v(-8pt)
 
   Let's look at some details of practice:
-  - After K-1 MOY assessments, many teachers are unsure of what to do with the data.
-  - A decision tree is needed. It will look different for different grades and assessment products.
-  - A true expert in the field creates one, and it seems good. It considers changes to Tier I instruction, using additional diagnostics, arranging Tier II intervention, and more.
-
-
-  #v(8pt)
+  #v(4pt)
 
   // ---- diagram: publish-and-forget vs. maintained-in-the-open ----
   #let dgrey = rgb("#93A0A9")
@@ -502,8 +497,44 @@
   #let arw(sym, c) = align(center + horizon)[#text(13pt, fill: c)[#sym]]
   #let vgap(sym, c) = align(center, pad(y: 3pt, text(12pt, fill: c)[#sym]))
 
+  // waterfall: the example that both models start from
+  #let fall(body) = block(
+    width: 100%,
+    inset: (x: 8pt, y: 5pt),
+    radius: 5pt,
+    fill: white,
+    stroke: 0.8pt + dnavy,
+  )[
+    #set par(justify: false, leading: 0.48em, spacing: 0pt)
+    #text(7.4pt, fill: rgb("#1E2933"))[#body]
+  ]
+  #let drop = 4pt
+
   #block(breakable: false, above: 0pt, below: 0pt)[
   #set block(above: 0pt, below: 0pt)
+  #let falls = (
+    [After K-1 MOY assessments, many teachers are unsure of what to do with the data.],
+    [A decision tree is needed. It will look different for different grades and assessment products.],
+    [A true expert in the field creates one, and it seems good. It considers changes to Tier I instruction, using additional diagnostics, arranging Tier II intervention, and more.],
+  )
+  #layout(region => {
+    let gap = 0.22in
+    let colw = (region.width - 2 * gap) / 3
+    // each arrow is centred on the box it leaves
+    let hs = falls.map(b => measure(block(width: colw, fall(b))).height)
+    let link(i) = pad(top: i * drop, block(width: 100%, height: hs.at(i),
+      align(center + horizon, text(13pt, fill: dnavy)[\u{2192}])))
+    grid(
+      columns: (colw, gap, colw, gap, colw),
+      gutter: 0pt,
+      fall(falls.at(0)),
+      link(0),
+      pad(top: drop, fall(falls.at(1))),
+      link(1),
+      pad(top: 2 * drop, fall(falls.at(2))),
+    )
+  })
+  #align(center, pad(top: 1pt, bottom: 3pt, scale(y: 150%, reflow: true, text(12pt, fill: dnavy)[\u{2193}])))
   #align(center)[#block(
     width: 60%,
     inset: (x: 8pt, y: 5pt),
@@ -513,7 +544,7 @@
   )[
     #set par(justify: false, leading: 0.48em, spacing: 0pt)
     #align(center)[
-      #text(7.4pt, weight: "bold", fill: dnavy)[The same expert writes the same guidance.]
+      #text(7.4pt, weight: "bold", fill: dnavy)[Then what?]
       #v(3.5pt)
       #text(5.5pt, weight: "bold", tracking: 0.09em, fill: dnavy)[THE TWO MODELS ARE IDENTICAL UP TO THIS POINT]
     ]
@@ -534,11 +565,11 @@
     [
       #text(8.5pt, weight: "bold", tracking: 0.06em, fill: dgrey)[PUBLISH AND FORGET]
       #v(4pt)
-      #step(tag: "the document is the deliverable")[Published as finished product: a blog post, podcast, book, webinar, etc.]
+      #step(tag: "the document is the deliverable")[The decision tree is published as a finished product in a blog post, podcast, book, webinar, etc.]
       #vgap("\u{2193}", dgrey)
       #step[Distribution to the field is spotty. Expert review even more uneven. Incorporation into live PD perhaps limited to the author's.]
       #vgap("\u{2193}", dgrey)
-      #step(dead: true, tag: "no route back to the source")[Teachers who do see it have questions. A few get asked and answered on X or Substack. Maybe on Facebook—where answers run the gamut.]
+      #step(dead: true, tag: "no route back to the source")[Teachers who do see it find cases it doesn't cover. A few get asked and answered on X or Substack. Maybe on Facebook—where answers run the gamut.]
       #vgap("\u{2193}", dgrey)
       #block(
         width: 100%,
@@ -548,7 +579,7 @@
         stroke: 0.8pt + dstop,
       )[
         #set par(justify: false, leading: 0.48em, spacing: 0pt)
-        #text(7.4pt, weight: "bold", fill: dstop)[Dead end.] #text(7.4pt, fill: rgb("#1E2933"))[Later, another expert repeats the process.]
+        #text(7.4pt, weight: "bold", fill: dstop)[Dead end.] #text(7.4pt, fill: rgb("#1E2933"))[Later, another expert writes another decision tree.]
       ]
     ],
 
@@ -564,7 +595,7 @@
         column-gutter: 0pt,
         row-gutter: 0pt,
 
-        step(tag: "version controlled release")[Proposal is released to a single canonical source, version-numbered and dated.],
+        step(tag: "version controlled release")[The decision tree is released to a single canonical source, version-numbered and dated.],
         arw("\u{2192}", dlinec),
         step(tag: "public issue tracking")[Experts and users weigh in, on an open, linked, issues tracker. (Feedback isn't lost in evaluation forms or hallway conversations.)],
 
@@ -578,7 +609,7 @@
         step(tag: "new version approved")[
           Maintainers accept or decline in public, with reasons on the record; the fix ships as the next version.],
         arw("\u{2190}", dlinec),
-        step(tag: "contribution from the field")[A teacher, coach, or specialist proposes the actual change \u{2014} not just a complaint.],
+        step(tag: "contribution from the field")[A teacher, coach, or specialist proposes a new branch \u{2014} not just a complaint.],
       )
       #v(6pt)
       #block(
@@ -611,7 +642,7 @@
         stroke: (left: 2.5pt + dblue),
       )[
         #set par(justify: false, leading: 0.48em, spacing: 0pt)
-        #text(7.4pt, weight: "bold", fill: dnavy)[Nothing is thrown away.] #text(7.4pt, fill: rgb("#1E2933"))[Every prior version stays citable. Changes from 2025 guidance to the 2028 guidance are tracked line by line \u{2014} who changed what, when, and on what evidence.]
+        #text(7.4pt, weight: "bold", fill: dnavy)[Nothing is thrown away.] #text(7.4pt, fill: rgb("#1E2933"))[Every prior version stays citable. Changes from the 2025 decision tree to the 2028 version are tracked line by line \u{2014} who changed what, when, and on what evidence.]
       ]
     ],
   )
