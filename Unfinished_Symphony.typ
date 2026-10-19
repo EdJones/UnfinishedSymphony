@@ -284,7 +284,7 @@
   #let dblue = rgb("#2F6F9F")
   #let dpale = rgb("#EEF4F8")
   #let dmuted = rgb("#454f59")
-  #let dlinec = rgb("#A8BAC7")
+  #let dlinec = dblue
   #let lifted(body, inset: 0.18in) = layout(region => {
     let card = block(
       width: region.width,
@@ -560,7 +560,7 @@
       #v(4pt)
       #grid(
         columns: (1fr, 0.56in, 1fr),
-        rows: (auto, 0.15in, auto),
+        rows: (auto, 0.24in, auto),
         column-gutter: 0pt,
         row-gutter: 0pt,
 
@@ -570,9 +570,8 @@
 
         arw("\u{2191}", dlinec),
         align(center + horizon)[
-          #text(6pt, weight: "bold", tracking: 0.06em, fill: dnavy)[KNOWLEDGE]
-          #v(-4pt)
-          #text(6pt, weight: "bold", tracking: 0.06em, fill: dnavy)[COMPOUNDS]
+          #set par(leading: 0.35em, spacing: 0pt)
+          #text(5.5pt, weight: "bold", tracking: 0.04em, fill: dnavy)[KNOWLEDGE \ COMPOUNDS]
         ],
         arw("\u{2193}", dlinec),
 
@@ -619,8 +618,8 @@
   ]
 
   #v(6pt)
-  #text(7.2pt, fill: dmuted)[
-    In the publish-and-forget model, improvement comes in random acts of innovation. In an open source community, improvement is constant and #text(style: "italic")[cumulative:] the thousands of corrections teachers already make in private become one shared, reviewed, attributed asset.
+  #text(9pt)[
+    In the publish-and-forget model, improvement comes via random acts of innovation. In an open source community, improvement is constant and #text(style: "italic")[cumulative:] contributions are reviewed against the evidence, and the best become part of what the profession knows.
   ]
 
 ]
