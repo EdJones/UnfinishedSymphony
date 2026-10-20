@@ -567,7 +567,7 @@
       #v(4pt)
       #step(tag: "the document is the deliverable")[The decision tree is published as a finished product in a blog post, podcast, book, webinar, etc.]
       #vgap("\u{2193}", dgrey)
-      #step[Distribution to the field is spotty. Expert review even more uneven. Incorporation into live PD perhaps limited to the author's.]
+      #step[Some teachers see it, most don't, few experts review it, and it rarely reaches PD beyond the author's own sessions.]
       #vgap("\u{2193}", dgrey)
       #step(dead: true, tag: "no route back to the source")[Teachers who do see it find cases it doesn't cover. A few get asked and answered on X or Substack. Maybe on Facebook—where answers run the gamut.]
       #vgap("\u{2193}", dgrey)
@@ -597,7 +597,7 @@
 
         step(tag: "version controlled release")[The decision tree is released to a single canonical source, version-numbered and dated.],
         arw("\u{2192}", dlinec),
-        step(tag: "public issue tracking")[Experts and users weigh in, on an open, linked, issues tracker. (Feedback isn't lost in evaluation forms or hallway conversations.)],
+        step(tag: "public issue tracking")[Experts and users weigh in, on an open, linked issue tracker. (Feedback isn't lost in evaluation forms or hallway conversations.)],
 
         arw("\u{2191}", dlinec),
         align(center + horizon)[
@@ -631,7 +631,7 @@
         stroke: (left: 2.5pt + dblue),
       )[
         #set par(justify: false, leading: 0.48em, spacing: 0pt)
-        #text(7.4pt, weight: "bold", fill: dnavy)[Deeper tracking to the science] #text(7.4pt, fill: rgb("#1E2933"))[Trainers and writers can drill down to linked connections to the research-practice edge.]
+        #text(7.4pt, weight: "bold", fill: dnavy)[Deeper tracking to the science.] #text(7.4pt, fill: rgb("#1E2933"))[Trainers and writers can drill down to linked connections to the research-practice edge.]
       ]
       #v(5pt)
       #block(
