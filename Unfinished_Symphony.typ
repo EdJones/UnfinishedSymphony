@@ -10,7 +10,7 @@
 
 #let docVersion = "v0.4"
 #let docStatus = "Working"
-#let docDate = "Oct 19, 2026"
+#let docDate = datetime.today().display("[month repr:short] [day padding:none], [year]")
 
 #set page(
   paper: "us-letter",
@@ -19,15 +19,12 @@
     #set text(font: "Inter", size: 6.8pt, fill: muted)
     #let anchors = query(<version-footer-anchor>)
     #let onVersionPage = anchors.len() > 0 and anchors.first().location().page() == here().page()
-    #if onVersionPage [
-      #align(center)[This is
-        #text(fill: blue)[#text(weight: "bold")[VERSION #docVersion] - #docStatus] #text[· #docDate · Help improve this ]#link("https://github.com/EdJones/UnfinishedSymphony/issues")[#text(weight: "bold", fill: blue)[#underline[here]]]
-      ]
-      #v(3pt)
-    ]
-    #grid(columns: (1fr, auto),
+    #grid(columns: (auto, 1fr, auto),
       [SKUNKWORKS/EDU  ·  AN UNFINISHED SYMPHONY, #docVersion],
-      [#counter(page).display("1")]
+      if onVersionPage [#align(center)[This is
+        #text(fill: blue)[#text(weight: "bold")[VERSION #docVersion] - #docStatus] #text[· #docDate · Help improve this ]#link("https://github.com/EdJones/UnfinishedSymphony/issues")[#text(weight: "bold", fill: blue)[#underline[here]]]]
+      ],
+      align(right)[#counter(page).display("1")]
     )
   ],
 )
@@ -451,11 +448,11 @@
   #v(2pt)
   Building these is the unfinished work; with them, excellent reading instruction can become commonplace. Teachers and trainers won't have to become reading scientists; their profession will make that knowledge clear, practical, and readily available---in forms that are, if not addictive, at least such that teachers will truly want to use them.
 
-  #v(0.06in)
+  #v(0.06in, weak: true)
   #metadata(none)<version-footer-anchor>
   #grid(
     columns: (1.3fr, 1fr),
-    align: (horizon + left, horizon + center),
+    align: (top + left, top + center),
     gutter: 0.15in,
     [
       #text(18pt, weight: "bold", fill: dnavy)[Moving Past Publish & Forget:]
@@ -466,14 +463,13 @@
       #v(-4pt)
       #text(8pt, fill: dmuted)[Today, guidance is published and left to age. It could be maintained instead.]
     ],
-    [
+    grid.cell(rowspan: 2)[
       #image("canonical-source-roles.png", width: 2.25in)
     ],
+    // lead-in sits at the foot of the image, beside it
+    grid.cell(align: bottom + left)[Let's look at some details of practice:],
   )
-  #v(-8pt)
-
-  Let's look at some details of practice:
-  #v(4pt)
+  #v(7pt)
 
   // ---- diagram: publish-and-forget vs. maintained-in-the-open ----
   #let dgrey = rgb("#93A0A9")
@@ -533,8 +529,15 @@
       link(1),
       pad(top: 2 * drop, fall(falls.at(2))),
     )
+    // down arrow runs from the bottom of box 2 to the fork box, which sits just below box 3
+    let rise = (2 * drop + hs.at(2)) - (drop + hs.at(1))
+    let len = rise + 5pt
+    v(-rise)
+    align(center, box(width: 6pt, height: len, {
+      place(center + top, line(angle: 90deg, length: len - 4pt, stroke: 0.8pt + dnavy))
+      place(center + bottom, polygon(fill: dnavy, (0pt, 0pt), (5pt, 0pt), (2.5pt, 4.5pt)))
+    }))
   })
-  #align(center, pad(top: 1pt, bottom: 3pt, scale(y: 150%, reflow: true, text(12pt, fill: dnavy)[\u{2193}])))
   #align(center)[#block(
     width: 60%,
     inset: (x: 8pt, y: 5pt),
@@ -648,10 +651,12 @@
   )
   ]
 
-  #v(6pt)
+  #v(5pt)
   #text(9pt)[
     In the publish-and-forget model, improvement comes via random acts of innovation. In an open source community, improvement is constant and #text(style: "italic")[cumulative:] contributions are reviewed against the evidence, and the best become part of what the profession knows.
   ]
+
+  #text(9pt, fill: dnavy)[To close reading gaps for kids, let's build the field guides their teachers most need.]
 
 ]
 //#pagebreak()
