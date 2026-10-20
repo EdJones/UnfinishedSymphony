@@ -8,9 +8,9 @@
 #let pale = rgb("f3f7fa")
 #let rule = rgb("dce5eb")
 
-#let docVersion = "v0.3"
-#let docStatus = "Preview"
-#let docDate = "Oct 12, 2026"
+#let docVersion = "v0.4"
+#let docStatus = "Working"
+#let docDate = datetime.today().display("[month repr:short] [day padding:none], [year]")
 
 #set page(
   paper: "us-letter",
@@ -19,15 +19,12 @@
     #set text(font: "Inter", size: 6.8pt, fill: muted)
     #let anchors = query(<version-footer-anchor>)
     #let onVersionPage = anchors.len() > 0 and anchors.first().location().page() == here().page()
-    #if onVersionPage [
-      #align(center)[This is
-        #text(fill: blue)[#text(weight: "bold")[VERSION #docVersion] - #docStatus] #text[· #docDate · Help improve this ]#link("https://github.com/EdJones/UnfinishedSymphony/issues")[#text(weight: "bold", fill: blue)[#underline[here]]]
-      ]
-      #v(3pt)
-    ]
-    #grid(columns: (1fr, auto),
-      [SKUNKWORKS/EDU  ·  THE UNFINISHED WORK, #docVersion],
-      [#counter(page).display("1")]
+    #grid(columns: (auto, 1fr, auto),
+      [SKUNKWORKS/EDU  ·  AN UNFINISHED SYMPHONY, #docVersion],
+      if onVersionPage [#align(center)[This is
+        #text(fill: blue)[#text(weight: "bold")[VERSION #docVersion] - #docStatus] #text[· #docDate · Help improve this ]#link("https://github.com/EdJones/UnfinishedSymphony/issues")[#text(weight: "bold", fill: blue)[#underline[here]]]]
+      ],
+      align(right)[#counter(page).display("1")]
     )
   ],
 )
@@ -106,7 +103,7 @@
         #let cy = ringSize/2 + radius * calc.sin(ang) - 4pt
         #place(top + left, dx: cx, dy: cy)[
           #if i == 6 or i == 7 [
-            #text(size: 8pt, fill: rgb("dce5eb"))[♪]
+            #text(size: 8pt, fill: rgb("A8B4BD"))[♪]
           ] else [
             #text(size: 8pt, fill: noteColors.at(calc.rem(i, 4)))[♪]
           ]
@@ -284,7 +281,7 @@
   #let dblue = rgb("#2F6F9F")
   #let dpale = rgb("#EEF4F8")
   #let dmuted = rgb("#454f59")
-  #let dlinec = rgb("#A8BAC7")
+  #let dlinec = dblue
   #let lifted(body, inset: 0.18in) = layout(region => {
     let card = block(
       width: region.width,
@@ -334,7 +331,7 @@
 
   #text(21pt, weight: "bold", fill: dnavy)[Building Consistent Nationwide Teaching Capability]
   #v(-8pt)
-  No one should doubt the remarkable success represented in the above components. Few, indeed, would have had reason to expect us to have come so far, so fast.
+  No one should doubt the remarkable success represented in the above components. Few, indeed, would have had reason to expect us to have come so far, so fast. That said, practices remain wildly inconsistent (see Appendix).
   //#linebreak()
   //#text(26pt, weight: "bold", fill: dnavy)[Reading Capability]
 
@@ -343,7 +340,7 @@
   #text(12.5pt, weight: "bold", fill: dnavy)[Still Missing]
   #v(-6pt)
 
-  Yet there remains missing an integrating framework. A unifying structure that ties together the various components of the system.
+  What's missing is an integrating framework: a unifying structure that ties the components together.
 
   #block(
     width: 100%,
@@ -361,7 +358,7 @@
 
 
 
-      Further, research traceability is inconsistent and not built into the architecture. It lacks the maintenance, issue tracking, version control, and feedback processes critical to the profession.
+      Further, research traceability is inconsistent and not built into the architecture. Like every resource today, it lacks the maintenance, issue tracking, version control, and feedback processes needed to move the profession forward.
     ]
   ]
 
@@ -377,10 +374,8 @@
     radius: 6pt,
     stroke: 0.75pt + rgb("#7A9CB8"),
   )[
-    #text(9pt, weight: "bold", fill: dnavy)[NRP 2.0]
-    #v(-5pt)
     #text(8pt)[
-      While some argue for a new National Reading Panel#cite(7,8), the truth is that experts have long been monitoring and sharing the updated research. A government-sponsored panel of experts may seem a viable next step. Yet there are better ways to achieve what's needed.
+      #text(9pt, weight: "bold", fill: dnavy)[NRP 2.0] A new National Reading Panel#cite(7,8) is moving forward, yet that 1990s model has aged. In 2026, experts monitor and share new research daily. While a government-sponsored panel may add imprimatur, its static report merely restarts the clock. Other professions offer tools, processes, and cultures to keep guidance current as the evidence changes.
     ]
   ]
 
@@ -391,10 +386,8 @@
     radius: 6pt,
     stroke: 0.75pt + rgb("#7A9CB8"),
   )[
-    #text(9pt, weight: "bold", fill: dnavy)[An 'Engineering of Reading']
-    #v(-5pt)
     #text(8pt)[
-      It's a good phrase: an engineering mindset is definitely needed. Today we have more of a writers + publishers mentality driving the system — extremely useful, yet insufficient to the need.
+      #text(9pt, weight: "bold", fill: dnavy)[An 'Engineering of Reading'] It's a good phrase: an engineering mindset is definitely needed. Today we have more of a writers + publishers mentality driving the system — extremely useful, yet insufficient to the need.
       #linebreak()
       On the other hand, engineering-like documents can only be intermediate steps. Not teacher- or trainer-facing work products. The various engineering professions are all smaller, and generally draw from a more academically elite demographic base than teaching. Where they can suffer more technical jargon, the teaching profession cannot.
     ]
@@ -455,11 +448,11 @@
   #v(2pt)
   Building these is the unfinished work; with them, excellent reading instruction can become commonplace. Teachers and trainers won't have to become reading scientists; their profession will make that knowledge clear, practical, and readily available---in forms that are, if not addictive, at least such that teachers will truly want to use them.
 
-  #v(0.06in)
+  #v(0.06in, weak: true)
   #metadata(none)<version-footer-anchor>
   #grid(
     columns: (1.3fr, 1fr),
-    align: (horizon + left, horizon + center),
+    align: (top + left, top + center),
     gutter: 0.15in,
     [
       #text(18pt, weight: "bold", fill: dnavy)[Moving Past Publish & Forget:]
@@ -468,21 +461,15 @@
       #linebreak()
       Accelerating the Speed of the Loop]
       #v(-4pt)
-      #text(8pt, fill: dmuted)[The difference between the two models is not the document. It is whether anything happens after the document ships.]
+      #text(8pt, fill: dmuted)[Today, guidance is published and left to age. It could be maintained instead.]
     ],
-    [
+    grid.cell(rowspan: 2)[
       #image("canonical-source-roles.png", width: 2.25in)
     ],
+    // lead-in sits at the foot of the image, beside it
+    grid.cell(align: bottom + left)[Let's look at some details of practice:],
   )
-  #v(-8pt)
-
-  Let's look at some details of practice:
-  - After K-1 MOY assessments, many teachers are unsure of what to do with the data.
-  - A decision tree is needed. It will look different for different grades and assessment products.
-  - A true expert in the field creates one, and it seems good. It considers changes to Tier I instruction, using additional diagnostics, arranging Tier II intervention, and more.
-
-
-  #v(8pt)
+  #v(7pt)
 
   // ---- diagram: publish-and-forget vs. maintained-in-the-open ----
   #let dgrey = rgb("#93A0A9")
@@ -506,8 +493,51 @@
   #let arw(sym, c) = align(center + horizon)[#text(13pt, fill: c)[#sym]]
   #let vgap(sym, c) = align(center, pad(y: 3pt, text(12pt, fill: c)[#sym]))
 
+  // waterfall: the example that both models start from
+  #let fall(body) = block(
+    width: 100%,
+    inset: (x: 8pt, y: 5pt),
+    radius: 5pt,
+    fill: white,
+    stroke: 0.8pt + dnavy,
+  )[
+    #set par(justify: false, leading: 0.48em, spacing: 0pt)
+    #text(7.4pt, fill: rgb("#1E2933"))[#body]
+  ]
+  #let drop = 4pt
+
   #block(breakable: false, above: 0pt, below: 0pt)[
   #set block(above: 0pt, below: 0pt)
+  #let falls = (
+    [After K-1 MOY assessments, many teachers are unsure of what to do with the data.],
+    [A decision tree is needed. It will look different for different grades and assessment products.],
+    [A true expert in the field creates one, and it seems good. It considers changes to Tier I instruction, using additional diagnostics, arranging Tier II intervention, and more.],
+  )
+  #layout(region => {
+    let gap = 0.22in
+    let colw = (region.width - 2 * gap) / 3
+    // each arrow is centred on the box it leaves
+    let hs = falls.map(b => measure(block(width: colw, fall(b))).height)
+    let link(i) = pad(top: i * drop, block(width: 100%, height: hs.at(i),
+      align(center + horizon, text(13pt, fill: dnavy)[\u{2192}])))
+    grid(
+      columns: (colw, gap, colw, gap, colw),
+      gutter: 0pt,
+      fall(falls.at(0)),
+      link(0),
+      pad(top: drop, fall(falls.at(1))),
+      link(1),
+      pad(top: 2 * drop, fall(falls.at(2))),
+    )
+    // down arrow runs from the bottom of box 2 to the fork box, which sits just below box 3
+    let rise = (2 * drop + hs.at(2)) - (drop + hs.at(1))
+    let len = rise + 5pt
+    v(-rise)
+    align(center, box(width: 6pt, height: len, {
+      place(center + top, line(angle: 90deg, length: len - 4pt, stroke: 0.8pt + dnavy))
+      place(center + bottom, polygon(fill: dnavy, (0pt, 0pt), (5pt, 0pt), (2.5pt, 4.5pt)))
+    }))
+  })
   #align(center)[#block(
     width: 60%,
     inset: (x: 8pt, y: 5pt),
@@ -517,7 +547,7 @@
   )[
     #set par(justify: false, leading: 0.48em, spacing: 0pt)
     #align(center)[
-      #text(7.4pt, weight: "bold", fill: dnavy)[The same expert writes the same guidance.]
+      #text(7.4pt, weight: "bold", fill: dnavy)[Then what?]
       #v(3.5pt)
       #text(5.5pt, weight: "bold", tracking: 0.09em, fill: dnavy)[THE TWO MODELS ARE IDENTICAL UP TO THIS POINT]
     ]
@@ -538,11 +568,11 @@
     [
       #text(8.5pt, weight: "bold", tracking: 0.06em, fill: dgrey)[PUBLISH AND FORGET]
       #v(4pt)
-      #step(tag: "the document is the deliverable")[Published as finished product: a blog post, podcast, book, webinar, etc.]
+      #step(tag: "the document is the deliverable")[The decision tree is published as a finished product in a blog post, podcast, book, webinar, etc.]
       #vgap("\u{2193}", dgrey)
-      #step[Distribution to the field is spotty. Expert review even more uneven. Incorporation into live PD perhaps limited to the author's.]
+      #step[Some teachers see it, most don't, few experts review it, and it rarely reaches PD beyond the author's own sessions.]
       #vgap("\u{2193}", dgrey)
-      #step(dead: true, tag: "no route back to the source")[Teachers who do see it have questions. A few get asked and answered on X or Substack. Maybe on Facebook—where answers run the gamut.]
+      #step(dead: true, tag: "no route back to the source")[Teachers who do see it find cases it doesn't cover. A few get asked and answered on X or Substack. Maybe on Facebook—where answers run the gamut.]
       #vgap("\u{2193}", dgrey)
       #block(
         width: 100%,
@@ -552,7 +582,7 @@
         stroke: 0.8pt + dstop,
       )[
         #set par(justify: false, leading: 0.48em, spacing: 0pt)
-        #text(7.4pt, weight: "bold", fill: dstop)[Dead end.] #text(7.4pt, fill: rgb("#1E2933"))[Later, another expert repeats the process.]
+        #text(7.4pt, weight: "bold", fill: dstop)[Dead end.] #text(7.4pt, fill: rgb("#1E2933"))[Later, another expert writes another decision tree.]
       ]
     ],
 
@@ -564,26 +594,25 @@
       #v(4pt)
       #grid(
         columns: (1fr, 0.56in, 1fr),
-        rows: (auto, 0.15in, auto),
+        rows: (auto, 0.24in, auto),
         column-gutter: 0pt,
         row-gutter: 0pt,
 
-        step(tag: "version controlled release")[Proposal is released to a single canonical source, version-numbered and dated.],
+        step(tag: "version controlled release")[The decision tree is released to a single canonical source, version-numbered and dated.],
         arw("\u{2192}", dlinec),
-        step(tag: "public issue tracking")[Experts and users weigh in, on an open, linked, issues tracker. (Feedback isn't lost in evaluation forms or hallway conversations.)],
+        step(tag: "public issue tracking")[Experts and users weigh in, on an open, linked issue tracker. (Feedback isn't lost in evaluation forms or hallway conversations.)],
 
         arw("\u{2191}", dlinec),
         align(center + horizon)[
-          #text(6pt, weight: "bold", tracking: 0.06em, fill: dnavy)[KNOWLEDGE]
-          #v(-4pt)
-          #text(6pt, weight: "bold", tracking: 0.06em, fill: dnavy)[COMPOUNDS]
+          #set par(leading: 0.35em, spacing: 0pt)
+          #text(5.5pt, weight: "bold", tracking: 0.04em, fill: dnavy)[KNOWLEDGE \ COMPOUNDS]
         ],
         arw("\u{2193}", dlinec),
 
         step(tag: "new version approved")[
           Maintainers accept or decline in public, with reasons on the record; the fix ships as the next version.],
         arw("\u{2190}", dlinec),
-        step(tag: "contribution from the field")[A teacher, coach, or specialist proposes the actual change \u{2014} not just a complaint.],
+        step(tag: "contribution from the field")[A teacher, coach, or specialist proposes a new branch \u{2014} not just a complaint.],
       )
       #v(6pt)
       #block(
@@ -605,7 +634,7 @@
         stroke: (left: 2.5pt + dblue),
       )[
         #set par(justify: false, leading: 0.48em, spacing: 0pt)
-        #text(7.4pt, weight: "bold", fill: dnavy)[Deeper tracking to the science] #text(7.4pt, fill: rgb("#1E2933"))[Trainers and writers can drill down to linked connections to the research-practice edge.]
+        #text(7.4pt, weight: "bold", fill: dnavy)[Deeper tracking to the science.] #text(7.4pt, fill: rgb("#1E2933"))[Trainers and writers can drill down to linked connections to the research-practice edge.]
       ]
       #v(5pt)
       #block(
@@ -616,16 +645,18 @@
         stroke: (left: 2.5pt + dblue),
       )[
         #set par(justify: false, leading: 0.48em, spacing: 0pt)
-        #text(7.4pt, weight: "bold", fill: dnavy)[Nothing is thrown away.] #text(7.4pt, fill: rgb("#1E2933"))[Every prior version stays citable. Changes from 2025 guidance to the 2028 guidance are tracked line by line \u{2014} who changed what, when, and on what evidence.]
+        #text(7.4pt, weight: "bold", fill: dnavy)[Nothing is thrown away.] #text(7.4pt, fill: rgb("#1E2933"))[Every prior version stays citable. Changes from the 2025 decision tree to the 2028 version are tracked line by line \u{2014} who changed what, when, and on what evidence.]
       ]
     ],
   )
   ]
 
-  #v(6pt)
-  #text(7.2pt, fill: dmuted)[
-    In the publish-and-forget model, improvement comes in random acts of innovation. In an open source community, improvement is constant and #text(style: "italic")[cumulative:] the thousands of corrections teachers already make in private become one shared, reviewed, attributed asset.
+  #v(5pt)
+  #text(9pt)[
+    In the publish-and-forget model, improvement comes via random acts of innovation. In an open source community, improvement is constant and #text(style: "italic")[cumulative:] contributions are reviewed against the evidence, and the best become part of what the profession knows.
   ]
+
+  #text(9pt, fill: dnavy)[To close reading gaps for kids, let's build the field guides their teachers most need.]
 
 ]
 //#pagebreak()
@@ -731,20 +762,21 @@
 
   #driftgroup[Fluency]
   #drift[Treating oral reading fluency as a single problem.][A low words-correct-per-minute score, or accurate but slow reading, can reflect weak decoding, automaticity, multisyllabic word skill, phrasing, vocabulary, content knowledge, or print exposure. Locate the source before choosing a response.]
-  #colbreak()
   #drift[Accurate decoding ≠ automatic word recognition.][A student who decodes a word correctly may need many more encounters before recognizing it instantly. Check speed as well as accuracy.]
+  #colbreak()
   #drift[Ignoring prosody when assessing fluency.][Appropriate phrasing, pausing, stress, and intonation provide information that accuracy and rate alone miss. Prosody relates meaningfully to comprehension.]
   #drift[Using repeated reading when the bottleneck is decoding.][A student can become faster at a practiced passage without acquiring the word-reading knowledge needed to transfer that improvement to a new passage.]
   #drift[Using round-robin or popcorn reading for oral reading practice.][Each student reads only a few sentences while classmates wait, read ahead, or tune out, and weak readers are exposed rather than supported. Partner, choral, and echo reading give every student far more practice.]
 
   #driftgroup[Vocabulary, knowledge, and comprehension]
-  #drift[Underteaching oral language.][Many students lag in spoken language. Listening comprehension should be explicitly built from K up, through read-alouds, discussion, and extended talk.]
+  #drift[Underteaching oral language.][Many students lag in spoken language. Listening comprehension should be explicitly built from K up, via read-alouds, discussion, prompted storytelling, and extended talk.]
   #drift[Teaching vocabulary as isolated definitions.][Students may copy definitions, match words to meanings, or memorize weekly lists without learning semantic relationships, morphology, multiple meanings, collocations, or the knowledge domain in which the words are useful.]
   #drift[Underteaching academic vocabulary.][Words such as _analyze_, _contrast_, _infer_, _significant_, and _establish_ occur across subjects and carry much of the meaning in textbooks, directions, assignments, and tests.]
   #drift[Trying to activate knowledge instead of building it.][Students cannot activate knowledge they do not have.]
   #drift[Teaching comprehension through excessive strategy rehearsal.][Predicting, questioning, summarizing, and identifying main ideas can help students learn how comprehension works. Once students understand a strategy, more practice yields little. The time is better spent building vocabulary and knowledge.]
   #drift[Teaching “main idea” as though it were independent of knowledge.][Students may be asked to infer main ideas from passages about topics they barely understand, making a knowledge deficit look like a strategy deficit.]
   #drift[Underteaching sentence structure.][Students may know every word in a sentence and still misunderstand who did what to whom, which idea modifies which, or how one clause relates to another. Passive voice, relative clauses, embedded clauses, and connectives such as _although_, _unless_, and _despite_ can trip up many learners.]
+  #drift[Underteaching text structure.][A text's organization (comparison, cause-effect, problem-solution) shows how its ideas connect. Students who learn to spot it from signal words (_because_, _in contrast_) can better grasp the gist and remember what they read.]
   #drift[Overteaching grammatical labels.][Students can spend substantial time naming predicates, subordinating conjunctions, or clause types without getting better at understanding or writing hard sentences.]
 
   #driftgroup[Programs, assessment, and intervention]
